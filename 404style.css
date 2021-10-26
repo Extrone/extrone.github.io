@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    text-align: center;
+    font-size: 64px;
+    color: white;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+body{
+    background-color: #111111;
+    background-position: center;
+    background-size: cover;
+}
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+    text-shadow: 5px 10px 10px #00000080;
+}
+.hero-btn{
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 5px solid #ff0e5e;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    box-shadow: transparent;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.hero-btn:hover{
+    border: 5px solid #ff0e5e;
+    border-radius: 25px;
+    box-shadow: 0px 10px 15px #00000080;
+    background: #ff0e5e;
+    transition: 0.25s;
+}

@@ -60,6 +60,7 @@ nav img{
 .text-box h1{
     font-size: 62px;
     text-shadow: 5px 10px 10px #00000080;
+    padding-bottom: 20px;
 }
 .text-box p{
     margin: 10px 0 40px;
