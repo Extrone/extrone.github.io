@@ -15,9 +15,9 @@
 <body>
 
     <!-- Header -->
-    <section class="header">
+    <section class="header" id="header">
         <nav>
-            <a href="index.html"><img src="images/logo_400x400.png"></a>
+            <a href="index.html" id="navImage"><img src="images/logo_400x400.png"></a>
             <div class="nav-links" id="navLinks">
                 <i class="uil uil-times" onclick="hideMenu()"></i>
                 <ul>
@@ -35,7 +35,6 @@
                 I make games in Unreal Engine
             </p>
             <a href="" class="hero-btn">PORTFOLIO</a>
-
         </div>
     </section>
 
@@ -53,7 +52,7 @@
     <!----- JavaScript for toggle menu ------>
     <script>
         var navLinks = document.getElementById("navLinks");
-        console.log(navLinks);
+
         function showMenu()
         {
             navLinks.style.right = "0";
