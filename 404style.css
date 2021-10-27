@@ -24,29 +24,47 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    transition: 0.25s;
 }
 .text-box h1{
     font-size: 62px;
     text-shadow: 5px 10px 10px #00000080;
+    transition: 0.25s;
 }
 .hero-btn{
-    border-radius: 10px;
+    border-radius: 25px;
+    font-weight: 600;
     display: inline-block;
     text-decoration: none;
     color: white;
     border: 5px solid #ff0e5e;
     padding: 12px 34px;
-    font-size: 13px;
-    background: transparent;
+    font-size: 16px;
+    background: #111111;
     position: relative;
-    box-shadow: transparent;
+    box-shadow: 0px 5px 10px #00000080;
     cursor: pointer;
     transition: 0.25s;
 }
 .hero-btn:hover{
-    border: 5px solid #ff0e5e;
-    border-radius: 25px;
-    box-shadow: 0px 10px 15px #00000080;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: 0px 15px 25px #00000080;
+    border: 5px outset #222222;
     background: #ff0e5e;
+    color: white;
     transition: 0.25s;
+}
+
+@media(max-width: 700px){
+    html, body {overflow-x: hidden;}
+    .text-box h1{
+        font-size: 40px;
+        transition: 0.25s;
+    }
+    .hero-btn{
+        font-size: 16px;
+        padding: 10px 24px;
+        transition: 0.25s;
+    }
 }
