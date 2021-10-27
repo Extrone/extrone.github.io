@@ -20,6 +20,9 @@ nav{
 nav img{
     width: 100px;
     border-radius: 25%;
+    border: 5px solid #222222;
+    box-shadow: 0px 10px 15px #00000050;
+    transition: 0.25s;
 }
 .nav-links{
     flex: 1;
@@ -35,6 +38,7 @@ nav img{
     color: white;
     text-decoration: none;
     font-size: 18px;
+    transition: 0.25;
 }
 .nav-links ul li::after{
     content: '';
@@ -61,32 +65,37 @@ nav img{
     font-size: 62px;
     text-shadow: 5px 10px 10px #00000080;
     padding-bottom: 20px;
+    transition: 0.25s;
 }
 .text-box p{
     margin: 10px 0 40px;
-    font-size: 14px;
+    font-size: 18px;
     text-shadow: 2px 5px 3px #00000080;
     color: #dddddd;
+    transition: 0.25s;
 }
 .hero-btn{
-    border-radius: 10px;
+    border-radius: 25px;
+    font-weight: 600;
     display: inline-block;
     text-decoration: none;
     color: white;
     border: 5px solid #ff0e5e;
     padding: 12px 34px;
-    font-size: 13px;
-    background: transparent;
+    font-size: 16px;
+    background: #111111;
     position: relative;
-    box-shadow: transparent;
+    box-shadow: 0px 5px 10px #00000080;
     cursor: pointer;
     transition: 0.25s;
 }
 .hero-btn:hover{
-    border: 5px solid #ff0e5e;
-    border-radius: 25px;
-    box-shadow: 0px 10px 15px #00000080;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: 0px 15px 25px #00000080;
+    border: 5px outset #222222;
     background: #ff0e5e;
+    color: white;
     transition: 0.25s;
 }
 nav .fa{
@@ -97,30 +106,44 @@ nav .fa{
 @media(max-width: 700px){
     html, body {overflow-x: hidden;}
     .text-box h1{
-        font-size: 20px;
+        font-size: 40px;
+    }
+    .text-box p{
+        font-size: 14px;
+    }
+    nav img{
+        width: 64px;
     }
     .nav-links ul li{
         display: block;
     }
     .nav-links{
         position: absolute;
-        background: #222222;
+        background: #1b1b1b;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
         height: 100vh;
         width: 200px;
         top: 0;
-        right: -200px;
+        right: -220px;
         text-align: left;
+        box-shadow: -10px 0px 20px #00000050;
         z-index: 2;
-        transition: 0.5s;
+        transition: 0.25s;
     }
     nav .fa{
         display: block;
         color: #ffffff;
-        margin: 10px;
-        font-size: 22px;
+        margin: 20px;
+        font-size: 24px;
         cursor: pointer;
+        text-shadow: 0px 7px 10px #00000080;
     }
     .nav-links ul{
         padding: 30px;
+    }
+    .hero-btn{
+        font-size: 16px;
+        padding: 10px 24px;
     }
 }
