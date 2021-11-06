@@ -11,13 +11,15 @@
     min-width: 100%;
     background-color: #111111;
     background-position: center;
-    background-size: cover;}
+    background-size: cover;
+    transition: 0.25s;
+}
 nav{
     position: fixed;
-    width: 100%;
-    right: 0;
-    left: 0;
+    width: 90vw;
+    margin-right: 10%;
     display: flex;
+    flex: 1;
     padding: 1% 6%;
     justify-content: space-between;
     align-items: center;
@@ -39,7 +41,6 @@ nav img{
 .nav-links{
     flex: 1;
     text-align: right;
-    padding-right: 10%;
 }
 .nav-links ul li{
     list-style: none;
@@ -251,5 +252,37 @@ nav .uil{
         flex-direction: column;
         justify-content: center;
         align-self: stretch;
+    }
+}
+
+@media(prefers-color-scheme: light) {
+    .header{
+        background: whitesmoke;
+        transition: 0.25s;
+    }
+    nav{
+        background: white;
+    }
+    nav .uil{
+        color: #111111;
+        text-shadow: 2px 2px 5px #00000030;
+    }
+    .text-box{
+        color: #111111;
+        transition: 0.25s;
+    }
+    .text-box h1{
+        text-shadow: 5px 5px 15px #00000050;
+        transition: 0.25s;
+    }
+    .text-box p{
+        color: #111111;
+        text-shadow: 2px 2px 5px #00000050;
+        transition: 0.25s;
+    }
+    .hero-btn{
+        background: #111111;
+        color: #ffffff;
+        transition: 0.25s;
     }
 }
