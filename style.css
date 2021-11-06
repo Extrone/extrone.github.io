@@ -8,25 +8,27 @@
 .header{
     min-height: 100vh;
     min-width: 100%;
-    background-color: #0a0a0a;
+    background-color: #111111;
     background-position: center;
-    background-size: cover;
-}
+    background-size: cover;}
 nav{
     display: flex;
     padding: 1% 6%;
     justify-content: space-between;
     align-items: center;
-    background-color: #050505;
-    border-bottom: 5px solid #222222;
-    position: relative;
+    background-color: #151515;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 25%);
+    flex: 1;
+
 }
 nav img{
-    width: 80px;
-    border-radius: 25px;
-    border: 5px solid #222222;
+    width: 50px;
+    border-radius: 100%;
+    border: 3px solid #cfcfcf;
     box-shadow: 0px 0px 20px #00000080;
-    display: block;
+    display: flex;
+    flex: auto;
     transition: 0.25s;
 }
 .nav-links{
@@ -61,6 +63,32 @@ nav img{
     margin: auto;
     transition: 0.25s;
 }
+.nav-btn{
+    cursor: pointer;
+    text-decoration: none;
+    margin: -10px;
+    flex: 1;
+    border-radius: 5px;
+    border: none;
+    font-family: Poppins;
+    font-size: 0.8rem;
+    font-weight: bold;
+    background: #303030;
+    color: white;
+    padding: 5px 15px;
+    box-shadow: 5px 5px 5px #00000030;
+    text-shadow: 2px 2px 2px #00000030;
+    transition: 0.15s;
+}
+
+.nav-btn:hover {
+    background: #DC245B;
+    transform: scale(1.1, 1.1);
+}
+.nav-btn:active {
+    background: #FF004C;
+    transform: scale(0.9, 0.9);
+}
 .text-box{
     width: 90%;
     color: white;
@@ -69,44 +97,62 @@ nav img{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    align-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+.home-btns{
+    display: inline-flex;
+    align-items: center;
+    flex: 1;
+    align-self: center;
 }
 .text-box h1{
-    font-size: 62px;
+    font-size: 4rem;
     text-shadow: 5px 10px 10px #00000080;
     padding-bottom: 20px;
     transition: 0.25s;
 }
 .text-box p{
     margin: 10px 0 40px;
-    font-size: 18px;
-    text-shadow: 2px 5px 3px #00000080;
+    font-size: 1.2rem;
+    text-shadow: 2px 5px 5px #00000080;
     color: #dddddd;
     transition: 0.25s;
 }
 .hero-btn{
-    border-radius: 25px;
-    font-weight: 600;
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    border: 5px solid #ff0e5e;
-    padding: 12px 34px;
+    display: inline-flex;
     font-size: 16px;
-    background: #0a0a0a;
     position: relative;
-    box-shadow: 0px 5px 10px #00000080;
     cursor: pointer;
-    transition: 0.25s;
+    text-decoration: none;
+    margin: 5px 10px;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    min-width: 160px;
+    border-radius: 10px;
+    border: none;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: bold;
+    background: #cfcfcf;
+    color: #111111;
+    padding: 10px 25px;
+    box-shadow: 5px 5px 5px #00000030;
+    text-shadow: 2px 2px 2px #00000030;
+    transition: 0.15s;
 }
-.hero-btn:hover{
-    font-size: 20px;
-    font-weight: 600;
-    box-shadow: 0px 15px 25px #00000080;
-    border: 5px outset #222222;
-    background: #ff0e5e;
-    color: white;
-    transition: 0.25s;
+
+.hero-btn:hover {
+    background: #DC245B;
+    transform: scale(1.1, 1.1);
 }
+.hero-btn:active {
+    background: #FF004C;
+    transform: scale(0.9, 0.9);
+}
+
 nav .uil{
     display: none;
 }
@@ -140,7 +186,7 @@ nav .uil{
 }
 
 
-@media(max-width: 700px){
+@media(max-width: 750px){
     html, body {overflow-x: hidden;}
     .text-box h1{
         font-size: 32px;
@@ -148,15 +194,8 @@ nav .uil{
     .text-box p{
         font-size: 14px;
     }
-    nav img{
-        width: 50px;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 50px;
-        border: 3px solid #222222;
-    }
     .nav-links ul li{
-        display: block;
+        display: flex;
         padding-bottom: 6px;
     }
     .nav-links{
@@ -165,9 +204,9 @@ nav .uil{
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
         height: 100vh;
-        width: 200px;
+        width: 250px;
         top: 0;
-        right: -220px;
+        right: -300px;
         text-align: left;
         box-shadow: -10px 0px 20px #00000050;
         z-index: 2;
@@ -190,8 +229,19 @@ nav .uil{
     .nav-links ul{
         padding: 30px;
     }
+    .nav-btn{
+        margin: 0px;
+        font-size: 1rem;
+    }
     .hero-btn{
-        font-size: 16px;
+        font-size: 1.2rem;
         padding: 10px 24px;
+        flex: 1;
+        width: 30%;
+    }
+    .home-btns{
+        flex-direction: column;
+        justify-content: center;
+        align-self: stretch;
     }
 }
