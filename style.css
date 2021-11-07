@@ -5,7 +5,9 @@
     scroll-behavior: smooth;
     scrollbar-width: none;
 }
-
+body{
+    padding-top: 50px;
+}
 .header{
     min-height: 100vh;
     min-width: 100%;
@@ -15,7 +17,9 @@
     transition: 0.25s;
 }
 nav{
+    top: 0;
     position: fixed;
+    z-index: 99;
     width: 90vw;
     margin-right: 10%;
     display: flex;
@@ -263,6 +267,9 @@ nav .uil{
     nav{
         background: white;
     }
+    .nav-links{
+        background: #ffffff;
+    }
     nav .uil{
         color: #111111;
         text-shadow: 2px 2px 5px #00000030;
@@ -279,6 +286,9 @@ nav .uil{
         color: #111111;
         text-shadow: 2px 2px 5px #00000050;
         transition: 0.25s;
+    }
+    .nav-btn{
+        background: #111111;
     }
     .hero-btn{
         background: #111111;
