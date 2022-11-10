@@ -16,7 +16,7 @@
 
 .profile img {
     display: inline-table;
-    border-radius: 20%;
+    border-radius: 50%;
 }
 
 .buttons {
@@ -26,7 +26,7 @@
 }
 
 .button {
-    background: var(--tertiary);
+    background: var(--primary);
     border-radius: var(--radius);
     margin: 8px;
     padding: 6px;
@@ -35,12 +35,17 @@
 
 .button:hover {
     background: var(--button-hover);
-    /* color: var(--button-content-hover); */
     transform: scale(1.1, 1.1);
+}
+
+.button:hover .button-inner {
+    color: var(--button-content-hover);
 }
 
 .button-inner {
     padding: 0 8px;
+    font-weight: 600;
+    color: var(--tertiary);
 }
 
 .button:active {

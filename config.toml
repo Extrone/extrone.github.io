@@ -11,7 +11,7 @@ ShowCodeCopyButtons = true
   [params.profileMode]
   enabled = true
   title = "Arjun Subhash"
-  subtitle = "I make games in Unreal Engine"
+  subtitle = "UI Artist"
   imageUrl = "img/Profile_400x400.jpg"
   imageWidth = 120
   imageHeight = 120
@@ -31,18 +31,6 @@ ShowCodeCopyButtons = true
   [[params.socialIcons]]
   name = "twitter"
   url = "https://twitter.com/extr0ne"
-
-  [[params.socialIcons]]
-  name = "instagram"
-  url = "https://instagram.com/arjun_subhash_"
-
-  [[params.socialIcons]]
-  name = "youtube"
-  url = "https://youtube.com/@extrone"
-
-  [[params.socialIcons]]
-  name = "mastodon"
-  url = "https://mastodon.gamedev.place/@Extrone"
 
   [params.cover]
   LinkFullImages = true
