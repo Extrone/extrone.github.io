@@ -12,12 +12,12 @@
     display: block;
     font-family: 'Poppins';
     font-weight: 500;
-    transition: .15s;
 }
 
 .nav a:hover {
     color: var(--button-hover);
     transform: translate(0px, -2px);
+    transition: .15s;
 }
 
 .logo,
@@ -47,12 +47,12 @@
 button#theme-toggle {
     font-size: 26px;
     margin: auto 4px;
-    transition: .15s;
 }
 
 button#theme-toggle:hover {
     color: var(--button-hover);
     transform: translate(0px, -2px);
+    transition: .15s;
 }
 
 body.dark #moon {
