@@ -1,0 +1,7 @@
+.test {
+    background-color: var(--primary);
+    color: var(--theme);
+    padding: 20px;
+    border-radius: var(--radius);
+    text-align: center;
+}
