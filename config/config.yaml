@@ -1,0 +1,74 @@
+baseURL: 'http://example.org/'
+languageCode: en-us
+title: Arjun Subhash
+theme: PaperMod
+
+params:
+  profileMode:
+    enabled: true
+    title: "Arjun Subhash"
+    subtitle: "I make games in Unreal Engine"
+    imageUrl: "img/Profile_400x400.jpg"
+    imageWidth: 120
+    imageHeight: 120
+    buttons:
+      - name: Portfolio
+        url: "/portfolio/"
+      - name: Games
+        url: "https://extrone.itch.io"
+
+  socialIcons:
+    - name: email
+      url: "mailto:anjana4760@gmail.com"
+    - name: twitter
+      url: "https://twitter.com/extr0ne"
+    - name: instagram
+      url: "https://instagram.com/arjun_subhash_"
+    - name: youtube
+      url: "https://youtube.com/@extrone"
+    - name: mastodon
+      url: "https://mastodon.gamedev.place/@Extrone"
+
+  cover:
+    LinkFullImages: true
+  ShowBreadCrumbs: true
+  ShowReadingTime: true
+  ShowCodeCopyButtons: true
+
+menu:
+  main:
+
+    # - identifier: home
+    #   name: Home
+    #   url: /
+    #   weight: 1
+  
+    - identifier: portfolio
+      name: Portfolio
+      url: /portfolio/
+      weight: 2
+      
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 3
+      
+    - identifier: contact
+      name: Contact
+      url: /contact/
+      weight: 4
+
+    # - identifier: categories
+    #   name: Categories
+    #   url: /categories/
+    #   weight: 20
+      
+    # - identifier: tegs
+    #   name: Tags
+    #   url: /tags/
+    #   weight: 30
+
+    - identifier: archives
+      name: Posts
+      url: /archives/
+      weight: 40

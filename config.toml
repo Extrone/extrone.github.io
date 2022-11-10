@@ -1,0 +1,72 @@
+baseURL = "https://extrone.github.io/"
+languageCode = "en-us"
+title = "Arjun Subhash"
+theme = "PaperMod"
+
+[params]
+ShowBreadCrumbs = true
+ShowReadingTime = true
+ShowCodeCopyButtons = true
+
+  [params.profileMode]
+  enabled = true
+  title = "Arjun Subhash"
+  subtitle = "I make games in Unreal Engine"
+  imageUrl = "img/Profile_400x400.jpg"
+  imageWidth = 120
+  imageHeight = 120
+
+    [[params.profileMode.buttons]]
+    name = "Portfolio"
+    url = "/portfolio/"
+
+    [[params.profileMode.buttons]]
+    name = "Games"
+    url = "https://extrone.itch.io"
+
+  [[params.socialIcons]]
+  name = "email"
+  url = "mailto:anjana4760@gmail.com"
+
+  [[params.socialIcons]]
+  name = "twitter"
+  url = "https://twitter.com/extr0ne"
+
+  [[params.socialIcons]]
+  name = "instagram"
+  url = "https://instagram.com/arjun_subhash_"
+
+  [[params.socialIcons]]
+  name = "youtube"
+  url = "https://youtube.com/@extrone"
+
+  [[params.socialIcons]]
+  name = "mastodon"
+  url = "https://mastodon.gamedev.place/@Extrone"
+
+  [params.cover]
+  LinkFullImages = true
+
+[[menu.main]]
+identifier = "portfolio"
+name = "Portfolio"
+url = "/portfolio/"
+weight = 2
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 3
+
+[[menu.main]]
+identifier = "contact"
+name = "Contact"
+url = "/contact/"
+weight = 4
+
+[[menu.main]]
+identifier = "archives"
+name = "Posts"
+url = "/archives/"
+weight = 40
