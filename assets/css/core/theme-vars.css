@@ -1,13 +1,13 @@
 :root {
     --gap: 24px;
     --content-gap: 20px;
-    --nav-width: 1024px;
-    --main-width: 720px;
+    --nav-width: 80%;
+    --main-width: 80%;
     --header-height: 60px;
     --footer-height: 60px;
     --radius: 8px;
     --theme: rgb(245, 245, 245);
-    --entry: rgb(245, 245, 245);
+    --entry: rgb(235, 235, 235);
     --primary: rgb(30, 30, 30);
     --secondary: rgb(108, 108, 108);
     --tertiary: rgb(245, 245, 245);
