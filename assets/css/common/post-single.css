@@ -129,16 +129,27 @@
 }
 
 .post-content table {
+    display: inline-table;
     margin-bottom: 32px;
+    border-radius: var(--radius);
+    table-layout: fixed
+}
+
+.post-content table tr {
+    background-color: var(--entry);
+    border: 5px transparent;
 }
 
 .post-content table th,
 .post-content table:not(.highlighttable, .highlight table, .gist .highlight) td {
+    width: 100%;
     min-width: 80px;
     padding: 12px 8px;
     line-height: 1.5;
     border-bottom: 1px solid var(--border);
+    border-collapse: collapse;
 }
+
 
 .post-content table th {
     font-size: 14px;

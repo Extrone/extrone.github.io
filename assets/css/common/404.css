@@ -1,0 +1,39 @@
+.not-found {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    font-size: 10vw;
+    font-weight: 700;
+    transition: .1s;
+}
+
+.not-found-description {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.not-found-description h3 {
+    padding: 10px;
+}
+
+.not-found a {
+    align-self: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    .not-found {
+        font-size: 17vw;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .not-found {
+        font-size: 30vw;
+    }
+}

@@ -9,12 +9,12 @@
     --theme: rgb(245, 245, 245);
     --entry: rgb(235, 235, 235);
     --primary: rgb(30, 30, 30);
-    --secondary: rgb(108, 108, 108);
+    --secondary: rgb(58, 58, 58);
     --tertiary: rgb(245, 245, 245);
     --content: rgb(31, 31, 31);
     --hljs-bg: rgb(28, 29, 33);
     --code-bg: rgb(245, 245, 245);
-    --border: rgb(238, 238, 238);
+    --border: rgb(255, 255, 255);
     --button-hover: rgb(253, 89, 124);
     --button-content-hover: rgb(245, 245, 245);
 }
@@ -28,7 +28,7 @@
     --content: rgb(196, 196, 197);
     --hljs-bg: rgb(46, 46, 51);
     --code-bg: rgb(55, 56, 62);
-    --border: rgb(51, 51, 51);
+    --border: rgb(0, 0, 0);
     --button-hover: rgb(250, 59, 100);
     --button-content-hover: rgb(245, 245, 245);
 }
