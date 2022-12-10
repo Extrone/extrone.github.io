@@ -58,7 +58,7 @@ url = "/contact/"
 weight = 4
 
 [[menu.main]]
-identifier = "archives"
+identifier = "posts"
 name = "Posts"
-url = "/archives/"
+url = "/posts/"
 weight = 40
