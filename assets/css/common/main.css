@@ -33,13 +33,28 @@
     padding: 12px 0;
 }
 
+.social-icons a > svg{
+    transition: .2s;
+}
+
 .social-icons a:not(:last-of-type) {
     margin-inline-end: 12px;
 }
 
+.social-icons a:hover {
+    color: var(--button-hover);
+    transition: .2s;
+}
+
+.social-icons a:hover > svg {
+    transform: scale(1.5);
+    transition: .2s;
+}
+
 .social-icons a svg {
-    height: 26px;
-    width: 26px;
+    height: 24px;
+    width: 24px;
+    transition: .2;
 }
 
 code {
