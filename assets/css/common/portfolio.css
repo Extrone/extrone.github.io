@@ -18,16 +18,17 @@
 }
 
 .design {
-    margin: 10px;
-    padding: 0px;
     width: 100%;
     height: 100%;
+    margin: 10px;
+    padding: 0px;
     border: solid;
     border-width: 0;
-    background-color: var(--entry);
-    color: var(--primary);
-    border-radius: var(--radius);
     text-align: center;
+    color: var(--primary);
+    border-color: transparent;
+    border-radius: var(--radius);
+    background-color: var(--entry);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 15%);
     transition: .2s;
 }
@@ -45,26 +46,34 @@
 }
 
 .design:hover > .design-image {
-    transform: scale(.97);
+    transform: scale(.95);
     transition: .2s;
+}
+
+.design h1 {
+    padding: 0;
+    margin: 0;
+    text-shadow: 5px 3px 5px rgba(0, 0, 0, 25%);
 }
 
 .design p {
     letter-spacing: 2px;
-    padding: 15px;
-    text-align: left;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 25%);
 }
 
 .design-image {
     display: flex;
-    padding: 5px;
+    padding: 10px;
     align-items: center;
     align-content: center;
     transition: .2s;
 }
 
 .design-image img {
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 15%);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 30%);
     width: 100%;
     align-self: center;
 }
