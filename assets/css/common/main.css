@@ -1,9 +1,11 @@
-@font-face {
+/* @font-face {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
     src: local('Poppins'), url('fonts/Poppins/Poppins-Regular.ttf') format('ttf');
-}
+} */
+
+* { font-family: 'Poppins', sans-serif !important; }
 
 .main {
     position: relative;
