@@ -22,11 +22,9 @@
     height: 100%;
     margin: 10px;
     padding: 0px;
-    border: solid;
-    border-width: 0;
+    border: 5px solid transparent;
     text-align: center;
     color: var(--primary);
-    border-color: transparent;
     border-radius: var(--radius);
     background-color: var(--entry);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 15%);
@@ -36,7 +34,6 @@
 .design:hover {
     transform: scale(1.05);
     border-color: var(--primary);
-    border-width: 5px;
     transition: .2s;
 }
 
@@ -45,20 +42,21 @@
     transition: .2s;
 }
 
-.design:hover > .design-image {
-    transform: scale(.95);
+.design:hover>.design-image img {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 30%);
+    transform: scale(1.15);
     transition: .2s;
 }
 
 .design h1 {
-    padding: 0;
-    margin: 0;
+    padding: 0 !important;
+    margin: 1rem !important;
     text-shadow: 5px 3px 5px rgba(0, 0, 0, 25%);
 }
 
 .design p {
     letter-spacing: 2px;
-    margin: 0;
+    margin: 0 !important;
     padding: 10px;
     text-align: center;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 25%);
@@ -67,15 +65,16 @@
 .design-image {
     display: flex;
     padding: 10px;
+    clip-path: inset(0 round 12px 12px 0 0);
     align-items: center;
     align-content: center;
-    transition: .2s;
 }
 
 .design-image img {
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 30%);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 15%);
     width: 100%;
     align-self: center;
+    transition: .2s;
 }
 
 .design-description {
@@ -91,21 +90,19 @@
 
 @media only screen and (max-width: 1400px) {
     .designs {
-    grid-template-columns: 2fr 2fr 2fr;
+        grid-template-columns: 2fr 2fr 2fr;
 
     }
 }
 
 @media only screen and (max-width: 1000px) {
     .designs {
-    grid-template-columns: 1fr 1fr
-
+        grid-template-columns: 1fr 1fr
     }
 }
 
 @media only screen and (max-width: 600px) {
     .designs {
-    grid-template-columns: 1fr
-
+        grid-template-columns: 1fr
     }
 }

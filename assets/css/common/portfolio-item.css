@@ -1,0 +1,172 @@
+.portfolio-showcase {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+}
+
+.portfolio-showcase-item {
+    padding: 10px;
+}
+
+.portfolio-showcase-item img {
+    width: 100%;
+    padding: 5px;
+    border: 5px solid transparent;
+    background-color: transparent !important;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 15%);
+    border-radius: var(--radius) !important;
+    transition: .2s;
+}
+
+.portfolio-showcase-item img:hover {
+    opacity: .9;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 35%);
+    border-color: var(--primary);
+    transform: scale(1.02);
+    transition: .2s;
+}
+
+.portfolio-showcase-item img:active {
+    transform: scale(.98);
+    transition: .2s;
+}
+
+.portfolio-showcase-item p {
+    margin-top: 10px;
+}
+
+.protfolio-slideshow-item {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.portfolio-slideshow-container {
+    max-width: 80%;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.2s ease;
+    color: var(--theme);
+    background-color: var(--primary);
+    border-radius: calc(var(--radius)/2);
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: var(--button-hover);
+    transform: scale(1.1);
+}
+
+.prev:active,
+.next:active {
+    transform: scale(.9);
+}
+
+/* Caption text */
+.text {
+    color: var(--primary);
+    font-size: 15px;
+    padding: 8px 12px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: var(--primary);
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 20px 2px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    border: 3px solid transparent;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.active {
+    background-color: var(--theme);
+    border-color: var(--primary);
+}
+
+.dot:hover {
+    background-color: var(--button-hover);
+    transform: scale(1.25);
+    transition: .2s;
+}
+
+.dot:active {
+    transform: scale(.75);
+    transition: .2s;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: .2s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .portfolio-showcase {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-showcase-item p {
+        font-size: 16px;
+        transition: .2s;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .portfolio-showcase-item p {
+        font-size: 14px;
+        transition: .2s;
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
