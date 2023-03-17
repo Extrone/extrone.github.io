@@ -40,11 +40,49 @@
 
 .submit-button:hover {
     background: var(--button-hover);
+    color: var(--primary);
     transform: scale(1.1, 1.1);
 }
 
 .submit-button:hover .button-inner {
     color: var(--button-content-hover);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: var(--theme);
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.modal-content {
+    display: flex;
+    border-radius: var(--radius);
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    background-color: var(--theme);
+    margin: 15% auto;
+    padding: 20px;
+    border: 5px solid var(--primary);
+    min-width: 30%;
+    width: fit-content;
+}
+
+.button {
+    color: var(--theme);
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+.button:hover {
+    color: var(--primary);
 }
 
 .socials {
@@ -61,7 +99,7 @@
     text-align: center;
 }
 
-.social-links .button{
+.social-links .button {
     box-shadow: none;
 }
 

@@ -9,7 +9,9 @@ ShowSocialButtons: true
 ---
 
 <div class="contact-form">
-    <form name="gform" id="gform" action="https://docs.google.com/forms/d/e/1FAIpQLScdKU-MISCXklCMYKa9vJP7lYq7YjGqS4P34YWhPEIx4pxybQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+    <form name="gform" id="gform"
+        action="https://docs.google.com/forms/d/e/1FAIpQLScdKU-MISCXklCMYKa9vJP7lYq7YjGqS4P34YWhPEIx4pxybQ/formResponse?"
+        target="hidden_iframe" onsubmit="submitted=true;">
         <div class="contact-field">
             <label for="name">Name:</label>
             <input type="text" id="entry.843253903" name="entry.843253903" required>
@@ -23,14 +25,34 @@ ShowSocialButtons: true
             <textarea type="textarea" id="entry.183883436" name="entry.183883436" required></textarea>
         </div>
         <div class="contact-field">
-            <input class="submit-button" type="submit" value="Sent Message">
+            <input class="submit-button" type="submit" value="Sent Message ">
         </div>
     </form>
 
-    <div class="form-submit-confirmation" id="form-submit-confirmation" style="visibility: hidden;">
-        <h3>Message Sent!</h3>
+    <div class="form-submit-confirmation modal" class="modal" id="form-submit-confirmation" style="visibility: hidden;">
+        <div class="modal-content">
+            <h3>Message Sent!</h3>
+            <p>Thank you for contacting. I'll reach back to you as soon as possible.</p>
+            <button class="close-button button">Close</button>
+        </div>
     </div>
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {document.getElementById('gform').reset(); document.getElementById('form-submit-confirmation').style.visibility='visible';}"></iframe>
+
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {
+        var modal = document.getElementById('form-submit-confirmation');
+        var button = document.getElementsByClassName('close-button')[0];
+        modal.style.display = 'block';
+        
+        button.onclick = function() {
+        modal.style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+            }
+        } 
+        document.getElementById('gform').reset(); document.getElementById('form-submit-confirmation').style.visibility='visible';
+         }"></iframe>
 
     <div class="socials">
         <h3>Email</h3>
