@@ -6,6 +6,11 @@
     width: auto;
 }
 
+.contact-form form {
+    min-width: 650px;
+    width: 50%;
+}
+
 .contact-field {
     display: flex;
     width: auto;
@@ -23,6 +28,7 @@
 }
 
 .contact-field textarea {
+    min-height: 150px;
     background-color: var(--primary);
     border-radius: calc(var(--radius)/2);
     color: var(--theme);
@@ -31,8 +37,10 @@
 
 .submit-button {
     margin: 8px;
+    margin-left: 0;
     border-radius: calc(var(--radius)/2);
-    width: 50%;
+    min-width: 10rem;
+    width: 10rem;
     align-self: center;
     padding: 6px;
     transition: 0.15s;
@@ -94,24 +102,78 @@
 
 .socials {
     display: flex;
+    min-width: 650px;
+    width: 50%;
     flex-direction: column;
     margin: 10px;
     padding: 10px;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
+    align-content: left;
 }
 
 .social-links {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
+    justify-content: left;
+    align-items: left;
+    align-content: left;
+    gap: 12px;
+    margin-left: 0;
 }
 
 .social-links .button {
     box-shadow: none;
+    flex: 1;
+    margin: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .socials {
+        width: 80%;
+    }
+
+    .social-links {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .contact-form form {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .socials {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .social-links {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-form form {
+        min-width: 0;
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 700px) {
+
+    .socials 
+    {
+        min-width: 0;
+    }
+
     .social-links {
-        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form form {
+        min-width: 0;
+        width: 100%;
     }
 }
