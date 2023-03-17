@@ -1,4 +1,4 @@
-/* .contact-form {
+.contact-form {
     display: flex;
     flex-direction: column;
     grid-template-columns: 2fr 2fr;
@@ -45,7 +45,7 @@
 
 .submit-button:hover .button-inner {
     color: var(--button-content-hover);
-} */
+}
 
 .socials {
     display: flex;
