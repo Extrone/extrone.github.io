@@ -13,24 +13,24 @@ ShowSocialButtons: true
         action="https://docs.google.com/forms/d/e/1FAIpQLScdKU-MISCXklCMYKa9vJP7lYq7YjGqS4P34YWhPEIx4pxybQ/formResponse?"
         target="hidden_iframe" onsubmit="submitted=true;">
         <div class="contact-field">
-            <label for="name">Name:</label>
+            <label class="required" for="name">Name:</label>
             <input type="text" id="entry.843253903" name="entry.843253903" required>
         </div>
         <div class="contact-field">
-            <label for="email">E-Mail:</label>
-            <input type="email" id="entry.1791357624" name="entry.1791357624" required>
+            <label class="required" for="email">E-Mail:</label>
+            <input type="email" id="entry.1791357624" name="entry.1791357624" required oninvalid="this.setCustomValidity('Invalid email!')">
         </div>
         <div class="contact-field">
-            <label for="message">Message</label>
+            <label class="required" for="message">Message</label>
             <textarea type="textarea" id="entry.183883436" name="entry.183883436" required></textarea>
         </div>
         <div class="contact-field">
-            <input class="submit-button" type="submit" value="Sent Message ">
+            <input class="submit-button" type="submit" value="Send Message ">
         </div>
     </form>
 
     <div class="form-submit-confirmation modal" class="modal" id="form-submit-confirmation" style="visibility: hidden;">
-        <div class="modal-content">
+        <div class="modal-content" id="modal-content">
             <h3>Message Sent!</h3>
             <p>Thank you for contacting. I'll reach back to you as soon as possible.</p>
             <button class="close-button button">Close</button>
@@ -40,7 +40,7 @@ ShowSocialButtons: true
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {
         var modal = document.getElementById('form-submit-confirmation');
         var button = document.getElementsByClassName('close-button')[0];
-        modal.style.display = 'block';
+        modal.style.display = 'flex';
         
         button.onclick = function() {
         modal.style.display = 'none';
