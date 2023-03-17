@@ -16,7 +16,7 @@
 
 .contact-field input {
     background-color: var(--primary);
-    border-radius: var(--radius);
+    border-radius: calc(var(--radius)/2);
     color: var(--theme);
     padding: 10px;
     transition: .15s;
@@ -24,15 +24,15 @@
 
 .contact-field textarea {
     background-color: var(--primary);
-    border-radius: var(--radius);
+    border-radius: calc(var(--radius)/2);
     color: var(--theme);
     padding: 10px;
 }
 
 .submit-button {
     margin: 8px;
-    border-radius: var(--radius);
-    width: 30%;
+    border-radius: calc(var(--radius)/2);
+    width: 50%;
     align-self: center;
     padding: 6px;
     transition: 0.15s;

@@ -9,24 +9,30 @@ ShowSocialButtons: true
 ---
 
 <div class="contact-form">
-    <form action="/action_page.php" id="contact_form" method="POST" enctype="multipart/form-data">
+    <form name="gform" id="gform" action="https://docs.google.com/forms/d/e/1FAIpQLScdKU-MISCXklCMYKa9vJP7lYq7YjGqS4P34YWhPEIx4pxybQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
         <div class="contact-field">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="entry.843253903" name="entry.843253903" required>
         </div>
         <div class="contact-field">
             <label for="email">E-Mail:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="entry.1791357624" name="entry.1791357624" required>
         </div>
         <div class="contact-field">
             <label for="message">Message</label>
-            <textarea type="textarea" id="message" name="message" required></textarea>
+            <textarea type="textarea" id="entry.183883436" name="entry.183883436" required></textarea>
         </div>
         <div class="contact-field">
-            <input class="submit-button" type="submit" value="Submit">
+            <input class="submit-button" type="submit" value="Sent Message">
         </div>
     </form>
-    <!-- <div class="socials">
+
+    <div class="form-submit-confirmation" id="form-submit-confirmation" style="visibility: hidden;">
+        <h3>Message Sent!</h3>
+    </div>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {document.getElementById('gform').reset(); document.getElementById('form-submit-confirmation').style.visibility='visible';}"></iframe>
+
+    <div class="socials">
         <h3>Email</h3>
         <div class="social-links">
             <a class="button" href="mailto:anjana4760@gmail.com" rel="me noopener" target="_blank" title="E-Mail">
@@ -67,5 +73,5 @@ ShowSocialButtons: true
                 </span>
             </a>
         </div>
-    </div> -->
+    </div>
 </div>
