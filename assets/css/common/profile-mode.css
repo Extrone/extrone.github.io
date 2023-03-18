@@ -12,11 +12,41 @@
 
 .profile .profile_inner h1 {
     padding: 12px 0;
+    text-shadow: 1px 3px 3px var(--shadow-color);
 }
 
 .profile img {
     display: inline-table;
     border-radius: 50%;
+    box-shadow: 3px 5px 15px var(--shadow-color);
+    transition: var(--transition-duration);
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+}
+
+.profile img:hover {
+    transform: scale(1.1);
+    box-shadow: 7px 15px 25px var(--shadow-color);
+    transition: var(--transition-duration);
+}
+
+.profile img:active {
+    box-shadow: 1px 3px 5px var(--shadow-color);
+    transform: scale(.95);
+}
+
+.profile span {
+    text-shadow: 3px 5px 5px var(--shadow-color);
+}
+
+.social-icons svg {
+    filter: drop-shadow(1px 3px 3px var(--shadow-color));
+}
+
+.social-icons a:hover>.social-icons svg {
+    filter: drop-shadow(3px 5px 5px var(--shadow-color));
 }
 
 .buttons {
@@ -33,6 +63,7 @@
     margin: 8px;
     padding: 6px;
     transition: var(--transition-duration);
+    color: var(--tertiary) !important;
     outline: none;
 }
 

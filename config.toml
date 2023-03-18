@@ -13,8 +13,8 @@ ShowCodeCopyButtons = true
   title = "Arjun Subhash"
   subtitle = "UI Artist"
   imageUrl = "img/Profile_400x400.jpg"
-  imageWidth = 120
-  imageHeight = 120
+  imageWidth = 256
+  imageHeight = 256
 
     [[params.profileMode.buttons]]
     name = "Portfolio"
