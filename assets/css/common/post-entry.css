@@ -38,22 +38,23 @@
     margin-bottom: var(--gap);
     padding: var(--gap);
     background: var(--entry);
-    border: 3px solid transparent !important;
+    border: 5px solid transparent !important;
     box-shadow: 3px 3px 5px var(--shadow-color);
     border-radius: var(--radius);
-    transition: transform 0.1s;
+    transition: var(--transition-duration);
     border: 1px solid var(--border);
 }
 
 .post-entry:hover {
-    border-color: var(--button-hover) !important;
+    z-index: 2;
+    border-color: var(--primary) !important;
     box-shadow: 3px 5px 10px var(--shadow-color);
-    transform: scale(1.02);
+    transform: scale(1.05) rotate(-1deg);
     transition: var(--transition-duration);
 }
 
 .post-entry:active {
-    transform: scale(0.98);
+    transform: scale(0.98) rotate(-1deg);
 }
 
 .tag-entry .entry-cover {
