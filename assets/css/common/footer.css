@@ -59,6 +59,7 @@
 }
 
 .top-link:hover {
+    background-color: var(--button-hover);
     transform: scale(1.2);
     transition: .2s;
 }
@@ -69,8 +70,7 @@
 }
 
 .top-link:hover > svg {
-    transform: scale(1.25);
-    color: var(--button-hover);
+    color: var(--primary);
     transition: .2s;
 }
 
