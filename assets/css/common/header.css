@@ -17,7 +17,7 @@
 .nav a:hover {
     color: var(--button-hover);
     transform: translate(0px, -2px);
-    transition: .15s;
+    transition: var(--transition-duration);
 }
 
 .logo,
@@ -52,7 +52,11 @@ button#theme-toggle {
 button#theme-toggle:hover {
     color: var(--button-hover);
     transform: translate(0px, -2px);
-    transition: .15s;
+    transition: var(--transition-duration);
+}
+
+button#theme-toggle:focus {
+    color: var(--button-hover);
 }
 
 body.dark #moon {

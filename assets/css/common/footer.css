@@ -24,7 +24,7 @@
 .footer a {
     color: inherit;
     border-bottom: 1px solid var(--secondary);
-    transition: .2s;
+    transition: var(--transition-duration);
 }
 
 .footer a:hover {
@@ -43,35 +43,35 @@
     height: 42px;
     padding: 12px;
     border-radius: calc(var(--radius)/2);
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 25%);
-    transition: .2s;
+    box-shadow: 3px 3px 5px var(--shadow-color);
+    transition: var(--transition-duration);
 }
 
 .top-link,
 .top-link svg {
-    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 25%));
-    transition: .2s;
+    filter: drop-shadow(1px 1px 2px var(--shadow-color));
+    transition: var(--transition-duration);
 }
 
 .footer a:hover {
     color: var(--button-hover);
-    transition: .2s;
+    transition: var(--transition-duration);
 }
 
 .top-link:hover {
     background-color: var(--button-hover);
     transform: scale(1.2);
-    transition: .2s;
+    transition: var(--transition-duration);
 }
 
 .top-link:active {
     transform: scale(.9);
-    transition: .2s;
+    transition: var(--transition-duration);
 }
 
 .top-link:hover > svg {
     color: var(--primary);
-    transition: .2s;
+    transition: var(--transition-duration);
 }
 
 .top-link:focus,

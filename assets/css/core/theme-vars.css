@@ -15,12 +15,13 @@
     --hljs-bg: rgb(28, 29, 33);
     --code-bg: rgb(245, 245, 245);
     --border: rgb(255, 255, 255);
+    --shadow-color: rgba(0, 0, 0, 25%);
     --button-hover: rgb(253, 89, 124);
     --button-content-hover: rgb(245, 245, 245);
+    --transition-duration: .15s;
 }
 
 .dark {
-    --theme: rgb(19, 20, 22);
     --theme: rgb(0, 0, 0);
     --entry: rgb(30, 30, 35);
     --primary: rgb(218, 218, 219);

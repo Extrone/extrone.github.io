@@ -27,15 +27,23 @@
 
 .button {
     background: var(--primary);
+    border: 3px solid transparent;
     border-radius: calc(var(--radius)/2);
+    box-shadow: 2px 5px 10px var(--shadow-color) !important;
     margin: 8px;
     padding: 6px;
-    transition: 0.15s;
+    transition: var(--transition-duration);
+    outline: none;
 }
 
 .button:hover {
     background: var(--button-hover);
+    color: var(--button-content-hover);
     transform: scale(1.1, 1.1);
+}
+
+.button:focus {
+    border-color: var(--button-hover);
 }
 
 .button:hover .button-inner {

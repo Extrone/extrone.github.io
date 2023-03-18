@@ -2,35 +2,37 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100%;
+    gap: 20px;
     flex-direction: row;
     align-items: center;
 }
 
 .portfolio-showcase-item {
     padding: 10px;
+    border: 5px solid transparent;
+    border-radius: var(--radius);
+    transition: var(--transition-duration);
 }
 
 .portfolio-showcase-item img {
     width: 100%;
-    padding: 5px;
-    border: 5px solid transparent;
     background-color: transparent !important;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 15%);
+    box-shadow: 10px 10px 20px var(--shadow-color);
     border-radius: var(--radius) !important;
-    transition: .2s;
+    transition: var(--transition-duration);
 }
 
-.portfolio-showcase-item img:hover {
+.portfolio-showcase-item:hover {
     opacity: .9;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 35%);
+    box-shadow: 10px 10px 20px var(--shadow-color);
     border-color: var(--primary);
     transform: scale(1.02);
-    transition: .2s;
+    transition: var(--transition-duration);
 }
 
 .portfolio-showcase-item img:active {
     transform: scale(.98);
-    transition: .2s;
+    transition: var(--transition-duration);
 }
 
 .portfolio-showcase-item p {
@@ -56,7 +58,7 @@ img {vertical-align: middle;}
     margin: 8px;
     font-weight: bold;
     font-size: 18px;
-    transition: 0.2s ease;
+    transition: var(--transition-duration);
     color: var(--theme);
     background-color: var(--primary);
     border-radius: calc(var(--radius)/2);
@@ -108,7 +110,7 @@ img {vertical-align: middle;}
     border-radius: 50%;
     border: 3px solid transparent;
     display: inline-block;
-    transition: 0.2s;
+    transition: var(--transition-duration);
 }
 
 .active {
@@ -119,12 +121,12 @@ img {vertical-align: middle;}
 .dot:hover {
     background-color: var(--button-hover);
     transform: scale(1.25);
-    transition: .2s;
+    transition: var(--transition-duration);
 }
 
 .dot:active {
     transform: scale(.75);
-    transition: .2s;
+    transition: var(--transition-duration);
 }
 
 /* Fading animation */
@@ -150,14 +152,14 @@ img {vertical-align: middle;}
 
     .portfolio-showcase-item p {
         font-size: 16px;
-        transition: .2s;
+        transition: var(--transition-duration);
     }
 }
 
 @media only screen and (max-width: 800px) {
     .portfolio-showcase-item p {
         font-size: 14px;
-        transition: .2s;
+        transition: var(--transition-duration);
     }
 }
 

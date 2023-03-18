@@ -4,7 +4,7 @@
     border-radius: var(--radius);
     padding: 20px;
     text-align: center;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 15%);
+    box-shadow: 0px 5px 10px var(--shadow-color);
 
 }
 
@@ -27,31 +27,31 @@
     color: var(--primary);
     border-radius: var(--radius);
     background-color: var(--entry);
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 15%);
-    transition: .2s;
+    box-shadow: 0px 5px 10px var(--shadow-color);
+    transition: var(--transition-duration);
 }
 
 .design:hover {
     transform: scale(1.05);
     border-color: var(--primary);
-    transition: .2s;
+    transition: var(--transition-duration);
 }
 
 .design:active {
     transform: scale(.95);
-    transition: .2s;
+    transition: var(--transition-duration);
 }
 
 .design:hover>.design-image img {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 30%);
+    box-shadow: 5px 5px 10px var(--shadow-color);
     transform: scale(1.15);
-    transition: .2s;
+    transition: var(--transition-duration);
 }
 
 .design h1 {
     padding: 0 !important;
     margin: 1rem !important;
-    text-shadow: 5px 3px 5px rgba(0, 0, 0, 25%);
+    text-shadow: 5px 3px 5px var(--shadow-color);
 }
 
 .design p {
@@ -59,7 +59,7 @@
     margin: 0 !important;
     padding: 10px;
     text-align: center;
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 25%);
+    text-shadow: 3px 3px 3px var(--shadow-color);
 }
 
 .design-image {
@@ -71,10 +71,10 @@
 }
 
 .design-image img {
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 15%);
+    box-shadow: 0px 0px 10px var(--shadow-color);
     width: 100%;
     align-self: center;
-    transition: .2s;
+    transition: var(--transition-duration);
 }
 
 .design-description {

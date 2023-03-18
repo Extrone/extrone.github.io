@@ -9,7 +9,7 @@
     height: 80%;
     font-size: 10vw;
     font-weight: 700;
-    transition: .1s;
+    transition: var(--transition-duration);
 }
 
 .not-found-description {
