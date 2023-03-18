@@ -1,0 +1,107 @@
+---
+title: "Portfolio Item"
+url: "/portfolio/portfolio-item/"
+summary: portfolio item
+draft: false
+ShowBreadCrumbs: false
+---
+<div class="portfolio-showcase">
+    <!-- <div class="prev" onclick="plusSlides(-1)">❮</div>
+    <div class="portfolio-slideshow-container">
+        <div class="protfolio-slideshow-item fade">
+            <div class="number-text">1 / 4</div>
+            <img src="../../img/Map.png">
+            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua.</div>
+        </div>
+        <div class="protfolio-slideshow-item fade">
+            <div class="number-text">2 / 4</div>
+            <img src="../../img/Inventory.png">
+            <div class="text">Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit
+                anim id est laborum.</div>
+        </div>
+        <div class="protfolio-slideshow-item fade">
+            <div class="number-text">3 / 4</div>
+            <img src="../../img/Quests.png">
+            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua.</div>
+        </div>
+        <div class="protfolio-slideshow-item fade">
+            <div class="number-text">4 / 4</div>
+            <img src="../../img/Journal.png">
+            <div class="text">Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit
+                anim id est laborum.</div>
+        </div>
+    </div>
+    <div class="next" onclick="plusSlides(1)">❯</div>
+    <br>
+
+</div>
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("protfolio-slideshow-item");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script> -->
+
+    <div class="portfolio-showcase-item">
+        <h3>Inventory</h3>
+        <img src="../../img/Inventory1.png" alt="">
+        <p>Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.</p>
+    </div>
+    <div class="portfolio-showcase-item">
+        <h3>Quests</h3>
+        <img src="../../img/Quest1s.png" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua.</p>
+    </div>
+    <div class="portfolio-showcase-item">
+        <h3>Map</h3>
+        <img src="../../img/Ma1p.png" alt="">
+        <p>Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.</p>
+    </div>
+    <div class="portfolio-showcase-item">
+        <h3>Journal</h3>
+        <img src="../../img/Jour1nal.png" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua.</p>
+    </div>
+    <div class="portfolio-showcase-item">
+        <h3>Skills</h3>
+        <img src="../../img/Ski1lls.png" alt="">
+        <p>Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.</p>
+    </div>
+</div>
