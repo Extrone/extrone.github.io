@@ -1,9 +1,5 @@
 * { font-family: 'Poppins', sans-serif !important; }
 
-body {
-    transition: var(--transition-duration);
-}
-
 a {
     outline: none;
 }
