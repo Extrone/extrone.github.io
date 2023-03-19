@@ -23,7 +23,7 @@
 .portfolio-showcase-item img {
   width: 1920;
   height: 1080;
-  background-image: url("../img/Placeholder.png");
+  background-image: var(--placeholder-image);
   background-color: transparent !important;
   box-shadow: 10px 10px 20px var(--shadow-color);
   border-radius: var(--radius) !important;

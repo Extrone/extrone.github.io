@@ -7,7 +7,7 @@
     --footer-height: 60px;
     --radius: 12px;
     --theme: rgb(245, 245, 245);
-    --header: rgb(235, 235, 235);
+    --header: rgb(245, 245, 245);
     --entry: rgb(235, 235, 235);
     --primary: rgb(30, 30, 30);
     --secondary: rgb(58, 58, 58);
@@ -20,6 +20,7 @@
     --button-hover: rgb(253, 89, 124);
     --button-content-hover: rgb(245, 245, 245);
     --transition-duration: .15s;
+    --placeholder-image: url("../../img/Placeholder_Light.png")
 }
 
 .dark {
@@ -34,6 +35,7 @@
     --code-bg: rgb(55, 56, 62);
     --border: rgb(0, 0, 0);
     --button-hover: rgb(250, 59, 100);
+    --placeholder-image: url("../../img/Placeholder_Dark.png")
 }
 
 .list {

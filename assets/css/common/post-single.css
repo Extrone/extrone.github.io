@@ -1,5 +1,16 @@
 .post-single .entry-cover {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    clip-path: inset(0% 0% 0% 0% round var(--radius));
+    width: 100%;
+    min-height: 256px;
+    max-height: 256px;
+    margin-bottom: var(--gap);
+}
+
+.post-single .entry-cover img {
+    flex: 1;
+    height: 1080px;
 }
 
 .page-header,
@@ -278,11 +289,16 @@
 }
 
 .toc {
-    margin: 0 2px 40px 2px;
-    border: 1px solid var(--border);
+    margin: 0 0 40px 0;
+    width: auto;
+    border: 3px solid transparent;
     background: var(--hljs-bg);
     border-radius: var(--radius);
     padding: 0.4em;
+}
+
+.toc:hover {
+    border-color: var(--primary);
 }
 
 .toc a {
@@ -432,4 +448,10 @@ h1>a>svg {
 img.in-text {
     display: inline;
     margin: auto;
+}
+
+@media only screen and (max-width: 800px) {
+    .post-single .entry-cover {
+        min-height: 64px;
+    }
 }
