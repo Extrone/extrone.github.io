@@ -50,8 +50,7 @@
     flex: 1;
     font-display: flex;
     flex-direction: row;
-    margin: 0;
-    margin-left: var(--gap);
+    margin: var(--gap);
 }
 
 .post-entry:hover {
