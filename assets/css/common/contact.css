@@ -100,7 +100,6 @@
     width: 10rem;
     align-self: center;
     padding: 6px;
-    transition: var(--transition-duration);
 }
 
 .required:after {
@@ -203,8 +202,7 @@
 
 @media only screen and (max-width: 700px) {
 
-    .socials 
-    {
+    .socials {
         min-width: 0;
     }
 
