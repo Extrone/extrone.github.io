@@ -15,6 +15,7 @@ ShowPostNavLinks: true
 
 ---
 ### **Code Test**
+#### **C++**
 ``` C++
 UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Test")
 TSubClassOf<UCustomCharacter> PlayerClass;
@@ -22,12 +23,46 @@ TSubClassOf<UCustomCharacter> PlayerClass;
 UFUNCTION(BlueprintCllable, Category = "Test");
 void CreatePlayer();
 ```
+#### **JS**
+``` JS
+function change_myselect(sel) {
+  const dbParam = JSON.stringify({table:sel,limit:20});
+  const xmlhttp = new XMLHttpRequest();
+  xmlhttp.onload = function() {
+    myObj = JSON.parse(this.responseText);
+    text = "<table border='1'>"
+    for (x in myObj) {
+      text += "<tr><td>" + myObj[x].name + "</td></tr>";
+    }
+    text += "</table>"    
+    document.getElementById("demo").innerHTML = text;
+  }
+  xmlhttp.open("POST", "json_demo_html_table.php", true);
+  xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xmlhttp.send("x=" + dbParam);
+}
+```
+#### **C#**
+``` C#
+using System;
+
+namespace HelloWorld
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");    
+        }
+    }
+}
+```
 ---
 ## **Table Test**
-| Syntax      | Description | Test Text     |
-| :---        |    :----:   |          ---: |
-| Header      | Title       | Here's this   |
-| Paragraph   | Text        | And more      |
+| Item         | Price | # In stock |
+|--------------|:-----:|-----------:|
+| Juicy Apples |  1.99 |        739 |
+| Bananas      |  1.89 |          6 |
 
 ## **Long Text**
 
