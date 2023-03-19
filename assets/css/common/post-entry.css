@@ -51,30 +51,30 @@
     font-display: flex;
     flex-direction: row;
     margin: var(--gap);
+    transition: var(--transition-duration);
 }
 
 .post-entry:hover {
     z-index: 2;
     border-color: var(--primary) !important;
     box-shadow: 3px 5px 10px var(--shadow-color);
-    transform: scale(1.05);
+    transform: translateX(30px);
+    transition: var(--transition-duration);
+}
+
+.post-entry:hover> .post-entry-text {
+    transform: translateX(-50px);
     transition: var(--transition-duration);
 }
 
 .post-entry:hover> .entry-cover img {
-    transform: translate(-20px, 0px) scale(1.25);
-    box-shadow: 3px 5px 10px var(--shadow-color);
-    transition: var(--transition-duration);
+    transform: translateX(-20px)  perspective(25em) rotateY(30deg) rotateX(10deg);
+    box-shadow: -20px 10px 25px var(--shadow-color);
+    transition: calc(var(--transition-duration)*2);
 }
 
 .post-entry:active {
-    transform: scale(0.98);
-}
-
-.post-entry:active> .entry-cover img {
-    transform: translate(0px, 0px) scale(1);
-    border-color: transparent;
-    box-shadow: none;
+    transform: translateX(30px) scale(0.98);
 }
 
 .tag-entry .entry-cover {
@@ -133,7 +133,7 @@
     pointer-events: none;
     height: 100%;
     margin: auto;
-    transition: var(--transition-duration);
+    transition: calc(var(--transition-duration)*2);
 }
 
 .entry-cover a {
