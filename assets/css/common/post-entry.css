@@ -127,8 +127,12 @@
 
 .entry-cover img {
     align-self: center;
+    background-color: var(--primary);
+    color: var(--entry);
     border-radius: calc(var(--radius)*.5);
     pointer-events: none;
+    height: 100%;
+    margin: auto;
     transition: var(--transition-duration);
 }
 
