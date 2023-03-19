@@ -5,7 +5,7 @@
     --main-width: 80%;
     --header-height: 60px;
     --footer-height: 60px;
-    --radius: 16px;
+    --radius: 12px;
     --theme: rgb(245, 245, 245);
     --entry: rgb(235, 235, 235);
     --primary: rgb(30, 30, 30);
@@ -32,7 +32,6 @@
     --code-bg: rgb(55, 56, 62);
     --border: rgb(0, 0, 0);
     --button-hover: rgb(250, 59, 100);
-    --button-content-hover: rgb(245, 245, 245);
 }
 
 .list {

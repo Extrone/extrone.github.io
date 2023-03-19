@@ -1,3 +1,7 @@
+.post-single .entry-cover {
+    display: none;
+}
+
 .page-header,
 .post-header {
     margin: 24px auto var(--content-gap) auto;
@@ -276,17 +280,24 @@
 .toc {
     margin: 0 2px 40px 2px;
     border: 1px solid var(--border);
-    background: var(--code-bg);
+    background: var(--hljs-bg);
     border-radius: var(--radius);
     padding: 0.4em;
 }
 
-.dark .toc {
-    background: var(--entry);
+.toc a {
+    color: var(--button-content-hover);
+    transition: var(--transition-duration);
+}
+
+.toc a:hover {
+    color: var(--button-hover);
+    transition: var(--transition-duration);
 }
 
 .toc details summary {
     cursor: zoom-in;
+    color: var(--button-content-hover);
     margin-inline-start: 20px;
 }
 
@@ -296,12 +307,14 @@
 
 .toc .details {
     display: inline;
+    color: var(--button-content-hover);
     font-weight: 500;
 }
 
 .toc .inner {
     margin: 0 20px;
     padding: 10px 20px;
+    color: var(--button-content-hover);
 }
 
 .toc li ul {

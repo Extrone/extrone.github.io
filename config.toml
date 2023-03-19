@@ -7,6 +7,8 @@ theme = "PaperMod"
 ShowBreadCrumbs = true
 ShowReadingTime = true
 ShowCodeCopyButtons = true
+ShowShareButtons = false
+author = "Arjun Subhash"
 
   [params.profileMode]
   enabled = true
