@@ -159,12 +159,30 @@
 
 .post-content table {
     display: inline-table;
-    background-color: var(--hljs-bg);
+    background-color: transparent;
     color: var(--button-content-hover);
     font-size: 24px;
     margin-bottom: 32px;
     border-radius: var(--radius);
     table-layout: fixed;
+}
+
+th, td {
+    background-color: var(--hljs-bg);
+    transition: var(--transition-duration);
+    border-radius: var(--radius);
+    user-select: none;
+}
+
+th:hover, td:hover {
+    background-color: var(--button-hover);
+    transform: scale(1.1);
+    transition: all var(--transition-duration), transform var(--transition-duration) cubic-bezier(0.175, 0.885, 0.32, 5.275);
+}
+
+th:active, td:active {
+    transform: scale(.9);
+    transition: var(--transition-duration);
 }
 
 .post-content table th,
@@ -173,7 +191,7 @@
     min-width: 80px;
     padding: 12px 8px;
     line-height: 1.5;
-    border: 2px solid var(--theme);
+    border: 5px solid var(--theme);
     border-collapse: collapse;
 }
 
@@ -488,5 +506,17 @@ img.in-text {
 
     .main {
         max-width: 95%;
+    }
+
+    th {
+        font-size: 16px;
+    }
+
+    td {
+        font-size: 12px;
+    }
+
+    .post-content table tbody td {
+        padding: 1px;
     }
 }
