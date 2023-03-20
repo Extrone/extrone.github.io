@@ -1,3 +1,7 @@
+.post-single {
+    max-width: 100% !important;
+}
+
 .wip {
     background-color: var(--entry);
     color: var(--primary);
@@ -12,13 +16,15 @@
     align-items: center;
     align-content: center;
     margin: 5px -10px 0px -10px;
-    display: grid;
+    display: flex;
+    flex-direction: row;
     gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .design {
-    width: 100%;
+    width: 32%;
     height: 100%;
     padding: 0px;
     border: 5px solid transparent;
@@ -87,21 +93,14 @@
     font-weight: 300;
 }
 
-@media only screen and (max-width: 1400px) {
-    .designs {
-        grid-template-columns: 2fr 2fr 2fr;
-
+@media only screen and (max-width: 1500px) {
+    .design {
+        width: 45%;
     }
 }
 
 @media only screen and (max-width: 1000px) {
-    .designs {
-        grid-template-columns: 1fr 1fr
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .designs {
-        grid-template-columns: 1fr
+    .design {
+        width: 100%;
     }
 }
