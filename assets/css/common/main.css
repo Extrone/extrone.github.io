@@ -39,10 +39,9 @@ a:focus {
 
 .social-icons {
     padding: 12px 0;
-}
-
-.social-icons a > svg{
-    transition: var(--transition-duration);
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
 }
 
 .social-icons a:not(:last-of-type) {
@@ -51,11 +50,6 @@ a:focus {
 
 .social-icons a:hover {
     color: var(--button-hover);
-    transition: var(--transition-duration);
-}
-
-.social-icons a:hover > svg {
-    transform: scale(1.5);
     transition: var(--transition-duration);
 }
 

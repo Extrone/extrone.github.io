@@ -20,9 +20,9 @@
     border-radius: 50%;
     outline: 1px solid transparent;
     box-shadow: 3px 5px 15px var(--shadow-color);
-    transition: var(--transition-duration);
-    -webkit-user-select: none;  
-    -moz-user-select: none;    
+    transition: all var(--transition-duration), transform calc(var(--transition-duration)*3) cubic-bezier(0.175, 1, 0.3, 2);
+    -webkit-user-select: none;
+    -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
 }
@@ -30,7 +30,6 @@
 .profile img:hover {
     transform: scale(1.1) perspective(35em) rotateX(15deg) rotateY(-8deg);
     box-shadow: 7px 15px 25px var(--shadow-color);
-    transition: all var(--transition-duration), transform calc(var(--transition-duration)*3) cubic-bezier(0.175, 1, 0.3, 2);
     outline: 5px solid var(--button-hover);
 }
 
@@ -43,18 +42,10 @@
     text-shadow: 3px 5px 5px var(--shadow-color);
 }
 
-.social-icons svg {
-    filter: drop-shadow(1px 3px 3px var(--shadow-color));
-}
-
-.social-icons a:hover>.social-icons svg {
-    filter: drop-shadow(3px 5px 5px var(--shadow-color));
-}
-
 .buttons {
-    flex-wrap: wrap;
     max-width: 400px;
     margin: 0 auto;
+    font-size: 0;
 }
 
 .button {
@@ -67,6 +58,7 @@
     transition: all var(--transition-duration), transform var(--transition-duration) cubic-bezier(0.175, 0.885, 0.32, 2.275) !important;
     color: var(--tertiary) !important;
     outline: none;
+    font-size: 18px;
 }
 
 .button:hover {
@@ -91,4 +83,11 @@
 
 .button:active {
     transform: scale(0.96) !important;
+}
+
+@media only screen and (max-width: 450px) {
+    .buttons {
+        flex-direction: column;
+        height: auto;
+    }
 }
