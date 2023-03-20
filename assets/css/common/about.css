@@ -1,0 +1,49 @@
+.about-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-profile {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    text-align: right;
+    align-items: right;
+}
+
+.about-profile h1 {
+    margin: 0 !important;
+    margin-top: var(--gap) !important;
+    margin-bottom: 10px !important;
+}
+
+.about-profile h3 {
+    margin-top: 0 !important;
+}
+
+.about-location {
+    display: inline-flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+
+.about-location .fa-solid {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+}
+
+.about-location p {
+    margin-top: auto;
+    margin-bottom: auto;
+    vertical-align: middle;
+}
+
+.about-content {
+    flex: 1;
+    margin-left: var(--gap);
+}
+
+.about-content h1 {
+    margin-top: 0 !important;
+}
