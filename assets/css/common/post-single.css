@@ -6,6 +6,7 @@
     min-height: 256px;
     max-height: 256px;
     margin-bottom: var(--gap);
+    transition: var(--transition-duration);
 }
 
 .post-single .entry-cover a {
@@ -13,6 +14,16 @@
     display: flex;
     box-shadow: none;
     height: 100%;
+}
+
+.post-single .entry-cover:hover {
+    transform: scale(1.02);
+    transition: var(--transition-duration);
+}
+
+.post-single .entry-cover:active {
+    transform: scale(.995);
+    transition: var(--transition-duration);
 }
 
 .post-single .entry-cover img {
@@ -170,7 +181,7 @@
 th,
 td {
     background-color: var(--hljs-bg);
-    transition: var(--transition-duration);
+    transition: all var(--transition-duration), background-color calc(var(--transition-duration)*5);
     border-radius: var(--radius);
     user-select: none;
 }
@@ -178,13 +189,13 @@ td {
 th:hover,
 td:hover {
     background-color: var(--button-hover);
-    transform: scale(1.1);
-    transition: all var(--transition-duration), transform var(--transition-duration) cubic-bezier(0.175, 0.885, 0.32, 5.275);
+    transform: scale(1.025);
+    transition: all var(--transition-duration), var(--transition-duration) cubic-bezier(0.175, 0.885, 0.32, 5.275);
 }
 
 th:active,
 td:active {
-    transform: scale(.9);
+    transform: scale(.995);
     transition: var(--transition-duration);
 }
 
@@ -302,17 +313,22 @@ td:active {
     border-radius: calc(var(--radius)/2);
     width: 100%;
     box-shadow: 3px 5px 10px var(--shadow-color);
-    background-image: var(--placeholder-image);
+    /* background-image: var(--placeholder-image); */
+    background-color: var(--primary) !important;
     min-height: 200px;
-    outline: 1px solid transparent;
     transition: var(--transition-duration);
 }
 
 .post-content img:hover {
-    transform: scale(1.1);
-    box-shadow: 20px 30px 50px var(--shadow-color);
-    outline: 6px solid var(--primary);
-    transition: all var(--transition-duration), var(--transition-duration) cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: scale(1.025);
+    box-shadow: 15px 15px 50px var(--shadow-color);
+    transition: var(--transition-duration);
+}
+
+.post-content img:active {
+    transform: scale(.995);
+    box-shadow: 0 0 0 var(--shadow-color);
+    transition: var(--transition-duration);
 }
 
 .post-content img[src*="#center"] {
@@ -343,10 +359,12 @@ td:active {
     background: var(--hljs-bg);
     border-radius: var(--radius);
     padding: 0.4em;
+    transition: var(--transition-duration);
 }
 
 .toc:hover {
-    border-color: var(--primary);
+    border-color: var(--button-hover);
+    transition: var(--transition-duration);
 }
 
 .toc a {
