@@ -11,7 +11,7 @@ a:focus {
 .main {
     position: relative;
     min-height: calc(100vh - var(--header-height) - var(--footer-height));
-    max-width: 95%;
+    max-width: 80%;
     margin: auto;
     padding: var(--gap);
 }
@@ -120,4 +120,10 @@ pre:hover .copy-code {
     min-height: 10px;
     flex: 1;
     opacity: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+    .main {
+        max-width: 100%;
+    }
 }

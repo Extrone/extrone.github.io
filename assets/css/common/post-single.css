@@ -313,7 +313,6 @@ td:active {
     border-radius: calc(var(--radius)/2);
     width: 100%;
     box-shadow: 3px 5px 10px var(--shadow-color);
-    /* background-image: var(--placeholder-image); */
     background-color: var(--primary) !important;
     min-height: 200px;
     transition: var(--transition-duration);
@@ -542,7 +541,7 @@ img.in-text {
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
     .post-single {
         max-width: 95%;
     }

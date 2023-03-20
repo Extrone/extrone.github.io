@@ -58,7 +58,6 @@
     z-index: 2;
     border-color: var(--button-hover) !important;
     box-shadow: 3px 5px 10px var(--shadow-color);
-    transform: translateX(30px);
     transition: var(--transition-duration);
 }
 
