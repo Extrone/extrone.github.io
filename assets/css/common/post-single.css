@@ -297,6 +297,8 @@ th:active, td:active {
 
 .post-content img {
     border-radius: calc(var(--radius)/2);
+    background-image: var(--placeholder-image);
+    min-height: 200px;
 }
 
 .post-content img[src*="#center"] {
