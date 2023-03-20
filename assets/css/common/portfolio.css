@@ -38,7 +38,7 @@
 
 .design:hover {
     transform: scale(1.05);
-    border-color: var(--primary);
+    border-color: var(--button-hover);
     transition: var(--transition-duration);
 }
 
