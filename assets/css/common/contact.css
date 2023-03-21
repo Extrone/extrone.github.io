@@ -100,6 +100,7 @@
     width: 10rem;
     align-self: center;
     padding: 6px;
+    border-radius: var(--radius) !important;
 }
 
 .required:after {
