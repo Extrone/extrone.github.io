@@ -7,7 +7,7 @@ theme = "PaperMod"
 ShowBreadCrumbs = true
 ShowReadingTime = true
 ShowCodeCopyButtons = true
-ShowShareButtons = false
+ShowShareButtons = true
 author = "Arjun Subhash"
 
   [params.profileMode]
@@ -45,22 +45,22 @@ author = "Arjun Subhash"
 identifier = "portfolio"
 name = "Portfolio"
 url = "/portfolio/"
-weight = 2
+weight = 1
 
 [[menu.main]]
 identifier = "about"
 name = "About"
 url = "/about/"
-weight = 3
+weight = 2
 
 [[menu.main]]
 identifier = "contact"
 name = "Contact"
 url = "/contact/"
-weight = 4
+weight = 3
 
 [[menu.main]]
 identifier = "posts"
 name = "Posts"
 url = "/posts/"
-weight = 40
+weight = 4

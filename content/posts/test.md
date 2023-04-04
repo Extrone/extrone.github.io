@@ -7,6 +7,12 @@ cover:
     alt: "Inventory"
     relative: false
 
+tags:
+    - Development
+    - Go
+    - fast
+    - Blogging
+
 ShowToc: true
 ShowPostNavLinks: true
 ---

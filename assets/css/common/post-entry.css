@@ -75,10 +75,10 @@
 .post-entry:active {
     transform: translateX(30px) scale(0.98);
 }
-
+/* 
 .tag-entry .entry-cover {
     display: none;
-}
+} */
 
 .entry-header h2 {
     font-size: 24px;
@@ -147,7 +147,7 @@
     box-shadow: 0 1px 0 var(--primary);
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
 
     .post-entry {
         flex-direction: column;

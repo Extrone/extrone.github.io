@@ -8,6 +8,12 @@ cover:
     caption: "Cover Image"
     relative: false
 
+tags:
+- Development
+- Go
+- fast
+- Blogging
+
 ShowToc: true
 ShowPostNavLinks: true
 ---

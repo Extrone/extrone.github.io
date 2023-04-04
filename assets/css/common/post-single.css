@@ -33,7 +33,7 @@
 }
 
 .post-single {
-    max-width: 70%;
+    max-width: var(--main-width);
     margin-left: auto;
     margin-right: auto;
 }
@@ -416,29 +416,34 @@ td:active {
     margin-bottom: 5px;
 }
 
-.post-tags a,
-.share-buttons,
 .paginav {
-    border-radius: var(--radius);
     background: var(--code-bg);
     border: 1px solid var(--border);
 }
 
 .post-tags a {
     display: block;
+    border-radius: calc(var(--radius)*.5);
     padding-inline-start: 14px;
     padding-inline-end: 14px;
-    color: var(--secondary);
+    color: var(--theme);
     font-size: 14px;
     line-height: 34px;
-    background: var(--code-bg);
+    background: var(--primary);
+    transition: var(--transition-duration);
 }
 
-.post-tags a:hover,
+.post-tags a:hover {
+    background: var(--button-hover);
+    transform: scale(1.1);
+    box-shadow: 3px 5px 15px var(--shadow-color);
+    color: var(--button-content-hover);
+}
+
 .paginav a:hover {
     background: var(--button-hover);
     transform: scale(1.025);
-    transition: var(--transition-duration);
+    box-shadow: 3px 5px 15px var(--shadow-color);
     color: var(--button-content-hover);
 }
 
@@ -461,10 +466,20 @@ td:active {
 
 .share-buttons a {
     margin-top: 10px;
+    transition: var(--transition-duration);
 }
 
 .share-buttons a:not(:last-of-type) {
     margin-inline-end: 12px;
+}
+
+.share-buttons a:hover {
+    color: var(--button-hover);
+    transform: scale(1.2);
+}
+
+.share-buttons a:active {
+    transform: scale(.8);
 }
 
 h1:hover .anchor,
@@ -481,6 +496,7 @@ h6:hover .anchor {
 }
 
 .paginav {
+    border: none;
     margin: 10px 0;
     display: flex;
     line-height: 30px;
@@ -489,6 +505,7 @@ h6:hover .anchor {
 }
 
 .paginav a {
+    width: 100%;
     padding-inline-start: 14px;
     padding-inline-end: 14px;
     border-radius: var(--radius);
@@ -504,9 +521,10 @@ h6:hover .anchor {
 
 .paginav .prev,
 .paginav .next {
-    background-color: var(--primary);
-    color: var(--theme);
-    width: 50%;
+    border-radius: calc(var(--radius)*.5);
+    padding: calc(var(--gap)*.5);
+    background-color: var(--hljs-bg);
+    color: var(--button-content-hover);
 }
 
 .paginav .prev {
@@ -535,19 +553,8 @@ img.in-text {
     margin: auto;
 }
 
-@media only screen and (max-width: 1200px) {
-    .post-single {
-        max-width: 90%;
-    }
-}
+@media only screen and (max-width: 768px) {
 
-@media only screen and (max-width: 800px) {
-    .post-single {
-        max-width: 95%;
-    }
-}
-
-@media only screen and (max-width: 600px) {
     .post-single .entry-cover {
         min-height: 64px;
     }

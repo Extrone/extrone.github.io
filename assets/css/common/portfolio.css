@@ -93,13 +93,13 @@
     font-weight: 300;
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1568px) {
     .design {
         width: 45%;
     }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1112px) {
     .design {
         width: 100%;
     }

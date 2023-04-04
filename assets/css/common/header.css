@@ -23,7 +23,7 @@ html:not([data-scroll='0']) .nav {
 .nav {
     display: flex;
     justify-content: space-between;
-    max-width: 80%;
+    max-width: var(--main-width);
     margin: 0 auto;
     line-height: var(--header-height);
     transition: calc(var(--transition-duration)*1.5) cubic-bezier(0.175, 1, 0.3, 1.05);
@@ -132,10 +132,11 @@ body:not(.dark) #sun {
     flex-wrap: inherit;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
     .nav {
         flex-direction: column;
         align-items: center;
+        line-height: 48px;
     }
 
     html:not([data-scroll='0']) .header {

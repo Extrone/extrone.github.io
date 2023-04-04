@@ -26,13 +26,7 @@
     align-self: center;
 }
 
-@media only screen and (max-width: 1200px) {
-    .not-found {
-        font-size: 17vw;
-    }
-}
-
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
     .not-found {
         font-size: 30vw;
     }
