@@ -461,7 +461,7 @@ td:active {
     padding-inline-start: var(--radius);
     display: flex;
     justify-content: center;
-    overflow-x: auto;
+    flex-wrap: wrap;
 }
 
 .share-buttons a {

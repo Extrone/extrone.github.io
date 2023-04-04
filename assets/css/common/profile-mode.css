@@ -64,7 +64,7 @@
 .button:hover {
     background: var(--button-hover);
     color: var(--button-content-hover) !important;
-    transform: scale(1.1, 1.1) !important;
+    transform: scale(1.05) !important;
 }
 
 .button:focus {
