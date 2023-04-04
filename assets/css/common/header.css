@@ -10,7 +10,7 @@
 
 html:not([data-scroll='0']) .header {
     background-color: var(--header);
-    width: 644px;
+    width: 768px;
     top: var(--gap);
     border-radius: var(--radius);
     box-shadow: 3px 5px 15px var(--shadow-color);
@@ -114,7 +114,8 @@ body:not(.dark) #sun {
 .lang-switch ul,
 .logo-switches {
     display: inline-flex;
-    margin: auto 4px;
+    margin: auto var(--gap);
+    margin-left: 0;
 }
 
 .lang-switch {

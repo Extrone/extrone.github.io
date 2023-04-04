@@ -410,15 +410,15 @@ td:active {
     margin-top: 56px;
 }
 
-.post-tags li {
-    display: inline-block;
-    margin-inline-end: 3px;
-    margin-bottom: 5px;
+.post-tags {
+    display: flex;
+    gap: calc(var(--gap)*.5);
+    flex-wrap: wrap;
+    margin-bottom: var(--gap);
 }
 
-.paginav {
-    background: var(--code-bg);
-    border: 1px solid var(--border);
+.post-tags li {
+    display: inline-block;
 }
 
 .post-tags a {
@@ -433,11 +433,24 @@ td:active {
     transition: var(--transition-duration);
 }
 
+.post-tags a::before {
+    content: "#";
+}
+
 .post-tags a:hover {
     background: var(--button-hover);
     transform: scale(1.1);
     box-shadow: 3px 5px 15px var(--shadow-color);
     color: var(--button-content-hover);
+}
+
+.post-tags a:active {
+    transform: scale(.95);
+}
+
+.paginav {
+    background: var(--code-bg);
+    border: 1px solid var(--border);
 }
 
 .paginav a:hover {
@@ -502,6 +515,7 @@ h6:hover .anchor {
     line-height: 30px;
     background-color: transparent;
     border-radius: var(--radius);
+    gap: var(--gap);
 }
 
 .paginav a {
@@ -525,10 +539,6 @@ h6:hover .anchor {
     padding: calc(var(--gap)*.5);
     background-color: var(--hljs-bg);
     color: var(--button-content-hover);
-}
-
-.paginav .prev {
-    margin-right: var(--gap);
 }
 
 .paginav span:hover:not(.title) {
