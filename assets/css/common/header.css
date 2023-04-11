@@ -5,7 +5,7 @@
     margin: 0 auto;
     top: 0;
     background-color: var(--theme);
-    transition: calc(var(--transition-duration)*1.5);
+    transition: all calc(var(--transition-duration)*1.5), background-color 0s;
 }
 
 html:not([data-scroll='0']) .header {
