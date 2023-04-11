@@ -40,6 +40,7 @@
     background: var(--entry);
     margin-bottom: var(--gap);
     border: 5px solid transparent !important;
+    outline: 5px solid transparent;
     box-shadow: 3px 3px 5px var(--shadow-color);
     border-radius: var(--radius);
     transition: var(--transition-duration);
@@ -54,7 +55,8 @@
     transition: var(--transition-duration);
 }
 
-.post-entry:hover {
+.post-entry:hover, 
+.post-entry:focus-within {
     z-index: 2;
     border-color: var(--button-hover) !important;
     box-shadow: 3px 5px 10px var(--shadow-color);

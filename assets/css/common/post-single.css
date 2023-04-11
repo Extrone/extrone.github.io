@@ -437,7 +437,8 @@ td:active {
     content: "#";
 }
 
-.post-tags a:hover {
+.post-tags a:hover,
+.post-tags a:focus {
     background: var(--button-hover);
     transform: scale(1.1);
     box-shadow: 3px 5px 15px var(--shadow-color);
