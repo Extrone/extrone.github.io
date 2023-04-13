@@ -1,10 +1,8 @@
 .post-single .entry-cover {
-    display: flex;
+    display: none;
     flex-direction: column;
     clip-path: inset(0% 0% 0% 0% round var(--radius));
     width: 100%;
-    min-height: 256px;
-    max-height: 256px;
     margin-bottom: var(--gap);
     transition: var(--transition-duration);
 }
@@ -319,8 +317,8 @@ td:active {
 }
 
 .post-content img:hover {
-    transform: scale(1.025);
-    box-shadow: 15px 15px 50px var(--shadow-color);
+    transform: scale(1.001);
+    box-shadow: 10px 10px 20px var(--shadow-color);
     transition: var(--transition-duration);
 }
 
@@ -352,58 +350,28 @@ td:active {
 }
 
 .toc {
-    margin: 0 0 40px 0;
-    width: auto;
-    border: 3px solid transparent;
-    background: var(--hljs-bg);
+    display: none;
+    font-size: 24px;
+    background-color: var(--header);
+    backdrop-filter: blur(15px);
+    position: sticky;
+    top: calc(var(--gap)/2);
+    left: calc(var(--gap)/2);
+    left: -200px;
+    z-index: 10;
+    width: fit-content;
+    line-height: var(--header-height);
+    padding: 0 var(--gap);
     border-radius: var(--radius);
-    padding: 0.4em;
-    transition: var(--transition-duration);
 }
 
-.toc:hover {
-    border-color: var(--button-hover);
-    transition: var(--transition-duration);
+html:not([data-scroll='0']) .toc {
+    box-shadow: 3px 5px 15px var(--shadow-color);
+    transition: calc(var(--transition-duration)*1.5) cubic-bezier(0.175, 1, 0.3, 1.1);
 }
 
-.toc a {
-    color: var(--button-content-hover);
-    transition: var(--transition-duration);
-}
-
-.toc a:hover {
-    color: var(--button-hover);
-    transition: var(--transition-duration);
-}
-
-.toc details summary {
-    cursor: zoom-in;
-    color: var(--button-content-hover);
-    margin-inline-start: 20px;
-}
-
-.toc details[open] summary {
-    cursor: zoom-out;
-}
-
-.toc .details {
-    display: inline;
-    color: var(--button-content-hover);
-    font-weight: 500;
-}
-
-.toc .inner {
-    margin: 0 20px;
-    padding: 10px 20px;
-    color: var(--button-content-hover);
-}
-
-.toc li ul {
-    margin-inline-start: var(--gap);
-}
-
-.toc summary:focus {
-    outline: 0;
+.toc li {
+    margin-left: var(--gap);
 }
 
 .post-footer {
