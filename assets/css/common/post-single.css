@@ -305,6 +305,7 @@ td:active {
 
 .post-content iframe {
     max-width: 100%;
+    border-radius: var(--radius);
 }
 
 .post-content img {
