@@ -6,12 +6,14 @@
     top: 0;
     background-color: var(--theme);
     backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
     transition: all calc(var(--transition-duration)*1.5), background-color 0s;
 }
 
 html:not([data-scroll='0']) .header {
     background-color: var(--header);
     backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     width: 768px;
     top: calc(var(--gap)*.5);
     border-radius: var(--radius);
