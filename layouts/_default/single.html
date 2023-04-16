@@ -24,7 +24,7 @@
   {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
   <ul class="post-tags">
     {{- if ( gt ( len ( .GetTerms $tags ) ) 0 ) }}
-    <a href="">Tags : </a>
+    <a href="/tags/">Tags : </a>
     {{- end }}
     {{- range ($.GetTerms $tags) }}
     <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
