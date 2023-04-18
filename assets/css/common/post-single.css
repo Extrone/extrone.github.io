@@ -232,9 +232,15 @@ td:active {
 .post-content .highlight pre {
     border-radius: var(--radius);
     background-color: transparent;
+    outline: 5px solid transparent;
+}
+
+.post-content .highlight pre:focus {
+    outline: 5px solid var(--button-hover);
 }
 
 .post-content .highlight .copy-code {
+    outline: 5px solid transparent;
     border-radius: var(--radius);
     margin: 5px;
 }
@@ -429,6 +435,10 @@ html:not([data-scroll='0']) .toc {
     border: 1px solid var(--border);
 }
 
+.paginav a {
+    outline: 5px solid transparent;
+}
+
 .paginav a:hover {
     background: var(--button-hover);
     transform: scale(1.025);
@@ -443,6 +453,10 @@ html:not([data-scroll='0']) .toc {
 .paginav a:active {
     transform: scale(.95);
     transition: var(--transition-duration);
+}
+
+.paginav a:focus {
+    outline: 5px solid var(--button-hover);
 }
 
 .share-buttons {

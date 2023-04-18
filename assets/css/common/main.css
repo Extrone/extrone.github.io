@@ -78,6 +78,7 @@ pre {
     background: var(--button-content-hover);
     border-radius: calc(var(--radius)/2) !important;
     box-shadow: 2px 2px 5px var(--shadow-color) !important;
+    outline: 3px solid transparent;
     padding: 2px 8px !important;
     font-size: 16px;
     user-select: none;
@@ -96,7 +97,12 @@ pre {
     transition: var(--transition-duration);
 }
 
+.copy-code:focus {
+    outline: 3px solid var(--button-content-hover);
+}
+
 div.highlight:hover .copy-code,
+div.highlight:focus-within .copy-code,
 pre:hover .copy-code {
     opacity: 1;
     transition: var(--transition-duration);
