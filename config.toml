@@ -49,7 +49,7 @@ author = "Arjun Subhash"
   url = "https://mastodon.gamedev.place/@extrone"
 
   [params.cover]
-  LinkFullImages = false
+  LinkFullImages = true
 
 [[menu.main]]
 identifier = "portfolio"

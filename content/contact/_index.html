@@ -36,16 +36,22 @@ ShowSocialButtons: true
     </form>
 
     <div class="form-submit-confirmation modal" class="modal" id="form-submit-confirmation" style="visibility: hidden;">
-        <div class="modal-content" id="modal-content">
-            <h3>Message Sent!</h3>
-            <p>Thank you for contacting. I'll reach back to you as soon as possible.</p>
-            <button class="close-button button">Close</button>
+        <div class="modal-window">
+            <div class="modal-title-bar">
+                <div class="modal-title">
+                    <h3>Message Sent!</h3>
+                </div>
+                <button class="modal-close-button button"> X </button>
+            </div>
+            <div class="modal-content" id="modal-content">
+                <p>Thank you for contacting. I'll reach back to you as soon as possible.</p>
+            </div>
         </div>
     </div>
 
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {
         var modal = document.getElementById('form-submit-confirmation');
-        var button = document.getElementsByClassName('close-button')[0];
+        var button = document.getElementsByClassName('modal-close-button')[0];
         modal.style.display = 'flex';
         
         button.onclick = function() {

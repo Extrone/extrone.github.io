@@ -138,7 +138,7 @@ body:not(.dark) #sun {
     flex-wrap: inherit;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
     .nav {
         flex-direction: column;
         align-items: center;

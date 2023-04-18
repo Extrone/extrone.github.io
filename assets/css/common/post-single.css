@@ -553,7 +553,7 @@ img.in-text {
     margin: auto;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
 
     .post-single .entry-cover {
         min-height: 64px;
