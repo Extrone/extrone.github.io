@@ -19,7 +19,7 @@
     --shadow-color: rgba(0, 0, 0, 25%);
     --button-hover: rgb(253, 89, 124);
     --button-content-hover: rgb(245, 245, 245);
-    --transition-duration: .15s;
+    --transition-duration: .1s;
     --placeholder-image: url("../../img/Placeholder_Light.png")
 }
 
