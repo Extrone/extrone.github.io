@@ -116,17 +116,11 @@ body:not(.dark) #sun {
 
 #menu .active {
     font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-    text-align: center;
+    border-bottom: 2px solid var(--primary);
 }
 
 #menu .active:before {
-    content: "[";
-}
-
-#menu .active::after {
-    content: "]";
+    content: "> ";
 }
 
 .lang-switch li,
