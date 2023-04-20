@@ -37,12 +37,12 @@ html:not([data-scroll='0']) .nav {
 .nav a {
     display: block;
     border-radius: calc(var(--radius)/2);
+    transition: var(--transition-duration);
 }
 
 .nav a:hover {
     color: var(--button-hover);
     transform: translate(0px, -2px);
-    transition: var(--transition-duration);
 }
 
 .logo,
@@ -58,6 +58,10 @@ html:not([data-scroll='0']) .nav {
 .logo a {
     font-size: 24px;
     font-weight: 700;
+}
+
+.nav button svg {
+    margin-bottom: 4px;
 }
 
 .logo a img,
@@ -111,8 +115,18 @@ body:not(.dark) #sun {
 }
 
 #menu .active {
-    font-weight: 500;
-    border-bottom: 2px solid currentColor;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    text-align: center;
+}
+
+#menu .active:before {
+    content: "[";
+}
+
+#menu .active::after {
+    content: "]";
 }
 
 .lang-switch li,
