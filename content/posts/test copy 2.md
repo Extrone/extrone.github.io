@@ -1,6 +1,6 @@
 ---
 title: "Test Post 2"
-date: 2022-11-10T18:55:12+05:30
+date: 2023-01-10T18:55:12+05:30
 draft: false
 cover:
     image: "../../img/Map.png"
