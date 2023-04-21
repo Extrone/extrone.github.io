@@ -190,6 +190,10 @@
     width: 100%;
 }
 
+.socials h3 {
+    margin-top: 0 !important;
+}
+
 .social-links {
     width: 100%;
     display: grid;

@@ -44,7 +44,7 @@
 
 .page-header,
 .post-header {
-    margin: 24px auto var(--content-gap) auto;
+    margin: 0 auto var(--content-gap) auto;
 }
 
 .post-title {
