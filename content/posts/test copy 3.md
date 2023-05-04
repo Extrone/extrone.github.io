@@ -3,7 +3,7 @@ title: "Test Post 3"
 date: 2023-02-10T18:55:12+05:30
 draft: false
 cover:
-    image: "../../img/Quests.png"
+    image: "https://images.unsplash.com/photo-1683027923109-3b4c2ff7b7ed"
     alt: "Quests"
     relative: false
 
@@ -19,8 +19,6 @@ ShowPostNavLinks: true
 
 ## Post to test website.
 
-😁
-
 ### **Code Test**
 ``` C++
 UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Test")
@@ -29,13 +27,14 @@ TSubClassOf<UCustomCharacter> PlayerClass;
 UFUNCTION(BlueprintCllable, Category = "Test");
 void CreatePlayer();
 ```
-## **Table Test**
+
+### **Table Test**
 | Syntax      | Description | Test Text     |
 | :---        |    :----:   |          ---: |
 | Header      | Title       | Here's this   |
 | Paragraph   | Text        | And more      |
 
-## **Long Text**
+### **Long Text**
 
 Lorem ipsum dolor sit amet. Et voluptas enim vel quia voluptatem non voluptas corrupti qui impedit enim et corporis commodi? Sed quia cupiditate et aliquid nobis sed fugit dignissimos in ratione atque aut harum ipsum. Aut ipsum voluptas et porro consequatur vel consequatur eveniet. Qui voluptates praesentium aut optio saepe id velit enim id dicta laborum et incidunt aliquid! Sed deleniti nostrum ut assumenda quis et pariatur error rem reiciendis veritatis et alias voluptatibus ab magnam quod? Non voluptatum saepe et earum deserunt ut eveniet expedita? Sit esse odio et corporis neque aut accusamus consequatur quo laudantium consectetur At dolores iste et laboriosam dolorem ea eius neque. Ea aspernatur consectetur et nemo officia ea iste consequuntur sit ducimus possimus aut ipsa nobis et mollitia deserunt qui delectus recusandae? Cum officiis perferendis eum repudiandae sint ea voluptatum obcaecati eos fugiat neque!
 

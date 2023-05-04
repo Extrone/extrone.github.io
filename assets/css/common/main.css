@@ -16,6 +16,15 @@ a:focus {
     padding: var(--gap);
 }
 
+.page-header {
+    max-width: var(--nav-width);
+}
+
+.post-content {
+    margin: auto;
+    max-width: var(--nav-width);
+}
+
 .page-header h1 {
     font-size: 40px;
 }
@@ -122,8 +131,12 @@ pre:hover .copy-code {
     opacity: 0;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
     :root {
         --main-width: 100%;
+    }
+
+    .main {
+        max-width: 100%;
     }
 }

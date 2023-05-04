@@ -6,7 +6,7 @@
     position: sticky;
     z-index: 100;
     width: 100%;
-    max-width: 100%;
+    max-width: var(--nav-width);
     margin: 0 auto;
     top: 0;
     background-color: var(--theme);
@@ -32,7 +32,6 @@ html:not([data-scroll='0']) .nav {
 }
 
 .nav {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     max-width: var(--main-width);
@@ -153,7 +152,7 @@ body:not(.dark) #sun {
     flex-wrap: inherit;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
     html:not([data-scroll='0']) .header {
         max-width: none;
         border-radius: 0 0 var(--radius) var(--radius);

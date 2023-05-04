@@ -1,7 +1,3 @@
-.post-single {
-    max-width: 100% !important;
-}
-
 .wip {
     background-color: var(--entry);
     color: var(--primary);
