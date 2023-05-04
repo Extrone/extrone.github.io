@@ -42,6 +42,7 @@ html:not([data-scroll='0']) .nav {
 
 .nav a {
     display: block;
+    flex-shrink: 0;
     border-radius: calc(var(--radius)/2);
     transition: color var(--transition-duration);
 }
@@ -152,7 +153,10 @@ body:not(.dark) #sun {
     flex-wrap: inherit;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
+    .header {
+        max-width: none;
+    }
     html:not([data-scroll='0']) .header {
         max-width: none;
         border-radius: 0 0 var(--radius) var(--radius);
@@ -163,7 +167,6 @@ body:not(.dark) #sun {
 @media only screen and (max-width: 650px) {
     html:not([data-scroll='0']) .header {
         top: 0;
-        max-width: 100%;
         margin: 0;
     }
 

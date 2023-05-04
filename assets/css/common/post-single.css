@@ -126,9 +126,6 @@
 }
 
 .post-content a,
-.toc a:hover {
-    box-shadow: 0 1px 0;
-}
 
 .post-content a code {
     margin: auto 0;
@@ -385,16 +382,16 @@ td:active {
     font-size: 18px;
     background-color: var(--primary);
     color: var(--theme);
-    top: 32px;
+    top: calc(var(--gap)*4);
     bottom: 32px;
     right: calc(var(--gap)/2);
     z-index: 10;
     width: 100% !important;
     max-width: 250px;
+    height: fit-content;
     margin-left: var(--gap);
     line-height: calc(var(--header-height)/2 + 6px);
     padding: calc(var(--gap)/2);
-    height: fit-content;
     border-radius: var(--radius);
     transition: .2s;
 }
@@ -409,16 +406,21 @@ html:not([data-scroll='0']) .toc {
     color: var(--theme);
 }
 
-.toc a {
+.toc a,
+.toc summary {
     padding: 4px 6px;
     border-radius: calc(var(--radius)/2);
     color: var(--theme);
     word-wrap: break-word;
+    transition: .2s;
 }
 
-.toc a:hover {
+.toc a:hover,
+.toc a:focus {
+    box-shadow: none;
     background-color: var(--button-hover);
     color: var(--button-content-hover);
+    transform: scale(1.1);
 }
 
 .post-footer {
@@ -610,8 +612,8 @@ img.in-text {
     }
 
     .toc {
+        width: 100%;
         order: 0;
-        position: initial;
         top: auto;
         margin: 0;
         margin-bottom: var(--gap);
