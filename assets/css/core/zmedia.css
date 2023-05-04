@@ -1,8 +1,9 @@
 @media screen and (max-width: 800px) {
-    /* theme-vars */
-    /* :root {
-        --gap: 14px;
-    } */
+
+    /* theme-vars  */
+    :root {
+        --nav-width: 100%;
+    }
 
     /* profile-mode */
     .profile img {
@@ -26,6 +27,7 @@
 }
 
 @media (prefers-reduced-motion) {
+
     /* terms; profile-mode; post-single; post-entry; post-entry; search; search */
     .terms-tags a:active,
     .button:active,

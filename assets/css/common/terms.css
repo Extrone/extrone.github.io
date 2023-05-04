@@ -1,3 +1,7 @@
+.terms-tags {
+    max-width: var(--nav-width);
+    margin: auto;
+}
 .terms-tags li {
     display: inline-block;
     margin: 10px;
