@@ -3,7 +3,7 @@ title: "Test Post 3"
 date: 2023-02-10T18:55:12+05:30
 draft: false
 cover:
-    image: "https://images.unsplash.com/photo-1683027923109-3b4c2ff7b7ed"
+    image: "../Quests Design.png"
     alt: "Quests"
     relative: false
 
