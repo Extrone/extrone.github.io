@@ -18,7 +18,6 @@
 .profile img {
     display: inline-table;
     border-radius: 50%;
-    outline: 1px solid transparent;
     box-shadow: 3px 5px 15px var(--shadow-color);
     transition: all var(--transition-duration), transform calc(var(--transition-duration)*3) cubic-bezier(0.175, 1, 0.3, 2);
     -webkit-user-select: none;
@@ -30,7 +29,6 @@
 .profile img:hover {
     transform: scale(1.1) perspective(35em) rotateX(15deg) rotateY(-8deg);
     box-shadow: 7px 15px 25px var(--shadow-color);
-    outline: 5px solid var(--button-hover);
 }
 
 .profile img:active {
