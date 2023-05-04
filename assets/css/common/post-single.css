@@ -21,8 +21,8 @@
     box-shadow: none;
 }
 
-.post-single .entry-cover:hoverwithin {
-    outline: 5px solid var(--button-hover);
+.post-single .entry-cover:hover {
+    transform: scale(1.005);
     transition: var(--transition-duration);
 }
 
