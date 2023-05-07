@@ -29,7 +29,8 @@
         <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
         {{- end }}
       </ul>
-      {{- $isHidden := .Params.cover.hidden | default site.Params.cover.hiddenInSingle | default site.Params.cover.hidden
+      {{- $isHidden := .Params.cover.hidden | default site.Params.cover.hiddenInSingle | default
+      site.Params.cover.hidden
       }}
       {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}
     </header>
@@ -39,23 +40,23 @@
       {{- end }}
       {{- if .Content }}
       <div class="post-content">
-      <hr>
+        <hr>
         {{- if not (.Param "disableAnchoredHeadings") }}
         {{- partial "anchored_headings.html" .Content -}}
         {{- else }}{{ .Content }}{{ end }}
+        
+        <footer class="post-footer">
+          {{- if (.Param "ShowPostNavLinks") }}
+          {{- partial "post_nav_links.html" . }}
+          {{- end }}
+          {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
+          {{- partial "share_icons.html" . -}}
+          {{- end }}
+        </footer>
       </div>
       {{- end }}
     </div>
-  
-    <footer class="post-footer">
-      {{- if (.Param "ShowPostNavLinks") }}
-      {{- partial "post_nav_links.html" . }}
-      {{- end }}
-      {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
-      {{- partial "share_icons.html" . -}}
-      {{- end }}
-    </footer>
-  
+
     {{- if (.Param "comments") }}
     {{- partial "comments.html" . }}
     {{- end }}

@@ -535,12 +535,14 @@ h6:hover .anchor {
 }
 
 .paginav {
+    width: fit-content;
     border: none;
-    margin: 10px 0;
+    margin: auto;
     display: flex;
     line-height: 30px;
     background-color: transparent;
     border-radius: var(--radius);
+    justify-content: center;
     gap: var(--gap);
 }
 
@@ -550,6 +552,7 @@ h6:hover .anchor {
     padding-inline-end: 14px;
     border-radius: var(--radius);
     transition: var(--transition-duration);
+    flex-shrink: 0;
 }
 
 .paginav .title {
@@ -565,6 +568,7 @@ h6:hover .anchor {
     padding: calc(var(--gap)*.5);
     background-color: var(--hljs-bg);
     color: var(--button-content-hover);
+    box-shadow: none;
 }
 
 .paginav span:hover:not(.title) {
@@ -593,6 +597,15 @@ img.in-text {
 @media only screen and (max-width: 650px) {
     .toc {
         max-width: none;
+    }
+
+    .paginav {
+        width: 100%;
+    }
+
+    .paginav a {
+        width: 100%;
+        flex-shrink: 1;
     }
 }
 
