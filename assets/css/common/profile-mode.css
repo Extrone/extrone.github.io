@@ -49,7 +49,7 @@
 .button {
     background: var(--primary);
     border: 3px solid transparent;
-    border-radius: calc(var(--radius)/2);
+    border-radius: calc(var(--radius)/2) !important;
     box-shadow: 2px 5px 10px var(--shadow-color) !important;
     margin: 8px;
     padding: 6px;
