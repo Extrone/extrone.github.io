@@ -391,9 +391,13 @@ td:active {
     height: fit-content;
     margin-left: var(--gap);
     line-height: calc(var(--header-height)/2 + 6px);
-    padding: calc(var(--gap)/2);
     border-radius: var(--radius);
     transition: .2s;
+}
+
+.toc .inner {
+    padding: calc(var(--gap)/2);
+    padding-top: 0;
 }
 
 html:not([data-scroll='0']) .toc {
@@ -415,12 +419,30 @@ html:not([data-scroll='0']) .toc {
     transition: .2s;
 }
 
+.toc summary {
+    margin: 4px;
+    padding: calc((var(--gap)/2) - 2px);
+    border-radius: calc(var(--radius) - 2px);
+    outline: 5px solid transparent;
+}
+
 .toc a:hover,
 .toc a:focus {
     box-shadow: none;
     background-color: var(--button-hover);
     color: var(--button-content-hover);
     transform: scale(1.1);
+}
+
+.toc summary:hover {
+    outline: none;
+    box-shadow: none;
+    background-color: var(--button-hover);
+    color: var(--button-content-hover);
+}
+
+.toc summary:focus {
+    outline: 5px solid var(--button-hover);
 }
 
 .post-footer {
