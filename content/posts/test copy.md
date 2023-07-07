@@ -1,7 +1,7 @@
 ---
 title: "Test Post 1"
 date: 2022-11-28T22:30:00+05:30
-draft: false
+draft: true
 author: ["Author 1", "Author 3", "Author 2"]
 summary: "Test Post Summary"
 cover:

@@ -1,7 +1,7 @@
 ---
 title: "Test Post 3"
 date: 2023-02-10T18:55:12+05:30
-draft: false
+draft: true
 cover:
     image: "../Quests Design.png"
     alt: "Quests"

@@ -329,11 +329,11 @@ td:active {
 }
 
 .post-content img {
+    margin: var(--gap);
     border-radius: calc(var(--radius)/2);
-    width: 100%;
+    width: auto;
     box-shadow: 3px 5px 10px var(--shadow-color);
     background-color: var(--primary) !important;
-    min-height: 200px;
     transition: var(--transition-duration);
 }
 
@@ -408,6 +408,8 @@ html:not([data-scroll='0']) .toc {
 .toc li {
     margin-left: var(--gap);
     color: var(--theme);
+    max-height: 600px;
+
 }
 
 .toc a,
