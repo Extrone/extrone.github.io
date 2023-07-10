@@ -1,7 +1,7 @@
 ---
 title: "Test Post"
 date: 2022-11-10T18:55:12+05:30
-draft: true
+draft: false
 cover:
     image: "../../img/Inventory.png"
     alt: "Inventory"
