@@ -20,6 +20,7 @@
     --button-hover: rgb(253, 89, 124);
     --button-content-hover: rgb(245, 245, 245);
     --transition-duration: .1s;
+    --image-background-color: rgb(30, 30, 30);
     --placeholder-image: url("../../img/Placeholder_Light.png")
 }
 

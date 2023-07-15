@@ -71,6 +71,8 @@
 .breadcrumbs {
     color: var(--secondary);
     font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -330,21 +332,23 @@ td:active {
 
 .post-content img {
     margin: var(--gap);
+    margin-left: 0;
+    padding: 8px;
     border-radius: calc(var(--radius)/2);
     width: auto;
     box-shadow: 3px 5px 10px var(--shadow-color);
-    background-color: var(--primary) !important;
+    background-color: var(--image-background-color) !important;
     transition: var(--transition-duration);
 }
 
 .post-content img:hover {
-    transform: scale(1.001);
+    transform: translate(0, -10px);
     box-shadow: 10px 10px 20px var(--shadow-color);
     transition: var(--transition-duration);
 }
 
 .post-content img:active {
-    transform: scale(.995);
+    transform: translate(0, 10px);
     box-shadow: 0 0 0 var(--shadow-color);
     transition: var(--transition-duration);
 }
@@ -380,6 +384,7 @@ td:active {
     flex-shrink: 0;
     position: sticky !important;
     font-size: 18px;
+    letter-spacing: 1px;
     background-color: var(--primary);
     color: var(--theme);
     top: calc(var(--gap)*4);
@@ -390,6 +395,7 @@ td:active {
     max-width: 250px;
     height: fit-content;
     margin-left: var(--gap);
+    font-weight: 600;
     line-height: calc(var(--header-height)/2 + 6px);
     border-radius: var(--radius);
     transition: .2s;
@@ -469,6 +475,8 @@ html:not([data-scroll='0']) .toc {
     padding-inline-end: 14px;
     color: var(--theme);
     font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
     line-height: 34px;
     background: var(--primary);
     transition: var(--transition-duration);

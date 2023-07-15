@@ -15,7 +15,7 @@ author = "Arjun Subhash"
   [params.profileMode]
   enabled = true
   title = "Arjun Subhash"
-  subtitle = "UI Artist"
+  subtitle = "UI Artist / Designer"
   imageUrl = "img/Profile_400x400.jpg"
   imageWidth = 256
   imageHeight = 256

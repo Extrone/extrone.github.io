@@ -9,6 +9,7 @@
 }
 
 .terms-tags a {
+    font-weight: 400;
     display: block;
     padding: 6px 14px;
     background: var(--primary);
@@ -20,6 +21,7 @@
 .terms-tags a:hover {
     transform: scale(1.1);
     background-color: var(--button-hover);
+    color: var(--button-content-hover);
 }
 
 .terms-tags a:active {
