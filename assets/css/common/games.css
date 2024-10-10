@@ -1,0 +1,21 @@
+.games-container {
+    display: flex;
+    gap: var(--gap);
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+}
+
+.games-container h3, h4 {
+    width: auto !important;
+    margin: 0 !important;
+    margin-top: 4px !important;
+    text-align: center;
+}
+
+.games-container img {
+    padding: 0 !important;
+    border-radius: var(--radius) !important;
+}

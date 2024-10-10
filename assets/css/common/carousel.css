@@ -246,7 +246,7 @@ button {
     margin-right: 3px;
     margin-left: 3px;
     text-indent: -999px;
-    cursor: pointer;
+    cursor: url("../../Cursors/HandPointing.png"), pointer;
     background-color: var(--primary);
     background-clip: padding-box;
     border: 0;

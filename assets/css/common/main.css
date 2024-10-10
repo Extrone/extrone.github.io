@@ -4,6 +4,14 @@ a {
     outline: none;
 }
 
+html, body {
+    cursor: url("../../Cursors/Crosshair.png"), default;
+}
+
+.button, a, img {
+    cursor: url("../../Cursors/HandPointing.png"), pointer;
+}
+
 a:focus {
     color: var(--button-hover);
 }
