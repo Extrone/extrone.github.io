@@ -2,6 +2,7 @@
 title: "Sample Project"
 summary: Sample Project to help you understand Extrone UI Manager plugin.
 url: "/plugins/extrone-ui-manager/documentation/sample-project"
+ShowToc: true
 ShowBreadCrumbs: true
 cover:
     image: "../../../img/Extrone_UI_Manager_SampleProject_Thumbnail.png"
