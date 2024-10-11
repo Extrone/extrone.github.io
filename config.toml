@@ -99,3 +99,8 @@ weight = 5
     disableInlineCSS = true
   [services.youtube]
     privacyEnhanced = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

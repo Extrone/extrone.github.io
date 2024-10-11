@@ -5,6 +5,7 @@ url: "/plugins/extrone-ui-manager/sample-project"
 ShowBreadCrumbs: true
 ShowReadingTime: false
 ShowWordCount: false
+Tags: ["Extrone UI Manager", "Unreal Engine", "UE 5.4"]
 author: " "
 cover:
     image: "Extrone_UI_Manager_SampleProject_Thumbnail.png"
@@ -12,9 +13,13 @@ cover:
     relative: false
 ---
 
+<div class="buttons" style="display:flex; justify-content:left; font-size:medium; max-width:none; gap:var(--gap); margin-top:var(--gap);">
+{{< download-button class="button" href="https://drive.google.com/drive/folders/1Jaw_iwY0F5nY0qAwFnFBEqng0wsdcz23?usp=sharing" >}}Download Sample Project{{< /download-button >}}
+</div>
+
 ## Using the Sample Project
 
 1. Make sure Extrone UI Manager Plugin is installed in your engine following the above guide
-2. Download the [**Sample Project**](https://extrone.github.io/plugins/extrone-ui-manager/sample-project/download)
+2. Download the Sample Project for your engine version following the above download button
 3. Extract **UIManagerSample.Zip**
 4. Open **UIManagerSample.uproject** inside Extracted Folder

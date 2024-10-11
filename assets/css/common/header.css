@@ -72,6 +72,10 @@ html:not([data-scroll='0']) .nav {
     margin-bottom: 4px;
 }
 
+.lang-switch {
+    visibility: collapse;
+}
+
 .logo a img,
 .logo a svg {
     display: inline;
