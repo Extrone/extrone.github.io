@@ -6,15 +6,15 @@
     --header-height: 60px;
     --footer-height: 60px;
     --radius: 12px;
-    --theme: rgb(220, 220, 220);
+    --theme: rgb(245, 245, 245);
     --header: rgba(255, 255, 255, 80%);
     --entry: rgb(235, 235, 235);
     --primary: rgb(30, 30, 30);
     --secondary: rgb(58, 58, 58);
-    --tertiary: rgb(220, 220, 220);
+    --tertiary: rgb(245, 245, 245);
     --content: rgb(31, 31, 31);
     --hljs-bg: rgb(10, 10, 15);
-    --code-bg: rgb(220, 220, 220);
+    --code-bg: rgb(245, 245, 245);
     --border: rgb(173, 173, 173);
     --shadow-color: rgba(0, 0, 0, 25%);
     --button-hover: rgb(253, 89, 124);
@@ -25,7 +25,7 @@
 }
 
 .dark {
-    --theme: rgb(8, 10, 10);
+    --theme: rgb(3, 5, 5);
     --header: rgba(0, 0, 0, 50%);
     --entry: rgb(30, 30, 35);
     --primary: rgb(218, 218, 219);
