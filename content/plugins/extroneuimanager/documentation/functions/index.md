@@ -1,6 +1,6 @@
 ---
 title: "Function Reference"
-summary: Everything you need to know about the functions available in Extrone UI Manager.
+summary: Information on what every function in this plugin does.
 url: "/plugins/extrone-ui-manager/documentation/functions"
 ShowBreadCrumbs: true
 ShowReadingTime: false
