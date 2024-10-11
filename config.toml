@@ -10,6 +10,7 @@ ShowWordCount = true
 ShowCodeCopyButtons = true
 ShowShareButtons = false
 disableAnchoredHeadings = true
+builddrafts = true
 author = "Arjun Subhash"
 
   [params.profileMode]
