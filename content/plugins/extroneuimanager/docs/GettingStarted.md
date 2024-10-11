@@ -2,7 +2,6 @@
 title: "Getting Started"
 summary: Everything you need to know to start using Extrone UI Manager plugin.
 url: "/plugins/extrone-ui-manager/documentation/getting-started"
-ShowToc: true
 ShowBreadCrumbs: true
 ShowReadingTime: false
 ShowWordCount: false
