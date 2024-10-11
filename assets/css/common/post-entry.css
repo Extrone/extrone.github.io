@@ -11,6 +11,7 @@
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
+    line-clamp: 3;
     -webkit-line-clamp: 3;
 }
 
@@ -22,6 +23,7 @@
 .first-entry .entry-content {
     margin: 14px 0;
     font-size: 16px;
+    line-clamp: 3;
     -webkit-line-clamp: 3;
 }
 
@@ -30,6 +32,7 @@
 }
 
 .home-info .entry-content {
+    line-clamp: unset;
     -webkit-line-clamp: unset;
 }
 
@@ -97,6 +100,7 @@
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
+    line-clamp: 2;
     -webkit-line-clamp: 2;
 }
 
@@ -134,7 +138,7 @@
 
 .entry-cover img {
     align-self: center;
-    /* background-image: var(--placeholder-image); */
+    background-image: var(--placeholder-image);
     background-color: var(--primary) !important;
     color: var(--entry);
     border-radius: calc(var(--radius)*.5);

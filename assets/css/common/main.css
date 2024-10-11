@@ -5,7 +5,7 @@ a {
 }
 
 html, body {
-    cursor: url("../../Cursors/Crosshair.png"), default;
+    cursor: url("../../Cursors/Crosshair.png") 14 14, default;
 }
 
 .button, a, img {
