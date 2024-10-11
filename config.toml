@@ -29,6 +29,10 @@ author = "Arjun Subhash"
     name = "Games"
     url = "https://extrone.itch.io"
 
+    [[params.profileMode.buttons]]
+    name = "Plugins"
+    url = "/plugins/"
+
   [[params.socialIcons]]
   name = "email"
   url = "mailto:anjana4760@gmail.com"

@@ -5,11 +5,11 @@ a {
 }
 
 html, body {
-    cursor: url("../../Cursors/Crosshair.png") 14 14, default;
+    cursor: url("../../Cursors/Crosshair.png") 12 12, default;
 }
 
 .button, a, img {
-    cursor: url("../../Cursors/HandPointing.png"), pointer;
+    cursor: url("../../Cursors/HandPointing.png") 9 3, pointer;
 }
 
 a:focus {

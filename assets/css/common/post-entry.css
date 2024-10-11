@@ -126,9 +126,6 @@
 .entry-cover {
     display: inline-flex;
     text-align: center;
-    /* clip-path: inset(0% 0% 0% 0%round calc(var(--radius)/2)); */
-    /* border-radius: calc(var(--radius)/2); */
-    /* box-shadow: 3px 5px 10px var(--shadow-color); */
     min-width: 256px;
     width: 20%;
     border-radius: calc(var(--radius)*.5);
@@ -138,7 +135,7 @@
 
 .entry-cover img {
     align-self: center;
-    background-image: var(--placeholder-image);
+    /* background-image: var(--placeholder-image); */
     background-color: var(--primary) !important;
     color: var(--entry);
     border-radius: calc(var(--radius)*.5);
