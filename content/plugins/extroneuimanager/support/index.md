@@ -7,7 +7,7 @@ ShowReadingTime: false
 ShowWordCount: false
 author: " "
 cover:
-    image: "../../../img/Extrone_UI_Manager_Support_Thumbnail.png"
+    image: "Extrone_UI_Manager_Support_Thumbnail.png"
     alt: "Extrone UI Manager Plugin support"
     relative: false
 ---
