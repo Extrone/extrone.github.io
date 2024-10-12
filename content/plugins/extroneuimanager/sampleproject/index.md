@@ -1,7 +1,7 @@
 ---
 title: "Sample Project"
 summary: Use the sample project to better understand how to use the plugin.
-url: "/plugins/extrone-ui-manager/sample-project"
+url: "/plugins/extroneuimanager/sampleproject"
 ShowBreadCrumbs: true
 ShowReadingTime: false
 ShowWordCount: false

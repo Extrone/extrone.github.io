@@ -1,7 +1,7 @@
 ---
 title: "Function Reference"
 summary: Information on what every function in this plugin does.
-url: "/plugins/extrone-ui-manager/documentation/functions"
+url: "/plugins/extroneuimanager/documentation/functions"
 weight: 2
 ShowBreadCrumbs: true
 ShowReadingTime: false

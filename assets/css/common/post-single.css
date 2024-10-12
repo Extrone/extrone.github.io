@@ -129,6 +129,10 @@
     font-size: 16px;
 }
 
+.breadcrumbs a:hover {
+    color: var(--button-hover);
+}
+
 .post-content-parent .post-content {
     color: var(--content);
     width: 100%;

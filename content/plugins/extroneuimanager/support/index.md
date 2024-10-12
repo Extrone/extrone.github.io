@@ -1,7 +1,7 @@
 ---
 title: "Support"
 summary: Submit any support requests you have about Extrone UI Manager here.
-url: "/plugins/extrone-ui-manager/support"
+url: "/plugins/extroneuimanager/support"
 ShowBreadCrumbs: true
 ShowReadingTime: false
 ShowWordCount: false

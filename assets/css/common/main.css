@@ -1,6 +1,6 @@
 * { 
     font-family: 'Poppins', sans-serif !important;
-    transition: none;
+    transition-property: transform, color !important;
 }
 
 a {

@@ -1,7 +1,7 @@
 ---
 title: "Getting Started"
 summary: Everything you need to know to start using the plugin.
-url: "/plugins/extrone-ui-manager/documentation/getting-started"
+url: "/plugins/extroneuimanager/documentation/gettingstarted"
 weight: 1
 ShowBreadCrumbs: true
 ShowReadingTime: false
