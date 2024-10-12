@@ -21,9 +21,9 @@ author = "Arjun Subhash"
   imageWidth = 256
   imageHeight = 256
 
-    [[params.profileMode.buttons]]
-    name = "Portfolio"
-    url = "/portfolio/"
+    # [[params.profileMode.buttons]]
+    # name = "Portfolio"
+    # url = "/portfolio/"
 
     [[params.profileMode.buttons]]
     name = "Games"
@@ -49,17 +49,17 @@ author = "Arjun Subhash"
   name = "youtube"
   url = "https://www.youtube.com/@Extrone"
 
-  [[params.socialIcons]]
-  name = "mastodon"
-  url = "https://mastodon.gamedev.place/@extrone"
+  # [[params.socialIcons]]
+  # name = "bluesky"
+  # url = "https://bsky.app/profile/extrone.bsky.social"
 
   [params.cover]
   LinkFullImages = true
 
 [[menu.main]]
-identifier = "portfolio"
-name = "Portfolio"
-url = "/portfolio/"
+identifier = "plugins"
+name = "Plugins"
+url = "/plugins/"
 weight = 1
 
 [[menu.main]]

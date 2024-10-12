@@ -18,8 +18,8 @@ cover:
 ## Installing the Plugin
 
 1. Open Epic Games Launcher and navigate to **Unreal Engine → Library → Vault**
-2. Search for Extrone UI Manager
-3. Click Install to Engine and select your preferred engine version
+2. Search for **Extrone UI Manager**
+3. Click Install to Engine and select the engine version you want to install the plugin to
 4. Wait for the plugin to be downloaded and installed
 5. Open your project and navigate to **Edit → Plugins**
 6. Search for Extrone UI Manager

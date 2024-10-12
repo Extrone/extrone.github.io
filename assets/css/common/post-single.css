@@ -1,5 +1,4 @@
 .post-parent {
-    margin-left: calc((100% - var(--nav-width))/2);
     margin-right: 0;
     display: flex;
     flex-direction: row;
@@ -133,6 +132,7 @@
     margin: auto 0;
     border-radius: 0;
     box-shadow: 0 -1px 0 var(--primary) inset;
+    color: var(--button-hover);
 }
 
 .post-content del {

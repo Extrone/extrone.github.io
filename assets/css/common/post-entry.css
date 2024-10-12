@@ -37,7 +37,6 @@
 }
 
 .post-entry {
-    max-width: var(--nav-width);
     margin: auto;
     display: flex;
     position: relative;
