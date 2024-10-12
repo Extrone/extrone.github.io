@@ -430,7 +430,6 @@ td:active {
     flex-shrink: 0;
     position: sticky !important;
     font-size: 18px;
-    letter-spacing: 1px;
     background-color: var(--primary);
     color: var(--theme);
     top: calc(var(--gap)*4);
@@ -442,7 +441,7 @@ td:active {
     height: fit-content;
     margin-left: var(--gap);
     font-weight: 600;
-    line-height: calc(var(--header-height)/2 + 6px);
+    line-height: calc(var(--header-height)/2);
     border-radius: var(--radius);
     transition: .2s;
 }
@@ -461,7 +460,6 @@ html:not([data-scroll='0']) .toc {
     margin-left: var(--gap);
     color: var(--theme);
     max-height: 600px;
-
 }
 
 .toc a,
@@ -470,7 +468,7 @@ html:not([data-scroll='0']) .toc {
     border-radius: calc(var(--radius)/2);
     color: var(--theme);
     word-wrap: break-word;
-    transition: .2s;
+    transition: .1s;
 }
 
 .toc summary {
