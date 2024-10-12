@@ -10,4 +10,4 @@
   {{- $myPos := 1}} {{ if gt (len .Params) $myPos }} {{$.Scratch.Set "theIcon"    (.Get $myPos) }} {{end}}
   {{- $myPos := 2}} {{ if gt (len .Params) $myPos }} {{$.Scratch.Set "theClasses" (.Get $myPos) }} {{end}}
 {{- end}}
-<a class="{{$.Scratch.Get `theClasses`}}" href="{{$.Scratch.Get `theHref` | relURL }}" rel="noopener noreferrer" target="_blank">{{if $.Scratch.Get `theIcon`}}{{end}}&nbsp;{{ .Inner }}&nbsp;</a>
+<a class="{{$.Scratch.Get `theClasses`}}" href="{{$.Scratch.Get `theHref` | relURL }}" style="--tertiary: black; --primary:rgb(255, 194, 41); --button-hover:rgb(41, 177, 255); --button-content-hover:black; font-weight: 600;" rel="noopener noreferrer" target="_blank">{{if $.Scratch.Get `theIcon`}}{{end}}&nbsp;{{ .Inner }}&nbsp;</a>
