@@ -5,7 +5,7 @@ url: "/plugins/extrone-ui-manager/support"
 ShowBreadCrumbs: true
 ShowReadingTime: false
 ShowWordCount: false
-Tags: ["Extrone UI Manager", "Unreal Engine", "UE 5.4"]
+Tags: ["Extrone UI Manager"]
 author: " "
 cover:
     image: "Extrone_UI_Manager_Support_Thumbnail.png"

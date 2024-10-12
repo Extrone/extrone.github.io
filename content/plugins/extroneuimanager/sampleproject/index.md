@@ -5,7 +5,7 @@ url: "/plugins/extrone-ui-manager/sample-project"
 ShowBreadCrumbs: true
 ShowReadingTime: false
 ShowWordCount: false
-Tags: ["Extrone UI Manager", "Unreal Engine", "UE 5.4"]
+Tags: ["Extrone UI Manager", "UE 5.4"]
 author: " "
 cover:
     image: "Extrone_UI_Manager_SampleProject_Thumbnail.png"

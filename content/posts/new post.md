@@ -18,10 +18,6 @@ ShowToc: true
 ShowPostNavLinks: true
 ---
 
-### Twitter Post
-
-{{< tweet 1644692646617554944 >}}
-
 ### YouTube Video
 
 {{< youtube 6ojhW0LAVbw >}}

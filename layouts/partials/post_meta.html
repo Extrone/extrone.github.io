@@ -12,10 +12,14 @@
 {{- $scratch.Add "meta" (slice (i18n "words" .WordCount | default (printf "%d words" .WordCount))) }}
 {{- end }}
 
-{{- with (partial "author.html" .) }}
-{{- $scratch.Add "meta" (slice .) }}
-{{- end }}
+{{- $author := (partial "author.html" .) }}
+{{- $tags := (partial "tags.html" .) }}
+{{- if $tags }}
+{{- $scratch.Add "meta" (slice $author $tags) -}}
+{{- else}}
+    {{- $scratch.Add "meta" (slice $author) -}}
+{{- end}}
 
 {{- with ($scratch.Get "meta") }}
-{{- delimit . "&nbsp;·&nbsp;" -}}
+{{- delimit . "" | safeHTML -}}
 {{- end -}}

@@ -2,7 +2,6 @@
 {{- if $tags -}}
   {{- $lastIndex := sub (len $tags) 1 -}}
   {{- range $index, $tag := $tags -}}
-    <a href="/tags/{{ $tag | urlize }}"> {{ $tag }}</a>
-    {{- if ne $index $lastIndex }}" "{{ end -}}
+    <a href="/tags/{{ $tag | urlize }}"> {{ $tag }} </a>
   {{- end -}}
 {{- end -}}
