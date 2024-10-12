@@ -1,4 +1,7 @@
-* { font-family: 'Poppins', sans-serif !important;}
+* { 
+    font-family: 'Poppins', sans-serif !important;
+    transition: none;
+}
 
 a {
     outline: none;
