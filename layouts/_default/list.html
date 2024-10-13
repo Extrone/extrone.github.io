@@ -25,10 +25,7 @@
     {{ .Description | markdownify }}
   </div>
   {{- end }}
-</header>
-{{- end }}
-
-<!-- Modification Start -->
+  <!-- Modification Start -->
 {{- if not (.Param "hideMeta") }}
 <div class="post-meta">
   {{- partial "post_meta.html" . -}}
@@ -37,9 +34,13 @@
   {{- partial "post_canonical.html" . -}}
 </div>
 {{- end }}
+<!-- Modification End -->
+</header>
+{{- end }}
 
+<!-- Modification Start -->
 <hr>
- <!-- Modification End -->
+<!-- Modification End -->
 
 {{- if .Content }}
 <div class="post-content">
