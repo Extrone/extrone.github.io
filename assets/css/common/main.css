@@ -1,5 +1,5 @@
 * { 
-    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Exo 2', sans-serif !important;
     transition: none;
 }
 
@@ -33,7 +33,7 @@ a:focus {
 
 .page-header h1 {
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 800;
 }
 
 .pagination {
