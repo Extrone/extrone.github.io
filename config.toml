@@ -5,13 +5,14 @@ theme = "PaperMod"
 
 [params]
 ShowBreadCrumbs = true
-ShowReadingTime = true
-ShowWordCount = true
+ShowReadingTime = false
+ShowWordCount = false
 ShowCodeCopyButtons = true
 ShowShareButtons = false
 disableAnchoredHeadings = true
 builddrafts = true
-author = "Arjun Subhash"
+ShowHeadingHR = true
+author = " "
 
   [params.profileMode]
   enabled = true

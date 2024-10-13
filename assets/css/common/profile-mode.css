@@ -64,14 +64,14 @@
     margin: 8px;
     padding: 6px;
     transition: all var(--transition-duration), transform var(--transition-duration) cubic-bezier(0.175, 0.885, 0.32, 2.275) !important;
-    color: var(--tertiary) !important;
+    color: var(--tertiary);
     outline: none;
 
 }
 
 .button:hover {
     background: var(--button-hover);
-    color: var(--button-content-hover) !important;
+    color: var(--button-content-hover);
     transform: scale(1.05) !important;
 }
 

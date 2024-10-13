@@ -20,8 +20,12 @@
         {{- partial "post_canonical.html" . -}}
       </div>
       {{- end }}
-
       </ul>
+
+      {{- if .Param "ShowHeadingHR" }}
+        <hr>
+      {{- end}}
+
       {{- $isHidden := .Params.cover.hidden | default site.Params.cover.hiddenInSingle | default
       site.Params.cover.hidden
       }}
@@ -33,7 +37,6 @@
       {{- end }}
       {{- if .Content }}
       <div class="post-content">
-        <hr>
         {{- if not (.Param "disableAnchoredHeadings") }}
         {{- partial "anchored_headings.html" .Content -}}
         {{- else }}{{ .Content }}{{ end }}

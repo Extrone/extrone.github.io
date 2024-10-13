@@ -42,7 +42,7 @@
     position: relative;
     padding: 4px;
     background: var(--entry);
-    margin-bottom: var(--gap);
+    margin-top: var(--gap);
     border: 5px solid transparent !important;
     outline: 5px solid transparent;
     box-shadow: 3px 3px 5px var(--shadow-color);
@@ -53,7 +53,6 @@
 
 .post-entry-text {
     flex: 1;
-    font-display: flex;
     flex-direction: row;
     margin: var(--gap);
     transition: var(--transition-duration);

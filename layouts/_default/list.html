@@ -39,7 +39,9 @@
 {{- end }}
 
 <!-- Modification Start -->
-<hr>
+{{- if .Param "ShowHeadingHR" }}
+  <hr>
+{{- end}}
 <!-- Modification End -->
 
 {{- if .Content }}

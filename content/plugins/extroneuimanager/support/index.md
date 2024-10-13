@@ -14,5 +14,5 @@ cover:
 ---
 
 <div class="buttons" style="display:flex; justify-content:left; font-size:medium; max-width:none; gap:var(--gap); margin-top:var(--gap);">
-{{< download-button class="button" href="mailto:anjana4760@gmail.com" >}}Send Support Request{{< /download-button >}}
+{{< custom-button classes="button" href="mailto:anjana4760@gmail.com" icon="mail" >}}Send Support Request{{< /custom-button >}}
 </div>

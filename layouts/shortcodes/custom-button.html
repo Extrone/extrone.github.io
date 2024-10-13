@@ -1,5 +1,5 @@
 {{- $.Scratch.Set "theHref"    "#"                                }}
-{{- $.Scratch.Set "theIcon"    ""                                 }}
+{{- $.Scratch.Set "theIcon"    "download"                                 }}
 {{- $.Scratch.Set "theClasses" "button " }}
 {{- if .IsNamedParams }}
   {{- $.Scratch.Set "theHref"    (.Get "href"    | default ($.Scratch.Get "theHref")    )}}
@@ -10,4 +10,13 @@
   {{- $myPos := 1}} {{ if gt (len .Params) $myPos }} {{$.Scratch.Set "theIcon"    (.Get $myPos) }} {{end}}
   {{- $myPos := 2}} {{ if gt (len .Params) $myPos }} {{$.Scratch.Set "theClasses" (.Get $myPos) }} {{end}}
 {{- end}}
-<a class="{{$.Scratch.Get `theClasses`}}" href="{{$.Scratch.Get `theHref` | relURL }}" style="--tertiary: black; --primary:rgb(255, 194, 41); --button-hover:rgb(216, 255, 41); --button-content-hover:black; font-weight: 600;" rel="noopener noreferrer" target="_blank">{{if $.Scratch.Get `theIcon`}}{{end}}&nbsp;{{ .Inner }}&nbsp;</a>
+<a class="custom-button {{$.Scratch.Get `theClasses`}}" href="{{$.Scratch.Get `theHref` | relURL }}" rel="noopener noreferrer" target="_blank">
+  <span>
+    <span class="material-symbols-rounded">
+      {{- $.Scratch.Get "theIcon" }}
+    </span>
+    <span>
+      &nbsp;{{ .Inner }}&nbsp;
+    </span>
+  </span>
+</a> 

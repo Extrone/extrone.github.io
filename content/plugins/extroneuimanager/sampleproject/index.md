@@ -5,6 +5,7 @@ url: "/plugins/extroneuimanager/sampleproject"
 ShowBreadCrumbs: true
 ShowReadingTime: false
 ShowWordCount: false
+ShowHR: true
 Tags: ["Extrone UI Manager", "UE 5.4"]
 author: " "
 cover:
@@ -14,7 +15,7 @@ cover:
 ---
 
 <div class="buttons" style="display:flex; justify-content:left; font-size:medium; max-width:none; gap:var(--gap); margin-top:var(--gap);">
-{{< download-button class="button" href="https://drive.google.com/drive/folders/1Jaw_iwY0F5nY0qAwFnFBEqng0wsdcz23?usp=sharing" >}}Sample Projects (Google Drive){{< /download-button >}}
+{{< custom-button classes="button" href="https://drive.google.com/drive/folders/1Jaw_iwY0F5nY0qAwFnFBEqng0wsdcz23?usp=sharing" icon="download">}}Download{{< /custom-button >}}
 </div>
 
 ## Accessing the Sample Project

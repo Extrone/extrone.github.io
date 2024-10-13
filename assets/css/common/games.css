@@ -8,7 +8,7 @@
     flex-direction: column;
 }
 
-.games-container h3, h4 {
+.games-container h3, .games-container h4 {
     width: auto !important;
     margin: 0 !important;
     margin-top: 4px !important;
