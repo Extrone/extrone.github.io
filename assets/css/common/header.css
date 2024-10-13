@@ -61,8 +61,8 @@ html:not([data-scroll='0']) .nav {
 }
 
 .logo a {
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 32px;
+    font-weight: 800;
 }
 
 .nav button svg {
@@ -120,7 +120,7 @@ body:not(.dark) #sun {
 }
 
 #menu a {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 #menu .active {

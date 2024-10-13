@@ -1,4 +1,5 @@
 .contact-form {
+    width: 100%;
     display: flex;
     flex-direction: column;
     grid-template-columns: 2fr 2fr;

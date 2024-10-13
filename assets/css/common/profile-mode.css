@@ -66,7 +66,9 @@
     transition: all var(--transition-duration), transform var(--transition-duration) cubic-bezier(0.175, 0.885, 0.32, 2.275) !important;
     color: var(--tertiary);
     outline: none;
-
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1;
 }
 
 .button:hover {
@@ -84,12 +86,18 @@
 }
 
 .button-inner {
+    display: flex;
     padding: 0 8px;
     font-weight: 600 !important;
     color: var(--tertiary);
-    font-size: 18px !important;
     /* padding: none !important;
     background-color: transparent !important; */
+}
+
+.button-inner svg {
+    margin: auto;
+    margin-left: 4px;
+    margin-bottom: 1px;
 }
 
 .button:active {
