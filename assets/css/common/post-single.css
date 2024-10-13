@@ -81,8 +81,7 @@ hr {
     flex-wrap: wrap;
     gap: calc(var(--gap)*.5);
 }
-.post-meta a,
-.entry-footer a {
+.post-tag {
     flex: 0 1 auto;
     display: block;
     border-radius: 24px;
@@ -99,20 +98,32 @@ hr {
     box-shadow: 1px 1px 2px var(--shadow-color);
 }
 
-.post-meta a::before,
-.entry-footer a::before {
+.post-tag-count {
+    border-radius: 24px;
+    background-color: var(--custom-button-color);
+    padding-top: 0px;
+    padding-bottom: 2px;
+    padding-inline-start: 8px;
+    padding-inline-end: 8px;
+    margin: 2px;
+    margin-right: 0px;
+    margin-left: calc(var(--gap) * 0.25);
+    color: black;
+}
+
+.post-tag::before {
     content: "💎 ";
 }
 
-.post-meta a:hover,
-.post-meta a:focus {
+.post-tag:hover,
+.post-tag:focus {
     background: var(--button-hover);
     transform: scale(1.05);
     box-shadow: 2px 3px 4px var(--shadow-color);
     color: var(--button-content-hover);
 }
 
-.post-meta a:active {
+.post-tag:active {
     transform: scale(.95);
 }
 

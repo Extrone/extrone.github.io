@@ -2,6 +2,6 @@
 {{- if $tags -}}
   {{- $lastIndex := sub (len $tags) 1 -}}
   {{- range $index, $tag := $tags -}}
-    <a href="/tags/{{ $tag | urlize }}"> {{ $tag }} </a>
+    <a class="post-tag" href="/tags/{{ $tag | urlize }}"> {{ $tag }} </a>
   {{- end -}}
 {{- end -}}

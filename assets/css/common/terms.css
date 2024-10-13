@@ -1,29 +1,20 @@
 .terms-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(var(--gap) * 0.5);
     max-width: var(--nav-width);
-    margin: auto;
+    margin: 0;
+    margin-top: var(--gap);
 }
+
 .terms-tags li {
     display: inline-block;
-    margin: 10px;
-    font-weight: 500;
 }
 
-.terms-tags a {
-    font-weight: 400;
-    display: block;
-    padding: 6px 14px;
-    background: var(--primary);
-    color: var(--theme);
-    border-radius: 6px;
-    transition: var(--transition-duration);
-}
-
-.terms-tags a:hover {
-    transform: scale(1.1);
-    background-color: var(--button-hover);
-    color: var(--button-content-hover);
-}
-
-.terms-tags a:active {
-    transform: scale(0.96);
+.terms-tags .post-tag {
+    font-size: 18px !important;
+    padding: 2px;
+    padding-bottom: 3px;
+    padding-inline-start: 8px;
+    padding-inline-end: 4px;
 }
