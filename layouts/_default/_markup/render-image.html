@@ -1,0 +1,3 @@
+<a class="post-image" href="{{ .Destination | safeURL }}" target="_blank">
+    <img loading="lazy" href="{{ .Destination | safeURL }}" src="{{ .Destination | safeURL }}" alt="{{ .Text }}" {{ with .Title}} title="{{ . }}" {{ end }} />
+</a>
