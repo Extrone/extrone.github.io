@@ -11,10 +11,11 @@
     --entry: rgb(235, 235, 235);
     --primary: black;
     --secondary: rgb(58, 58, 58);
-    --tertiary: rgb(220, 220, 220);
+    --tertiary: rgb(200, 200, 200);
     --content: rgb(50, 50, 50);
     --hljs-bg: black;
     --code-bg: rgb(220, 220, 220);
+    --tag-bg: white;
     --border: rgb(173, 173, 173);
     --shadow-color: rgba(0, 0, 0, 25%);
     --button-hover: rgb(253, 89, 124);
@@ -34,6 +35,7 @@
     --secondary: rgb(155, 156, 157);
     --tertiary: rgb(10, 10, 10);
     --content: rgb(230, 230, 230);
+    --tag-bg: rgb(50, 50, 50);
     --hljs-bg: rgb(50, 50, 55);
     --code-bg: rgb(55, 56, 62);
     --border: rgb(30, 30, 40);
