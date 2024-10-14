@@ -1,11 +1,16 @@
 .wip {
-    width: 100%;
+    width: auto;
+    margin: auto;
+    padding: 20px 40px;
     background-color: var(--entry);
     color: var(--primary);
     border-radius: var(--radius);
-    padding: 20px;
     text-align: center;
     box-shadow: 0px 5px 10px var(--shadow-color);
+}
+
+.wip h3 {
+    margin: 0 !important;
 }
 
 .designs {

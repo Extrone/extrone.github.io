@@ -13,11 +13,12 @@
     --secondary: rgb(58, 58, 58);
     --tertiary: rgb(200, 200, 200);
     --content: rgb(50, 50, 50);
-    --hljs-bg: black;
+    --hljs-bg: rgb(20, 20, 22);
     --code-bg: rgb(220, 220, 220);
     --tag-bg: white;
     --toc-bg: rgb(230, 230, 230);
     --border: rgb(173, 173, 173);
+    --hr-color: rgb(230, 230, 230);
     --shadow-color: rgba(0, 0, 0, 25%);
     --button-hover: rgb(253, 89, 124);
     --button-content-hover: rgb(245, 245, 245);
@@ -40,9 +41,10 @@
     --content: rgb(230, 230, 230);
     --tag-bg: rgb(50, 50, 50);
     --toc-bg: rgb(23, 25, 25);
-    --hljs-bg: rgb(50, 50, 55);
+    --hljs-bg: rgb(40, 40, 42);
     --code-bg: rgb(55, 56, 62);
     --border: rgb(30, 30, 40);
+    --hr-color: rgb(50, 50, 55);
     --button-hover: rgb(250, 59, 100);
     --placeholder-image: url("../../img/Placeholder_Dark.png")
 }
