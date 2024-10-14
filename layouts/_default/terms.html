@@ -18,7 +18,7 @@
     {{- $count := .Count }}
     {{- with site.GetPage (printf "/%s/%s" $type $name) }}
     <li>
-        <a class="post-tag" href="{{ .Permalink }}">{{ .Name }} <span class="post-tag-count">{{ $count }}</span></a>
+        <a class="post-tag term-{{- $type}} term-{{- $type}}-{{- replaceRE "(\\s)" "" .Title }}" href="{{ .Permalink }}">{{ .Name }} <span class="post-tag-count">{{ $count }}</span></a>
     </li>
     {{- end }}
     {{- end }}

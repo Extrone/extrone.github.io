@@ -1,7 +1,29 @@
-{{- $tags := .Params.tags -}}
-{{- if $tags -}}
-  {{- $lastIndex := sub (len $tags) 1 -}}
-  {{- range $index, $tag := $tags -}}
-    <a class="post-tag" href="/tags/{{ $tag | urlize }}"> {{ $tag }} </a>
-  {{- end -}}
-{{- end -}}
+{{- $preferredTaxonomies := slice "categories" "engines" "unrealengineversions" "tags"  }}
+
+<!-- Get list of taxonomies on this page -->
+{{- $taxonomiesInPage := slice }}
+{{- range $siteTaxonomyName, $siteTaxonomyData := site.Taxonomies }}
+    {{- with $.Page.GetTerms $siteTaxonomyName }}
+        {{- $taxonomiesInPage = $taxonomiesInPage | append $siteTaxonomyName }}
+    {{- end }}
+{{- end }}
+
+<!-- Reorder taxonomy list so that taxonomies in $preferredTaxonomies show up first -->
+{{- if gt ($taxonomiesInPage | len) 0 }}
+    {{- range $preferredTaxonomy := $preferredTaxonomies | collections.Reverse }}
+        <!-- If page has a preferred taxonomy, place taxonomy at the start of the list -->
+        <!-- Duplicates are covered by uniq -->
+        {{- if in $taxonomiesInPage $preferredTaxonomy }}
+            {{- $taxonomiesInPage = append $taxonomiesInPage (slice $preferredTaxonomy) }}
+        {{- end }}
+    {{- end }}
+    {{- $taxonomiesInPage = uniq $taxonomiesInPage}}
+{{- end }}
+
+{{- range $taxonomyName := $taxonomiesInPage }}
+{{- with $.Page.GetTerms $taxonomyName }}
+    {{- range . }}
+        <a class="post-tag term-{{- $taxonomyName}} term-{{- $taxonomyName}}-{{- replaceRE "(\\s)" "" .Name }}" href="{{ .RelPermalink }}">{{ .Title | title }}</a>
+    {{- end }}
+{{- end }}
+{{- end }}

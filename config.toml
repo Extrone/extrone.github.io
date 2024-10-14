@@ -3,6 +3,13 @@ languageCode = "en-us"
 title = "Arjun Subhash"
 theme = "PaperMod"
 
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+  unrealengineversion = 'unrealengineversions'
+  engine = 'engines'
+  project = 'projects'
+
 [params]
 ShowBreadCrumbs = true
 ShowReadingTime = false

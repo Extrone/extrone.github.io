@@ -5,7 +5,10 @@ url: "/plugins/extroneuimanager/support"
 ShowBreadCrumbs: true
 ShowReadingTime: false
 ShowWordCount: false
-Tags: ["Extrone UI Manager"]
+Tags: [""]
+Categories: ["Help"]
+Projects: ["Extrone UI Manager"]
+Engines: ["Unreal Engine"]
 author: " "
 cover:
     image: "Extrone_UI_Manager_Support_Thumbnail.png"

@@ -14,6 +14,57 @@
 .terms-tags .post-tag {
     padding: 2px;
     padding-bottom: 3px;
-    padding-inline-start: 8px;
+    padding-inline-start: 4px;
     padding-inline-end: 4px;
+}
+
+.term-engines {
+    &::before {
+        content: "⚙️ ";
+    }
+}
+
+.term-projects {
+    &::before {
+        content: "📟 ";
+    }
+}
+
+.term-unrealengineversions,
+.term-engines-UnrealEngine,
+.term-projects-ExtroneUIManager {
+    &::before {
+        display: inline-flex;
+        content: " ";
+        background-size: 24px 24px;
+        height: 24px;
+        width: 24px;
+        vertical-align: middle;
+        margin-right: 10px;
+        /* margin-bottom: 4px; */
+        /* top: 4px; */
+        margin-top: -4px;
+    }
+}
+
+.term-unrealengineversions,
+.term-engines-UnrealEngine {
+    &::before {
+        background-image: var(--unreal-engine-logo) !important;
+    }
+}
+
+.term-projects-ExtroneUIManager {
+    &::before {
+        background-image: var(--extrone-ui-manager-logo) !important;
+    }
+}
+
+
+.term-tags::before {
+    content: "🏷️ ";
+}
+
+.term-categories::before {
+    content: "📚 ";
 }

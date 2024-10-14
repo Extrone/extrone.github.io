@@ -6,7 +6,11 @@ ShowBreadCrumbs: true
 ShowReadingTime: false
 ShowWordCount: false
 ShowHR: true
-Tags: ["Extrone UI Manager", "UE 5.4"]
+Tags: [""]
+Categories: ["Samples"]
+Projects: ["Extrone UI Manager"]
+Engines: ["Unreal Engine"]
+unrealengineversions: ["5.4"]
 author: " "
 cover:
     image: "Extrone_UI_Manager_SampleProject_Thumbnail.png"

@@ -111,7 +111,7 @@ body:not(.dark) #sun {
 #menu {
     list-style: none;
     word-break: keep-all;
-    overflow-x: auto;
+    /* overflow-x: auto; */
     white-space: nowrap;
 }
 
@@ -124,8 +124,13 @@ body:not(.dark) #sun {
 }
 
 #menu .active {
-    font-weight: 600;
+    font-weight: 800;
     border-bottom: 2px solid var(--primary);
+    padding-bottom: 4px;
+    /* padding: 6px 16px 10px 16px; */
+    /* background-color: var(--header);
+    border-radius: calc(var(--radius)*2);
+    box-shadow: 1px 1px 3px var(--shadow-color); */
 }
 
 #menu .active:before {

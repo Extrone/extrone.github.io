@@ -6,7 +6,11 @@ weight: 2
 ShowBreadCrumbs: true
 ShowReadingTime: false
 ShowWordCount: false
-Tags: ["Extrone UI Manager", "Blueprint", "UE 5.4"]
+Tags: ["Blueprint"]
+Categories: ["Documentation"]
+Projects: ["Extrone UI Manager"]
+Engines: ["Unreal Engine"]
+unrealengineversions: ["5.4"]
 author: " "
 cover:
     image: "Extrone_UI_Manager_Functions_Thumbnail.png"
