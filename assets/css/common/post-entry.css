@@ -133,8 +133,8 @@
 
 .entry-cover img {
     align-self: center;
-    /* background-image: var(--placeholder-image); */
-    background-color: var(--primary) !important;
+    background-image: var(--placeholder-image);
+    /* background-color: var(--primary) !important; */
     color: var(--entry);
     border-radius: calc(var(--radius)*.5);
     pointer-events: none;
