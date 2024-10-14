@@ -87,6 +87,7 @@
 
 .button-inner {
     display: flex;
+    justify-content: center;
     padding: 0 8px;
     font-weight: 600 !important;
     color: var(--tertiary);
