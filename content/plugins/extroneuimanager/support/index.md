@@ -17,5 +17,5 @@ cover:
 ---
 
 <div class="buttons" style="display:flex; justify-content:left; font-size:medium; max-width:none; gap:var(--gap); margin-top:var(--gap);">
-{{< custom-button classes="button" href="mailto:anjana4760@gmail.com" icon="mail" >}}Send Support Request{{< /custom-button >}}
+{{< custom-button classes="button" href="mailto:anjana4760@gmail.com?subject=Support%20Request%20for%20Extrone%20UI%20Manager" icon="mail" >}}Send Support Request{{< /custom-button >}}
 </div>
