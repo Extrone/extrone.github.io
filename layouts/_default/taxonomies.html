@@ -1,0 +1,39 @@
+{{- define "main" }}
+
+{{- if .Title }}
+<header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{- if .Description }}
+    <div class="post-description">
+        {{ .Description }}
+    </div>
+    {{- end }}
+    {{- if .Param "ShowHeadingHR" }}
+    <hr>
+    {{- end}}
+</header>
+{{- end }}
+<br>
+
+{{ with .Site.Taxonomies }}
+{{ $numberOfTerms := 0 }}
+{{ range $taxonomy, $terms := . }}
+{{ $numberOfTerms = len . | add $numberOfTerms }}
+{{ end }}
+
+{{ if gt $numberOfTerms 0 }}
+{{ range $taxonomy, $terms := . }}
+{{ with $terms }}
+<h2 href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}</h2>
+<ul class="taxonomies-container">
+    {{ range $term, $weightedPages := . }}
+    <a class="post-tag term-{{- $taxonomy}} term-{{- $taxonomy}}-{{- replaceRE "(\\s)" "" .Page.LinkTitle }}"
+        href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}</a>
+    {{ end }}
+</ul>
+<br>
+{{ end }}
+{{ end }}
+{{ end }}
+{{ end }}
+{{- end }}{{/* end main */ -}}

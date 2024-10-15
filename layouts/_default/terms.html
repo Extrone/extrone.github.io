@@ -8,10 +8,11 @@
         {{ .Description }}
     </div>
     {{- end }}
+    
 </header>
 {{- end }}
 
-<ul class="terms-tags">
+<ul class="taxonomies-container">
     {{- $type := .Type }}
     {{- range $key, $value := .Data.Terms.Alphabetical }}
     {{- $name := .Name }}

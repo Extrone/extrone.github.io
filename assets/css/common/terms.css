@@ -1,5 +1,7 @@
-.terms-tags {
+.taxonomies-container {
     display: flex;
+    flex-direction: row;
+    width: 100%;
     flex-wrap: wrap;
     gap: calc(var(--gap) * 0.5);
     max-width: var(--nav-width);
@@ -7,7 +9,7 @@
     margin-top: var(--gap);
 }
 
-.terms-tags li {
+.taxonomies-container li {
     display: inline-block;
 }
 
@@ -79,7 +81,6 @@
     content: "🏷️ ";
     font-size: 18px;
     line-height: 1.3;
-    padding-left: 2px;
 }
 
 .term-categories::before {
