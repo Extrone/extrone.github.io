@@ -72,10 +72,6 @@
                 {{- $label_text -}}
             </a>
             {{- end }}
-            
-        </div>
-        {{- $currentPage := . }}
-        <ul id="menu">
             <div class="logo-switches">
                 {{- if (not site.Params.disableThemeToggle) }}
                 <button id="theme-toggle" accesskey="t" title="Change Theme">
@@ -122,6 +118,11 @@
                 </ul>
                 {{- end }}
             </div>
+            
+        </div>
+        
+        {{- $currentPage := . }}
+        <ul id="menu">
             {{- range site.Menus.main }}
             {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
             {{- $page_url:= $currentPage.Permalink | absLangURL }}
