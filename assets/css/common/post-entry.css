@@ -133,6 +133,7 @@
 
 .entry-cover img {
     align-self: center;
+    object-fit: cover;
     background-image: var(--placeholder-image);
     /* background-color: var(--primary) !important; */
     color: var(--entry);
