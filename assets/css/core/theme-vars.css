@@ -32,6 +32,7 @@
 
     --unreal-engine-logo: url("../../img/logos/UE-Icon-2023-Black.svg");
     --extrone-ui-manager-logo: url("../../img/logos/Extrone_UI_Manager_Logo_Black.svg");
+    --empty-logo: url("../../img/logos/EmptyLogo_Black.svg");
 }
 
 .dark {
@@ -53,6 +54,7 @@
 
     --unreal-engine-logo: url("../../img/logos/UE-Icon-2023-White.svg");
     --extrone-ui-manager-logo: url("../../img/logos/Extrone_UI_Manager_Logo_White.svg");
+    --empty-logo: url("../../img/logos/EmptyLogo_White.svg");
 }
 
 .list {
