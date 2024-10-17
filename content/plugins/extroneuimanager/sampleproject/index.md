@@ -19,12 +19,12 @@ cover:
 ---
 
 <div class="buttons" style="display:flex; justify-content:left; font-size:medium; max-width:none; gap:var(--gap); margin-top:var(--gap);">
-{{< custom-button classes="button" href="plugins/extroneuimanager/sampleproject/UIManagerSample.zip" icon="download">}}Download Sample Project{{< /custom-button >}}
+{{< custom-button classes="button" href="[plugins/extroneuimanager/sampleproject/UIManagerSample.zip](https://drive.google.com/drive/folders/1Jaw_iwY0F5nY0qAwFnFBEqng0wsdcz23?usp=sharing)" icon="download">}}Sample Projects{{< /custom-button >}}
 </div>
 
 ## Accessing the Sample Project
 
 1. Make sure Extrone UI Manager Plugin is installed in your desired engine version (follow the [Getting Started](../documentation/getting-started/) guide if needed)
 2. Download the Sample Project for your engine version following **Sample Projects (Google Drive)** button
-3. Extract **UIManagerSample.Zip**
+3. Extract **UIManagerSample_[Version_Number].Zip**
 4. Open **UIManagerSample.uproject** inside Extracted Folder
