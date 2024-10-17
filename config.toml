@@ -20,6 +20,7 @@ disableAnchoredHeadings = true
 builddrafts = true
 ShowHeadingHR = true
 author = " "
+social = true
 
   [params.profileMode]
   enabled = true
