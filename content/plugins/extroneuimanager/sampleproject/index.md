@@ -19,7 +19,7 @@ cover:
 ---
 
 <div class="buttons" style="display:flex; justify-content:left; font-size:medium; max-width:none; gap:var(--gap); margin-top:var(--gap);">
-{{< custom-button classes="button" href="[plugins/extroneuimanager/sampleproject/UIManagerSample.zip](https://drive.google.com/drive/folders/1Jaw_iwY0F5nY0qAwFnFBEqng0wsdcz23?usp=sharing)" icon="download">}}Sample Projects{{< /custom-button >}}
+{{< custom-button classes="button" href="https://drive.google.com/drive/folders/1Jaw_iwY0F5nY0qAwFnFBEqng0wsdcz23?usp=sharing" icon="download">}}Sample Projects{{< /custom-button >}}
 </div>
 
 ## Accessing the Sample Project
