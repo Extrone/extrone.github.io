@@ -20,7 +20,7 @@ cover:
 ---
 
 ## Initialize Extrone UI Manager
-Initialize ExtroneUIManager Subsystem
+Initializes **Extrone UI Manager Subsystem** and registers default layers
 
 ![*Screenshot of Initialize Extrone UI Manager Blueprint Node*](nodes/InitializeExtroneUIManagerBFL.png)
 
