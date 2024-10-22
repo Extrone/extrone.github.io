@@ -530,7 +530,7 @@ html:not([data-scroll='0']) .toc {
 }
 
 .paginav {
-    background: var(--code-bg);
+    background: var(--theme);
     border: 1px solid var(--border);
 }
 
