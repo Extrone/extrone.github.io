@@ -218,27 +218,27 @@ hr {
 }
 
 .post-content table {
+    width: max-content;
     display: inline-table;
     background-color: transparent;
-    color: var(--button-content-hover);
+    color: var(--primary);
     font-size: 24px;
     margin-bottom: 32px;
     border-radius: var(--radius);
     table-layout: fixed;
+    border: none !important;
 }
 
 th,
 td {
-    background-color: var(--hljs-bg);
-    transition: all var(--transition-duration), background-color calc(var(--transition-duration)*5);
+    background-color: var(--toc-bg);
     border-radius: var(--radius);
     user-select: none;
 }
 
-th:hover,
+/* th:hover,
 td:hover {
-    background-color: var(--button-hover);
-    transform: scale(1.025);
+    transform: scale(1.005);
     transition: all var(--transition-duration), var(--transition-duration) cubic-bezier(0.175, 0.885, 0.32, 5.275);
 }
 
@@ -246,11 +246,10 @@ th:active,
 td:active {
     transform: scale(.995);
     transition: var(--transition-duration);
-}
+} */
 
 .post-content table th,
 .post-content table:not(.highlighttable, .highlight table, .gist .highlight) td {
-    width: 100%;
     min-width: 80px;
     padding: 12px 8px;
     line-height: 1.5;
@@ -435,6 +434,7 @@ td:active {
 .toc .inner {
     padding: calc(var(--gap)/2);
     padding-top: 0;
+    overflow: scroll;
 }
 
 html:not([data-scroll='0']) .toc {
@@ -444,13 +444,13 @@ html:not([data-scroll='0']) .toc {
 
 .toc li {
     margin-left: var(--gap);
-    color: var(--theme);
     max-height: 600px;
+    line-height: 1.1;
+    margin-bottom: calc(var(--gap) * 0.5);
 }
 
 .toc a,
 .toc summary {
-    padding: 4px 6px;
     border-radius: calc(var(--radius)/2);
     color: var(--primary);
     word-wrap: break-word;
