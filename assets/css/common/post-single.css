@@ -331,11 +331,12 @@ td:active {
 
 .post-content code {
     margin: auto 4px;
-    padding: 4px 6px;
-    font-size: 0.78em;
+    padding: 2px 12px 4px 12px;
+    font-size: 1rem;
     line-height: 1.5;
     background: var(--code-bg);
-    border-radius: 2px;
+    border-radius: calc(var(--radius)*0.5);
+    box-shadow: 2px 2px 2px var(--shadow-color);
 }
 
 .post-content pre code {
