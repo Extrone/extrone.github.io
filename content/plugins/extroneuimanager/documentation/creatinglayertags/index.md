@@ -2,7 +2,7 @@
 title: "Creating Layer Gameplay Tags"
 summary: Need to add more Layer Gameplay Tags? Here is how.
 url: "/plugins/extroneuimanager/documentation/createlayergameplaytags"
-weight: 0
+weight: 300
 ShowBreadCrumbs: true
 ShowReadingTime: false
 ShowWordCount: false
@@ -11,7 +11,7 @@ Tags: ["C++", "Blueprint"]
 Categories: ["Documentation"]
 Projects: ["Extrone UI Manager"]
 Engines: ["Unreal Engine"]
-unrealengineversions: ["5.4"]
+unrealengineversions: ["5.4", "5.5"]
 author: " "
 cover:
     image: "Extrone_UI_Manager_Thumbnail.png"

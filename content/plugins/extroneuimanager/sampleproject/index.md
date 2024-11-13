@@ -2,6 +2,7 @@
 title: "Sample Project"
 summary: Use the sample project to better understand how to use the plugin.
 url: "/plugins/extroneuimanager/sampleproject"
+Weight: 20
 ShowBreadCrumbs: true
 ShowReadingTime: false
 ShowWordCount: false
@@ -10,7 +11,7 @@ Tags: [""]
 Categories: ["Samples"]
 Projects: ["Extrone UI Manager"]
 Engines: ["Unreal Engine"]
-unrealengineversions: ["5.4"]
+unrealengineversions: ["5.4", "5.5"]
 author: " "
 cover:
     image: "Extrone_UI_Manager_SampleProject_Thumbnail.png"
