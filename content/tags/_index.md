@@ -1,9 +1,10 @@
 ---
 title: "Tags"
-layout: "tags"
+layout: "taxonomies"
 url: "/tags/"
-summary: tags
+summary: Tags
 ShowWordCount: false
 ShowReadingTime: false
+ShowHeadingHR: true
 Author: " "
 ---

@@ -77,13 +77,13 @@
     }
 }
 
-.term-tags::before {
+.term-labels::before {
     content: "🏷️ ";
     font-size: 18px;
     line-height: 1.3;
 }
 
-.term-tags-UI::before {
+.term-labels-UI::before {
     content: "💻 ";
 }
 

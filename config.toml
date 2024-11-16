@@ -5,7 +5,7 @@ theme = "PaperMod"
 
 [taxonomies]
   category = 'categories'
-  tag = 'tags'
+  label = 'labels'
   unrealengineversion = 'unrealengineversions'
   engine = 'engines'
   project = 'projects'
@@ -86,6 +86,12 @@ weight = 3
 identifier = "contact"
 name = "Contact"
 url = "/contact/"
+weight = 4
+
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
 weight = 4
 
 # [[menu.main]]

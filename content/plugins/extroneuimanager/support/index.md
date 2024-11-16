@@ -6,7 +6,7 @@ Weight: 30
 ShowBreadCrumbs: true
 ShowReadingTime: false
 ShowWordCount: false
-Tags: [""]
+Labels: [""]
 Projects: ["Extrone UI Manager"]
 author: " "
 cover:

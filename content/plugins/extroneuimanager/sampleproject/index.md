@@ -7,7 +7,7 @@ ShowBreadCrumbs: true
 ShowReadingTime: false
 ShowWordCount: false
 ShowHR: true
-Tags: [""]
+Labels: [""]
 Projects: ["Extrone UI Manager"]
 Engines: ["Unreal Engine"]
 unrealengineversions: ["5.4", "5.5"]
