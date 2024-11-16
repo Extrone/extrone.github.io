@@ -24,7 +24,7 @@ cover:
 
 ## Accessing the Sample Project
 
-1. Make sure Extrone UI Manager Plugin is installed in your desired engine version (follow the [Getting Started](../documentation/getting-started/) guide if needed)
+1. Make sure Extrone UI Manager Plugin is installed in your desired engine version (follow the [Getting Started](../documentation/gettingstarted/) guide if needed)
 2. Download the Sample Project for your engine version following **Sample Projects (Google Drive)** button
 3. Extract **UIManagerSample_[Version_Number].Zip**
 4. Open **UIManagerSample.uproject** inside Extracted Folder
