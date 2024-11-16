@@ -28,7 +28,7 @@
 <ul class="taxonomies-container">
     {{ range $term, $weightedPages := . }}
     <a class="post-tag term-{{- $taxonomy}} term-{{- $taxonomy}}-{{- replaceRE "(\\s)" "" .Page.LinkTitle }}"
-        href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }}</a>
+        href="{{ .Page.RelPermalink }}">{{ .Page.LinkTitle }} <span class="post-tag-count">{{ .Count }}</span></a>
     {{ end }}
 </ul>
 <br>

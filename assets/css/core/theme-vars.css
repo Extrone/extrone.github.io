@@ -24,8 +24,7 @@
     --button-content-hover: rgb(245, 245, 245);
     --transition-duration: 0.1s;
     --image-background-color: rgb(20, 20, 20);
-    --custom-button-color: rgb(255, 194, 41);
-    --custom-button-color: rgb(180, 181, 238);
+    --custom-button-color: rgb(218, 218, 218);
     --custom-button-hover: rgb(255, 194, 41);
     --download-button-text-color: black;
     --placeholder-image: url("../../img/Placeholder_Light.png");
