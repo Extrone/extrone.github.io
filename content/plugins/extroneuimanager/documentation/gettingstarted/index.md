@@ -41,6 +41,20 @@ Default Layers specified in the Project Settings will be auto registered when in
 
 ![*Add Layers that should be registered by default to **Project Settings → Plugins → Extrone UI → Layers → Default Layers***](DefaultLayers.png)
 
+You can also use **[Register UI Layer](../functions/#register-ui-layer)** or **[Register UI Layer Widget](../functions/#register-ui-layer-widget)** functions to register layers
+
+## Creating Screens
+
+Screens that you can push to Layers need to be inhertied from UExtroneScreenBase class
+
+1. Right Click on the Content Browser and select **User Interface** -> **Widget Blueprint**
+![Creating Widget Blueprint](CreateNewWidgetBlueprint.png)
+2. A new window will appear asking you to select a parent class. Expand the **All Classes** dropdown and search for **ExtroneScreenBase**
+![Search for and select ExtroneScreenBase](SearchForExtroneScreenBase.png)
+3. Select **ExtroneScreenBase** from the list and click the **Select** Button
+
+The above steps will create a new Widget Blueprint that inherits from UExtroneScreenBase and can be pushed to or popped from layers.
+
 ## Pushing Screens
 
 Use **Push Screen to Layer** node to add widgets to layers
