@@ -66,7 +66,7 @@
 {{- end }}
 
 {{- $term := .Data.Term }}
-{{- range $index, $page := sort $paginator.Pages "Title" "asc" }}
+{{- range $index, $page := sort $paginator.Pages "Weight" "asc" }}
 
 {{- $class := "post-entry" }}
 

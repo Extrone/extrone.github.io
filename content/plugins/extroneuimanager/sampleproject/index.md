@@ -8,7 +8,6 @@ ShowReadingTime: false
 ShowWordCount: false
 ShowHR: true
 Tags: [""]
-Categories: ["Samples"]
 Projects: ["Extrone UI Manager"]
 Engines: ["Unreal Engine"]
 unrealengineversions: ["5.4", "5.5"]

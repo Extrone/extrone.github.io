@@ -2,13 +2,12 @@
 title: "Support"
 summary: Submit any support requests you have about Extrone UI Manager here.
 url: "/plugins/extroneuimanager/support"
+Weight: 30
 ShowBreadCrumbs: true
 ShowReadingTime: false
 ShowWordCount: false
 Tags: [""]
-Categories: ["Help"]
 Projects: ["Extrone UI Manager"]
-Engines: ["Unreal Engine"]
 author: " "
 cover:
     image: "Extrone_UI_Manager_Support_Thumbnail.png"

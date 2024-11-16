@@ -101,6 +101,20 @@
     }
 }
 
+.post-date {
+    padding-left: 1px;
+    &::before {
+        padding-left: 0;
+        content: "🕒 ";
+    }
+}
+
+.post-author{
+    &::before {
+        content: "✒️ ";
+    }
+}
+
 .term-unrealengineversions,
 .term-engines-UnrealEngine,
 .term-projects-ExtroneUIManager {
