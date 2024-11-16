@@ -55,6 +55,10 @@ social = true
   url = "https://www.instagram.com/arjun_subhash_/"
 
   [[params.socialIcons]]
+  name = "bluesky"
+  url = "https://bsky.app/profile/extrone.bsky.social"
+
+  [[params.socialIcons]]
   name = "youtube"
   url = "https://www.youtube.com/@Extrone"
 
