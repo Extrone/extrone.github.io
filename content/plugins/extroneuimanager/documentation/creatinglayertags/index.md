@@ -7,10 +7,10 @@ ShowBreadCrumbs: true
 ShowReadingTime: false
 ShowWordCount: false
 ShowToc: true
-Tags: ["C++", "Blueprint"]
 Projects: ["Extrone UI Manager"]
 Engines: ["Unreal Engine"]
 unrealengineversions: ["5.4", "5.5"]
+programminglanguages: ["C++", "Blueprint"]
 author: " "
 cover:
     image: "Extrone_UI_Manager_Thumbnail.png"

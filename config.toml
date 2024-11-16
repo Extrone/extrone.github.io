@@ -9,6 +9,7 @@ theme = "PaperMod"
   unrealengineversion = 'unrealengineversions'
   engine = 'engines'
   project = 'projects'
+  programminglanguage = 'programminglanguages'
 
 [params]
 ShowBreadCrumbs = true

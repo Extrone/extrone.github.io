@@ -83,6 +83,16 @@
     line-height: 1.3;
 }
 
+.term-tags-UI::before {
+    content: "💻 ";
+}
+
+.term-programminglanguages::before {
+    content: "🧮 ";
+    font-size: 18px;
+    line-height: 1.3;
+}
+
 .term-categories::before {
     content: "📂 ";
     font-size: 18px;
@@ -116,6 +126,7 @@
 }
 
 .term-unrealengineversions,
+.term-programminglanguages,
 .term-engines-UnrealEngine,
 .term-projects-ExtroneUIManager {
     &::before {
@@ -133,8 +144,15 @@
     }
 }
 
+.term-programminglanguages {
+    &::before {
+        background-image: var(--cpp-logo) !important;
+    }
+}
+
 .term-unrealengineversions,
-.term-engines-UnrealEngine {
+.term-engines-UnrealEngine,
+.term-programminglanguages-Blueprint {
     &::before {
         background-image: var(--unreal-engine-logo) !important;
     }
