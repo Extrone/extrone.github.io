@@ -129,7 +129,8 @@
 .term-programminglanguages,
 .term-engines-UnrealEngine,
 .term-engines-Godot,
-.term-projects-ExtroneUIManager {
+.term-projects-ExtroneUIManager,
+.term-projects-EditorClock {
     &::before {
         display: inline-flex;
         content: " ";
@@ -168,6 +169,12 @@
 .term-projects-ExtroneUIManager {
     &::before {
         background-image: var(--extrone-ui-manager-logo) !important;
+    }
+}
+
+.term-projects-EditorClock {
+    &::before {
+        background-image: var(--editor-clock-logo) !important;
     }
 }
 
