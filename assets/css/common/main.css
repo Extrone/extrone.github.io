@@ -20,7 +20,7 @@ html, body {
 }
 
 .button, a, img {
-    cursor: url("../../Cursors/HandPointing.png") 9 3, pointer;
+    cursor: url("../../Cursors/HandPointing.png") 9 3, pointer !important; 
 }
 
 .custom-button {
