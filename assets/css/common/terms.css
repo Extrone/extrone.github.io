@@ -130,7 +130,8 @@
 .term-engines-UnrealEngine,
 .term-engines-Godot,
 .term-projects-ExtroneUIManager,
-.term-projects-EditorClock {
+.term-projects-EditorClock,
+.term-projects-EditorClockLite {
     &::before {
         display: inline-flex;
         content: " ";
@@ -175,6 +176,12 @@
 .term-projects-EditorClock {
     &::before {
         background-image: var(--editor-clock-logo) !important;
+    }
+}
+
+.term-projects-EditorClockLite {
+    &::before {
+        background-image: var(--editor-clock-lite-logo) !important;
     }
 }
 

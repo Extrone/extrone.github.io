@@ -34,6 +34,7 @@
     --godot-logo-color: url("../../img/logos/godot_icon_color.svg");
     --extrone-ui-manager-logo: url("../../img/logos/Extrone_UI_Manager_Logo_Black.svg");
     --editor-clock-logo: url("../../img/logos/Editor_Clock_Logo_Black.svg");
+    --editor-clock-lite-logo: url("../../img/logos/Editor_Clock_Lite_Logo_Black.svg");
     --empty-logo: url("../../img/logos/EmptyLogo_Black.svg");
     --cpp-logo: url("../../img/logos/ISO_C++_Logo.svg");
 
@@ -59,6 +60,8 @@
     --unreal-engine-logo: url("../../img/logos/UE-Icon-2023-White.svg");
     --godot-logo: url("../../img/logos/godot_icon_monochrome_dark.svg");
     --extrone-ui-manager-logo: url("../../img/logos/Extrone_UI_Manager_Logo_White.svg");
+    --editor-clock-logo: url("../../img/logos/Editor_Clock_Logo_White.svg");
+    --editor-clock-lite-logo: url("../../img/logos/Editor_Clock_Lite_Logo_White.svg");
     --empty-logo: url("../../img/logos/EmptyLogo_White.svg");
 }
 
