@@ -1,7 +1,7 @@
 :root {
     --gap: 24px;
     --content-gap: 20px;
-    --nav-width: 80%;
+    --nav-width: 85%;
     --main-width: 100%;
     --header-height: 60px;
     --footer-height: 60px;
@@ -44,7 +44,7 @@
     --theme: rgb(8, 10, 10);
     --header: rgba(255, 255, 255, 10%);
     --entry: rgb(30, 30, 35);
-    --primary: rgb(218, 218, 219);
+    --primary: rgb(255, 255, 255);
     --secondary: rgb(155, 156, 157);
     --tertiary: rgb(10, 10, 10);
     --content: rgb(230, 230, 230);

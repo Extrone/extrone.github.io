@@ -10,7 +10,7 @@ Labels: [""]
 Projects: ["Editor Clock"]
 author: " "
 cover:
-    image: "Editor_Clock_Support_Thumbnail.png"
+    image: "Editor_Clock_Thumbnail.png"
     alt: "Editor Clock Plugin support"
     relative: false
 ---

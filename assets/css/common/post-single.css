@@ -125,16 +125,13 @@ hr {
     margin-bottom: var(--gap) !important;
 }
 
-.post-content h3,
-.post-content h4,
-.post-content h5,
-.post-content h6 {
-    margin: 24px 0 16px;
+.post-content h1, h2, h3, h4, h5, h6{
+    color: var(--primary);
+    margin: 24px 0 8px;
 }
 
 .post-content h1 {
-    margin: 40px 0 32px;
-    font-size: 40px;
+    font-size: 42px;
 }
 
 .post-content h2 {
@@ -143,19 +140,19 @@ hr {
 }
 
 .post-content h3 {
-    font-size: 24px;
+    font-size: 26px;
 }
 
 .post-content h4 {
-    font-size: 16px;
+    font-size: 22px;
 }
 
 .post-content h5 {
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .post-content h6 {
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .post-content a,
@@ -218,7 +215,7 @@ hr {
 }
 
 .post-content table {
-    width: max-content;
+    width: fit-content;
     display: inline-table;
     background-color: transparent;
     color: var(--primary);
@@ -229,24 +226,20 @@ hr {
     border: none !important;
 }
 
+thead tr th:first-child,
+tbody tr td:first-child {
+  width: 25%;
+  max-width: fit-content;
+  min-width: fit-content;
+}
+
 th,
 td {
+    padding: calc(var(--gap)/2) !important;
     background-color: var(--toc-bg);
     border-radius: var(--radius);
-    user-select: none;
+    word-wrap: break-word;
 }
-
-/* th:hover,
-td:hover {
-    transform: scale(1.005);
-    transition: all var(--transition-duration), var(--transition-duration) cubic-bezier(0.175, 0.885, 0.32, 5.275);
-}
-
-th:active,
-td:active {
-    transform: scale(.995);
-    transition: var(--transition-duration);
-} */
 
 .post-content table th,
 .post-content table:not(.highlighttable, .highlight table, .gist .highlight) td {
@@ -411,25 +404,25 @@ td:active {
 }
 
 .toc {
-    order: 1;
-    flex-shrink: 0;
+    flex: 1 0 auto;
+    order: 0;
     position: sticky !important;
     font-size: 18px;
     background-color: var(--toc-bg);
     top: calc(var(--gap)*4);
-    bottom: 32px;
-    right: calc(var(--gap)/2);
+    bottom: calc(var(--gap)/2);
     z-index: 10;
-    width: 100%;
-    max-width: 250px;
-    height: fit-content;
+    width: fit-content;
+    max-width: 20%;
+    height: 100%;
     margin-top: calc(var(--gap) * 1);
-    margin-left: var(--gap);
+    margin-right: var(--gap);
+    margin-bottom: auto;
     font-weight: 600;
     line-height: calc(var(--header-height)/2);
     border-radius: var(--radius);
-    transition: .2s;
-    box-shadow: 3px 3px 5px var(--shadow-color);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 10%);
+    transition: calc(var(--transition-duration)*1.5) cubic-bezier(0.175, 1, 0.3, 1.1);
 }
 
 .toc .inner {
@@ -439,30 +432,42 @@ td:active {
 }
 
 html:not([data-scroll='0']) .toc {
-    box-shadow: 3px 5px 15px var(--shadow-color);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 10%);
     transition: calc(var(--transition-duration)*1.5) cubic-bezier(0.175, 1, 0.3, 1.1);
 }
 
 .toc li {
-    margin-left: var(--gap);
+    margin-left: calc(var(--gap)/2);
     max-height: 600px;
-    line-height: 1.1;
-    margin-bottom: calc(var(--gap) * 0.5);
+    list-style-type: none;
 }
 
 .toc a,
 .toc summary {
+    width: 100%;
+    display: inline-block;
+    padding: 1px 4px;
     border-radius: calc(var(--radius)/2);
     color: var(--primary);
     word-wrap: break-word;
-    transition: .1s;
+    transition: var(--transition-duration);
+}
+
+.toc a::before {
+    display: inline-block;
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--primary);
+    margin: auto 10px auto 0;
 }
 
 .toc summary {
     margin: 4px;
     padding: calc((var(--gap)/2) - 2px);
     border-radius: calc(var(--radius) - 2px);
-    outline: 5px solid transparent;
+    cursor: url("../../Cursors/HandPointing.png"), pointer;
 }
 
 .toc a:hover,
@@ -470,7 +475,6 @@ html:not([data-scroll='0']) .toc {
     box-shadow: none;
     background-color: var(--button-hover);
     color: var(--button-content-hover);
-    transform: scale(1.1);
 }
 
 .toc summary:hover {
@@ -673,7 +677,7 @@ img.in-text {
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1500px) {
 
     .post-parent {
         margin: 0;
@@ -704,14 +708,6 @@ img.in-text {
     .post-single {
         max-width: 100%;
         width: 100%;
-    }
-
-    th {
-        font-size: 16px;
-    }
-
-    td {
-        font-size: 12px;
     }
 
     .post-content table tbody td {
