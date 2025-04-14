@@ -131,7 +131,7 @@
     height: 100%;
     overflow: auto;
     background-color: var(--header);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(10px);
 }
 
