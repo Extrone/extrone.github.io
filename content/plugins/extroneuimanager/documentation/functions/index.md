@@ -120,6 +120,7 @@ Create and Register new Layer with provided Widget Class
 |Layer|GameplayTag that should be used to Identify this Layer|
 |LayerWidgetClass|Base Widget that the screens will be pushed to|
 |ZOrder|ZOrder of the Layer|
+|bAddToViewport|Should the Created Layer Widget be added to the Viewport|
 
 |Out|Description|
 |---|-----------|
@@ -135,6 +136,7 @@ Register new Layer with provided Widget
 |Layer|GameplayTag that should be used to Identify this Layer|
 |LayerWidget|Base Widget that the screens will be pushed to|
 |ZOrder|ZOrder of the Layer|
+|bAddToViewport|Should the Created Layer Widget be added to the Viewport|
 
 |Out|Description|
 |---|-----------|
