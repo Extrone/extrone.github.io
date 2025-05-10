@@ -6,19 +6,19 @@
     --header-height: 60px;
     --footer-height: 60px;
     --radius: 12px;
-    --theme: rgb(220, 220, 220);
-    --header: rgba(255, 255, 255, 50%);
-    --entry: rgb(235, 235, 235);
+    --theme: rgb(255, 255, 255);
+    --header: rgba(0, 0, 0, 10%);
+    --entry: rgba(0, 0, 0, 3%);
     --primary: black;
     --secondary: rgb(58, 58, 58);
     --tertiary: rgb(200, 200, 200);
     --content: rgb(50, 50, 50);
     --hljs-bg: rgb(20, 20, 22);
-    --code-bg: rgb(255, 255, 255);
-    --tag-bg: white;
-    --toc-bg: rgb(230, 230, 230);
+    --code-bg: rgb(235, 235, 235);
+    --tag-bg: rgb(235, 235, 235);
+    --toc-bg: rgba(0, 0, 0, 5%);
     --border: rgb(173, 173, 173);
-    --hr-color: rgb(230, 230, 230);
+    --hr-color: rgba(0, 0, 0, 3%);
     --shadow-color: rgba(0, 0, 0, 25%);
     --button-hover: rgb(253, 89, 124);
     --button-content-hover: rgb(245, 245, 245);
@@ -41,9 +41,9 @@
 }
 
 .dark {
-    --theme: rgb(8, 10, 10);
+    --theme: rgb(8, 8, 8);
     --header: rgba(255, 255, 255, 10%);
-    --entry: rgb(30, 30, 35);
+    --entry: rgba(255, 255, 255, 4%);
     --primary: rgb(255, 255, 255);
     --secondary: rgb(155, 156, 157);
     --tertiary: rgb(10, 10, 10);
@@ -53,7 +53,7 @@
     --hljs-bg: rgb(40, 40, 42);
     --code-bg: rgb(55, 56, 62);
     --border: rgb(30, 30, 40);
-    --hr-color: rgb(50, 50, 55);
+    --hr-color: rgba(255, 255, 255, 4%);
     --button-hover: rgb(250, 59, 100);
     --placeholder-image: url("../../img/Placeholder_Dark.png");
 
