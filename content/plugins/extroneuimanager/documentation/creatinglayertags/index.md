@@ -9,7 +9,7 @@ ShowWordCount: false
 ShowToc: true
 Projects: ["Extrone UI Manager"]
 Engines: ["Unreal Engine"]
-unrealengineversions: ["5.4", "5.5"]
+unrealengineversions: ["5.4", "5.5", "5.6"]
 programminglanguages: ["C++", "Blueprint"]
 author: " "
 cover:

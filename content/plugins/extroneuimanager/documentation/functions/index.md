@@ -10,7 +10,7 @@ ShowToc: true
 programminglanguages: ["Blueprint"]
 Projects: ["Extrone UI Manager"]
 Engines: ["Unreal Engine"]
-unrealengineversions: ["5.4", "5.5"]
+unrealengineversions: ["5.4", "5.5", "5.6"]
 author: " "
 cover:
     image: "Extrone_UI_Manager_Functions_Thumbnail.png"
