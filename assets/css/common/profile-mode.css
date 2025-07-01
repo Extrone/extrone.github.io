@@ -59,7 +59,7 @@
 .button {
     background: var(--primary);
     border: 3px solid transparent;
-    border-radius: calc(var(--radius)/2) !important;
+    border-radius: calc(var(--radius)/2);
     box-shadow: 2px 5px 10px var(--shadow-color) !important;
     margin: 8px;
     padding: 6px;
@@ -109,5 +109,10 @@
     .buttons {
         flex-direction: column;
         height: auto;
+        align-items: center;
+    }
+    .button {
+        flex: 1;
+        max-width: none;
     }
 }

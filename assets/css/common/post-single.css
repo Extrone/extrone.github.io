@@ -408,8 +408,8 @@ td {
     order: 0;
     position: sticky !important;
     font-size: 16px;
-    /* background-color: var(--toc-bg); */
-    border: 2px solid var(--content);
+    background-color: transparent;
+    border: 2px solid var(--hr-color);
     top: calc(var(--gap)*4);
     bottom: calc(var(--gap)/2);
     z-index: 10;
@@ -447,7 +447,7 @@ html:not([data-scroll='0']) .toc {
 .toc summary {
     width: 100%;
     display: inline-block;
-    padding: 2px 0px;
+    padding: 0px;
     border-radius: calc(var(--radius)/2);
     color: var(--primary);
     word-wrap: break-word;
@@ -458,16 +458,21 @@ html:not([data-scroll='0']) .toc {
     display: inline-block;
     content: "";
     width: 4px;
-    height: 4px;
-    border-radius: 2px;
-    background: var(--primary);
+    height: 12px;
+    border-radius: 6px;
+    background: var(--code-bg);
     margin: auto 10px auto 0;
 }
 
 .toc summary {
-    padding: calc((var(--gap)/2) - 2px);
-    border-radius: calc(var(--radius) - 2px);
+    padding: 6px 12px;
+    background-color: var(--code-bg);
+    border-radius: calc(var(--radius) - 2px) calc(var(--radius) - 2px) 4px 4px;
     cursor: url("../../Cursors/HandPointing.png"), pointer;
+}
+
+.toc .inner {
+    margin-top: 12px;
 }
 
 .toc a:hover,
