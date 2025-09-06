@@ -2,7 +2,8 @@
 title: "Settings"
 summary: Editor Clock Settings can be changed in Editor Preferences -> Editor Clock
 url: "/plugins/editorclock/documentation/settings"
-weight: 100
+draft: true
+weight: 200
 ShowBreadCrumbs: true
 ShowReadingTime: false
 ShowWordCount: false
