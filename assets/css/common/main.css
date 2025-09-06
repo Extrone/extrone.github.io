@@ -175,7 +175,71 @@ pre:hover .copy-code {
     text-align: center;
 }
 
-@media only screen and (max-width: 900px) {
+.hidden {
+    display: none;
+}
+
+.discord-invite {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f1f1f;
+    border-radius: var(--radius) !important;
+}
+
+.discord-invite-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    gap: calc(var(--gap)/2);
+    background-color: #5865F2;
+    color: #E0E3FF;
+    padding: calc(var(--gap)/2) var(--gap);
+    border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.discord-invite-header>h3 {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.discord-invite-button>h4 {
+    margin: 0;
+    padding: 0;
+    color: #1f1f1f;
+}
+
+.discord-logo {
+    width: 124px;
+    height: 19px;
+    background-image: var(--discord-logo);
+}
+
+.discord-invite-button {
+    display: flex;
+    width: fit-content;
+    height: auto;
+    margin: var(--gap) !important;
+    padding: calc(var(--gap)/2) var(--gap) !important;
+    border-radius: 100px !important;
+    background-color: white !important;
+    box-shadow: none !important;
+}
+
+.discord-invite-button:hover {
+    background-color: #5865F2 !important;
+}
+
+.discord-invite-button:hover >h4{
+    color: white !important;
+}
+
     :root {
         --main-width: 100%;
     }
