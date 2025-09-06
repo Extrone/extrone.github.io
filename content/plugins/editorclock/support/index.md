@@ -16,5 +16,6 @@ cover:
 ---
 
 <div class="buttons" style="display:flex; justify-content:left; font-size:medium; max-width:none; gap:var(--gap); margin-top:var(--gap);">
-{{< custom-button classes="button" href="mailto:anjana4760@gmail.com?subject=Support%20Request%20for%Editor%20Clock%20Plugin" icon="mail" >}}Send Support Request{{< /custom-button >}}
+{{< discord-invite-button >}}
 </div>
+
