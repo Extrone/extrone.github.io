@@ -240,6 +240,8 @@ pre:hover .copy-code {
     color: white !important;
 }
 
+
+@media only screen and (max-width: 915px) {
     :root {
         --main-width: 100%;
     }
