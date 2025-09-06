@@ -2,6 +2,7 @@
 title: "Getting Started"
 summary: Everything you need to know to start using the plugin.
 url: "/plugins/editorclocklite/documentation/gettingstarted"
+draft: true
 weight: 100
 ShowBreadCrumbs: true
 ShowReadingTime: false

@@ -41,9 +41,6 @@ Customize Clock Display Format in Editor Clock Settings
 ![*Editor Clock*](Clock2.gif) `d MM YYY h mm s a`
 ![*Editor Clock*](Clock1.gif) `d MMMM YYY h mm s a`
 
-### Editor Clock Lite
-if you only want the Clock and not the other features, check out the much cheaper [Editor Clock Lite Plugin](/plugins/editorclocklite/) instead.
-
 ## Timers
 Create and manage multiple timers right in the editor.
 ![*Editor Clock Timers*](Timers.gif)

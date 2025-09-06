@@ -2,6 +2,7 @@
 title: "Support"
 summary: Submit any support requests you have about Editor Clock Lite plugin here.
 url: "/plugins/editorclocklite/support"
+draft: true
 Weight: 30
 ShowBreadCrumbs: true
 ShowReadingTime: false

@@ -2,6 +2,7 @@
 title: "Editor Clock Lite"
 summary: Adds a clock widget to the Unreal Engine Status Bar.
 url: "/plugins/editorclocklite/"
+draft: true
 Weight: 0
 ShowBreadCrumbs: true
 ShowReadingTime: false
@@ -17,6 +18,85 @@ cover:
     relative: false
 ---
 
-<div class="buttons" style="display:flex; justify-content:left; font-size:medium; max-width:none; gap:var(--gap); margin-top:var(--gap);">
+<div class="buttons" style="display:flex; flex-direction: column; justify-content:left; font-size:medium; max-width:none; gap:var(--gap); margin-top:var(--gap);">
     {{< custom-button classes="button" href="" icon="shopping_cart">}}Coming Soon{{< /custom-button >}}
+    {{< custom-button classes="button custom-button collapsible" icon="mail">}}Subscribe to Updates/Sales.{{< /custom-button >}}
+
+<div class="contact-form subscription collapsible-content">
+    
+    <form name="gform" id="gform" class="subscirbe-form"
+        action="https://docs.google.com/forms/d/e/1FAIpQLSfwgqzLiMv6AwozNHDFBIbnvCCHudhS1XcIIffKVNbK5V-IsA/formResponse"
+        target="hidden_iframe" onsubmit="submitted=true;">
+        <div class="contact-field">
+            <label class="required" for="email">E-Mail:</label>
+            <input type="email" id="entry.116422623" name="entry.116422623" placeholder="Your Email" required>
+        </div>
+        <div class="contact-field">
+            <label class="sale" for="sale">Sale:</label>
+            <div class="filler"></div>
+            <input class="checkbox" type="checkbox" checked="checked" id="entry.180534384" name="entry.180534384" value="Sale">
+        </div>
+        <div class="contact-field">
+            <label class="update" for="update">Update:</label>
+            <div class="filler"></div>
+            <input class="checkbox" type="checkbox" checked="checked" id="entry.180534384" name="entry.180534384" value="Update">
+        </div>
+        <div class="contact-field hidden">
+            <label class="status" for="status">Status:</label>
+            <input class="checkbox" type="checkbox" checked="checked" id="entry.501139247" name="entry.501139247" value="Subscribed">
+        </div>
+        <div class="contact-field">
+            <input class="submit-button button" type="submit" value="Subscribe">
+        </div>
+    </form>
+
+    <div class="form-submit-confirmation modal" class="modal" id="form-submit-confirmation" style="visibility: hidden;">
+        <div class="modal-window">
+            <div class="modal-title-bar">
+                <div class="modal-title">
+                    <h3>Message Sent!</h3>
+                </div>
+                <button class="modal-close-button button"> X </button>
+            </div>
+            <div class="modal-content" id="modal-content">
+                <p>You're now subscribed to Sales and Update Notification for Editor Clock Plugin.</p>
+            </div>
+        </div>
+    </div>
+
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {
+        var modal = document.getElementById('form-submit-confirmation');
+        var button = document.getElementsByClassName('modal-close-button')[0];
+        modal.style.display = 'flex';
+        
+        button.onclick = function() {
+        modal.style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+            }
+        } 
+        document.getElementById('gform').reset(); document.getElementById('form-submit-confirmation').style.visibility='visible';
+         }"></iframe>
 </div>
+</div>
+
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+} 
+</script>
