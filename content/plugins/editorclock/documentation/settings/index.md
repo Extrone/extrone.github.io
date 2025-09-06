@@ -11,7 +11,7 @@ ShowToc: true
 Labels: [""]
 Projects: ["Editor Clock"]
 Engines: ["Unreal Engine"]
-unrealengineversions: ["5.4", "5.5"]
+unrealengineversions: ["5.4", "5.5", "5.6"]
 author: " "
 cover:
     image: "Editor_Clock_Settings_Thumbnail.png"

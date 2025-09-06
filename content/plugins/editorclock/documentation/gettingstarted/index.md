@@ -10,7 +10,7 @@ ShowToc: true
 Labels: [""]
 Projects: ["Editor Clock"]
 Engines: ["Unreal Engine"]
-unrealengineversions: ["5.4", "5.5"]
+unrealengineversions: ["5.4", "5.5", "5.6"]
 author: " "
 cover:
     image: "Editor_Clock_Thumbnail.png"
@@ -31,8 +31,13 @@ cover:
 ## Clock
 By default the plugin adds a Clock Widget to the Editor Status Bar that display your Current Local Time.
 ![*Editor Clock*](Clock.gif)
+
+### Time Zone
+Set a custom Time Zone instead of your Local Time Zone
+![*Editor Clock Custom Time Zone Feature*](Clock_Feature_TimeZone.webm)
+
 ### Clock Display Format
-Customize Clock Display Format in Editor Clock Settings <br>
+Customize Clock Display Format in Editor Clock Settings
 ![*Editor Clock*](Clock2.gif) `d MM YYY h mm s a`
 ![*Editor Clock*](Clock1.gif) `d MMMM YYY h mm s a`
 
