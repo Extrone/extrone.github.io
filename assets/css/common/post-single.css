@@ -403,6 +403,25 @@ td {
     flex-direction: row;
 }
 
+.post-image {
+    display: block;
+
+    margin: calc(var(--gap)*0.8) !important;
+    margin-left: 0 !important;
+    padding: 8px;
+    border-radius: calc(var(--radius)/2) !important;
+    width: fit-content;
+    box-shadow: 3px 5px 10px var(--shadow-color) !important;
+    background-color: var(--image-background-color) !important;
+    transition: var(--transition-duration);
+}
+
+.post-image:hover {
+    transform: translate(0, -6px);
+    box-shadow: 10px 10px 20px var(--shadow-color) !important;
+    transition: var(--transition-duration);
+}
+
 .toc {
     flex: 1 0 auto;
     order: 0;

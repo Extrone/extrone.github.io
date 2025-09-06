@@ -30,37 +30,36 @@ cover:
 # Features
 ## Clock
 By default the plugin adds a Clock Widget to the Editor Status Bar that display your Current Local Time.
-![*Editor Clock*](Clock.gif)
+{{< video label="*Editor Clock*" webm="EditorClockTime.webm" >}}
 
 ### Time Zone
 Set a custom Time Zone instead of your Local Time Zone
-![*Editor Clock Custom Time Zone Feature*](Clock_Feature_TimeZone.webm)
+{{< video label="*Editor Clock Custom Time Zone Feature*" webm="EditorClockTimeZone.webm" >}}
 
 ### Clock Display Format
 Customize Clock Display Format in Editor Clock Settings
-![*Editor Clock*](Clock2.gif) `d MM YYY h mm s a`
-![*Editor Clock*](Clock1.gif) `d MMMM YYY h mm s a`
-
+{{< video label="*Editor Clock*" webm="EditorClockFormat1.webm" >}} `d MM YYY h mm s a`
+{{< video label="*Editor Clock*" webm="EditorClockFormat2.webm" >}} `d MMMM YYY h mm s a`
 ## Timers
 Create and manage multiple timers right in the editor.
-![*Editor Clock Timers*](Timers.gif)
+{{< video label="*Editor Clock Timers*" webm="EditorClockTimers.webm" >}}
 
 ### Create new Timer
 Creating a new Timer is as simple as setting the Duration, Name (optional) and clicking the + Button
-![*How to Create new Timer*](CreateTimer.gif)
+{{< video label="*How to Create new Timer*" webm="EditorClockAddTimer.webm" >}}
 
 ### Timer Notification
 Get a notification when Timer Finishes.
-![*Timer Complete Notification*](TimerCompleteNotification.gif)
+{{< video label="*Timer Complete Notification*" webm="EditorClockTimerNotification.webm" >}}
 
 ## Stopwatches
 Create and manage multiple stopwatches right in the editor
-![*Editor Clock Stopwatches*](Stopwatches.gif)
+{{< video label="*Editor Clock Stopwatches*" webm="EditorClockStopwatches.webm" >}}
 
 ### Create new Stopwatch
 Creating a new Stopwatch is as simple as setting the Name (optional) and clicking the + Button
-![*How to Create new Stopwatch*](CreateStopwatch.gif)
+{{< video label="*How to Create new Stopwatch*" webm="EditorClockAddStopwatch.webm" >}}
 
 ## Pinning
 You can Pin Timers or Stopwatches to the Status Bar instead of the Clock. Unpin to get the Clock back.
-![*Pin Timer to Status Bar*](TimerPinning.gif)
+{{< video label="*Pin Clock to Status Bar*" webm="EditorClockPinning.webm" >}}
