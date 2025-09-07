@@ -12,7 +12,7 @@
 {{- end}}
 {{ $a := $.Scratch.Get "theIcon"}}
 {{ $IconPath:= printf "%s" ".svg" | printf "%s%s" $a | printf "%s%s" "../../icons/"| printf "%s"}}
-<a type="button" class="custom-button {{$.Scratch.Get `theClasses`}}" rel="" target="_blank">
+<a type="button" class="custom-button {{$.Scratch.Get `theClasses`}}" href="{{$.Scratch.Get `theHref` | relURL }}" rel="noopener noreferrer" target="_blank">
   <span>
     <span class="icon">
       <img src="{{- $IconPath }}" alt="">
