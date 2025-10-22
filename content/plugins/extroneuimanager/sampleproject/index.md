@@ -17,9 +17,8 @@ cover:
     alt: "Extrone UI Manager Plugin support"
     relative: false
 ---
-
-<div class="buttons" style="display:flex; justify-content:left; font-size:medium; max-width:none; gap:var(--gap); margin-top:var(--gap);">
-{{< custom-button classes="button" href="https://drive.google.com/drive/folders/1Jaw_iwY0F5nY0qAwFnFBEqng0wsdcz23?usp=sharing" icon="download">}}Sample Projects{{< /custom-button >}}
+<div class="buttons" style="gap: var(--gap); margin-top: var(--gap);">
+    {{< custom-button-external classes="button" href="https://drive.google.com/drive/folders/1Jaw_iwY0F5nY0qAwFnFBEqng0wsdcz23" icon="mail">}}Sample Projects{{< /custom-button-external >}}
 </div>
 
 ## Accessing the Sample Project
