@@ -1,5 +1,6 @@
 ---
 title: "Settings"
+draft: true
 summary: Editor Clock Settings can be changed in Editor Preferences -> Editor Clock
 url: "/plugins/editorclock/documentation/settings"
 draft: true

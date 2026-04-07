@@ -1,5 +1,6 @@
 ---
 title: "Support"
+draft: true
 summary: Submit any support requests you have about Editor Clock plugin here.
 url: "/plugins/editorclock/support"
 Weight: 30

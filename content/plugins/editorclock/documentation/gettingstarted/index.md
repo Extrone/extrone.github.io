@@ -1,5 +1,6 @@
 ---
 title: "Getting Started"
+draft: true
 summary: Everything you need to know to start using the plugin.
 url: "/plugins/editorclock/documentation/gettingstarted"
 weight: 100
