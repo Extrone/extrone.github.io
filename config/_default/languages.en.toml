@@ -1,0 +1,30 @@
+disabled = false
+locale = "en"
+label = "English"
+weight = 1
+title = "Extrone"
+
+[params]
+  displayName = "EN"
+  isoCode = "en"
+  rtl = false
+  dateFormat = "2 January 2006"
+  logo = "img/headericon.png"
+  secondaryLogo = "img/Profile_400x400.png"
+  description = "My awesome website"
+  copyright = "2026 Arjun Subhash"
+
+[params.author]
+  name = "Extrone"
+  email = "anjana4760@gmail.com"
+  image = "img/Profile_400x400.jpg"
+  imageQuality = 96
+  headline = "Making Games and Plugins in Unreal Engine"
+  bio = "A little bit about you"
+  links = [
+    { email = "mailto:anjana4760@gmail.com.com" },
+    { discord = "https://discord.gg/invitecode" },
+    { instagram = "https://instagram.com/username" },
+    { twitter = "https://twitter.com/username" },
+    { youtube = "https://youtube.com/username" },
+  ]
