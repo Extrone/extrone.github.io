@@ -3,7 +3,6 @@ title: "Getting Started"
 summary: Everything you need to know to start using the plugin.
 url: "/plugins/extroneuimanager/documentation/gettingstarted"
 weight: 100
-ShowBreadCrumbs: true
 Projects: ["Extrone UI Manager"]
 Engines: ["Unreal Engine"]
 unrealengineversions: ["5.4", "5.5", "5.6"]

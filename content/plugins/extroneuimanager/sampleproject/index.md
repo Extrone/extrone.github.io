@@ -1,8 +1,10 @@
 ---
 title: "Sample Project"
-description: "Use the sample project to better understand how to use the plugin."
-cascade:
-    showReadingTime: true
+summary: "Use the sample project to better understand how to use the plugin."
+showReadingTime: false
+showWordCount: false
+tags: ["Project"]
+engines: ["Unreal Engine"]
 unrealengineversions: ["5.7", "5.6"]
 ---
 <br>

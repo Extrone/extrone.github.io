@@ -5,11 +5,11 @@
 # Refer to the theme docs for more details about each of these parameters.
 # https://blowfish.page/docs/configuration/#theme-parameters
 
-colorScheme = "terminal"
+colorScheme = "extrone"
 defaultAppearance = "dark" # valid options: light or dark
-autoSwitchAppearance = true
+autoSwitchAppearance = false
 
-enableA11y = true
+enableA11y = false
 enableSearch = true
 enableCodeCopy = true
 enableStructuredBreadcrumbs = false
@@ -23,9 +23,9 @@ mainSections = ["posts"]
 disableImageOptimization = false
 disableImageOptimizationMD = false
 disableTextInHeader = false
-backgroundImageWidth = 1200
+backgroundImageWidth = 1920
 
-defaultBackgroundImage = "img/Beach.png" # used as default for background images
+defaultBackgroundImage = "img/background.jpg" # used as default for background images
 defaultFeaturedImage = "img/Profile_400x400.jpg" # used as default for featured images in all articles
 defaultSocialImage = "android-chrome-512x512.png" # used as default for social media sharing (Open Graph and Twitter)
 hotlinkFeatureImage = false
@@ -33,9 +33,9 @@ hotlinkFeatureImage = false
 # thumbnailAspectRatio = "1.5"
 # imagePosition = "50% 50%"
 
-highlightCurrentMenuArea = true
+highlightCurrentMenuArea = false
 smartTOC = true
-smartTOCHideUnfocusedChildren = true
+# smartTOCHideUnfocusedChildren = false
 
 fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384", "sha256"
 
@@ -46,23 +46,23 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 # metaDescriptionOrder = ["summary", "description", "site"] # Controls the fallback order for the HTML meta description. Valid values are "summary", "description", and "site".
 
 [header]
-  layout = "fixed-gradient" # valid options: basic, fixed, fixed-fill, fixed-gradient, fixed-fill-blur
+  layout = "fixed" # valid options: basic, fixed, fixed-fill, fixed-gradient, fixed-fill-blur
 
 [footer]
   showMenu = true
-  showCopyright = true
-  showThemeAttribution = true
-  showAppearanceSwitcher = true
+  showCopyright = false
+  showThemeAttribution = false
+  showAppearanceSwitcher = false
   showScrollToTop = true
 
 [homepage]
   layout = "background" # valid options: page, profile, hero, card, background, custom
-  homepageImage = "img/Beach.png" # used in: hero, and card
+  homepageImage = "img/background.jpg" # used in: hero, and card
   showRecent = true
-  showRecentItems = 5
-  showMoreLink = false
+  showRecentItems = 3
+  showMoreLink = true
   showMoreLinkDest = "/posts/"
-  cardView = true
+  cardView = false
   cardViewScreenWidth = true
   layoutBackgroundBlur = true # only used when layout equals background
   disableHeroImageFilter = false # only used when layout equals hero
@@ -74,12 +74,12 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showDateOnlyInArticle = true
   showDateUpdated = true
   showAuthor = true
-  # showAuthorBottom = false
-  showHero = false
-  # heroStyle = "basic" # valid options: basic, big, background, thumbAndBackground
+  showAuthorBottom = true
+  showHero = true
+  heroStyle = "Background" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
-  layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
-  showBreadcrumbs = false
+  layoutBackgroundHeaderSpace = false # only used when heroStyle equals background
+  showBreadcrumbs = true
   showDraftLabel = true
   showEdit = false
   # editURL = "https://github.com/username/repo/"
@@ -87,14 +87,14 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   seriesOpened = false
   showHeadingAnchors = true
   showPagination = true
-  invertPagination = false
+  invertPagination = true
   showReadingTime = true
   showTableOfContents = true
-  showRelatedContent = true
+  showRelatedContent = false
   relatedContentLimit = 3
-  showTaxonomies = true # Enable the display of taxonomies for the related article.
-  showCategories = true # These will show if showTaxonomies is true.
-  showTags = true # These will show if showTaxonomies is true.
+  showTaxonomies = false # Enable the display of taxonomies for the related article.
+  showCategories = false # These will show if showTaxonomies is true.
+  showTags = false # These will show if showTaxonomies is true.
   showCategoriesInSecondaryColor = true # This will change the color of category badges, so the user can better distinguish between the two. Only if showTaxonomies is true.
   showAuthorsBadges = true
   showWordCount = true
@@ -103,8 +103,8 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   # externalLinkForceNewTab = false # disable to allow external links in the same tab (defaults to true)
 
 [list]
-  showHero = false
-  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  showHero = true
+  heroStyle = "Background" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
   layoutBackgroundHeaderSpace = false # only used when heroStyle equals background
   showBreadcrumbs = true
@@ -112,10 +112,10 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showViews = false
   showLikes = false
   showTableOfContents = false
-  showCards = false
+  showCards = true
   orderByWeight = true
   groupByYear = false
-  cardView = true
+  cardView = false
   cardViewScreenWidth = false
   constrainItemsWidth = true
 
@@ -132,10 +132,10 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showViews = false
   showLikes = false
   showTableOfContents = false
-  cardView = true
+  cardView = false
 
 [term]
-  showHero = false
+  showHero = true
   heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
   layoutBackgroundHeaderSpace = false # only used when heroStyle equals background
@@ -144,7 +144,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showLikes = false
   showTableOfContents = true
   groupByYear = false
-  cardView = true
+  cardView = false
   cardViewScreenWidth = false
 
 [firebase]

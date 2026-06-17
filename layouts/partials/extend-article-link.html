@@ -1,0 +1,30 @@
+<div class="extrone-taxonomies extrone-pills">
+    {{ if .Params.tags}} 
+        {{ range $index, $tags := .Params.tags }}
+            <a class="tag extrone-pill {{ replace . " " "-" }}" href="{{ "/tags/" | relURL }}{{ . | urlize }}">
+                {{ partial "icon.html" "tag" }} {{ . }}
+            </a>
+        {{ end }}
+    {{ end }}
+    {{ if .Params.engines}} 
+        {{ range $index, $engines := .Params.engines }}
+            <a class="engine extrone-pill {{ replace . " " "-" }}" href="{{ "/engines/" | relURL }}{{ . | urlize }}">
+                {{ partial "icon.html" "EmptyLogo_White" }} {{ . }}
+            </a>
+        {{ end }}
+    {{ end }}
+    {{ if .Params.unrealengineversions}} 
+        {{ range $index, $versions := .Params.unrealengineversions }}
+            <a class="ueversion extrone-pill {{ replace . " " "-" }}" href="{{ "/unrealengineversions/" | relURL }}{{ . | urlize }}">
+                {{ partial "icon.html" "UE-Icon-2023-White" }} {{ . }}
+            </a>
+        {{ end }}
+    {{ end }}
+    {{ if .Params.programminglanguages}} 
+        {{ range $index, $plangs := .Params.programminglanguages }}
+            <a class="plang extrone-pill {{ replace . " " "-" }}" href="{{ "/programminglanguages/" | relURL }}{{ . | urlize }}">
+                {{ partial "icon.html" "EmptyLogo_White" }} {{ . }}
+            </a>
+        {{ end }}
+    {{ end }}
+</div>

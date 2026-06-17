@@ -20,11 +20,12 @@ title = "Extrone"
   image = "img/Profile_400x400.jpg"
   imageQuality = 96
   headline = "Making Games and Plugins in Unreal Engine"
-  bio = "A little bit about you"
+  bio = ""
   links = [
     { email = "mailto:anjana4760@gmail.com.com" },
-    { discord = "https://discord.gg/invitecode" },
-    { instagram = "https://instagram.com/username" },
-    { twitter = "https://twitter.com/username" },
-    { youtube = "https://youtube.com/username" },
+    { discord = "https://discord.gg/w4xrhDSv8J" },
+    { instagram = "https://instagram.com/arjun_subhash_" },
+    { twitter = "https://twitter.com/extr0ne" },
+    { youtube = "https://youtube.com/@Extrone" },
+    { link = "https://extrone.bio.link"}
   ]
