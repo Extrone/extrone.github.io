@@ -1,30 +1,45 @@
-<div class="extrone-taxonomies extrone-pills">
+<div class="extrone-pills">
     {{ if .Params.tags}} 
         {{ range $index, $tags := .Params.tags }}
             <a class="tag extrone-pill {{ replace . " " "-" }}" href="{{ "/tags/" | relURL }}{{ . | urlize }}">
-                {{ partial "icon.html" "tag" }} {{ . }}
+                {{ partial "icon.html" "tag" }} 
+                {{ . }}
             </a>
         {{ end }}
     {{ end }}
     {{ if .Params.engines}} 
         {{ range $index, $engines := .Params.engines }}
             <a class="engine extrone-pill {{ replace . " " "-" }}" href="{{ "/engines/" | relURL }}{{ . | urlize }}">
-                {{ partial "icon.html" "EmptyLogo_White" }} {{ . }}
+                {{ partial "icon.html" "EmptyLogo_White" }} 
+                {{ . }}
             </a>
         {{ end }}
     {{ end }}
     {{ if .Params.unrealengineversions}} 
         {{ range $index, $versions := .Params.unrealengineversions }}
             <a class="ueversion extrone-pill {{ replace . " " "-" }}" href="{{ "/unrealengineversions/" | relURL }}{{ . | urlize }}">
-                {{ partial "icon.html" "UE-Icon-2023-White" }} {{ . }}
+                {{ partial "icon.html" "UE-Icon-2023-White" }} 
+                {{ . }}
             </a>
         {{ end }}
     {{ end }}
     {{ if .Params.programminglanguages}} 
         {{ range $index, $plangs := .Params.programminglanguages }}
             <a class="plang extrone-pill {{ replace . " " "-" }}" href="{{ "/programminglanguages/" | relURL }}{{ . | urlize }}">
-                {{ partial "icon.html" "EmptyLogo_White" }} {{ . }}
+                {{ partial "icon.html" "code" }} 
+                {{ . }}
             </a>
         {{ end }}
     {{ end }}
+</div>
+<div class="extrone-params extrone-pills">
+    <div class="extrone-pill">
+        {{ .Params.date | time.Format "02 January 2006" }}
+    </div>
+    <div class="extrone-pill">
+        {{- i18n "article.word_count" .WordCount | markdownify -}}
+    </div>
+    <div class="extrone-pill">
+        {{- i18n "article.reading_time" .ReadingTime | markdownify | emojify -}}
+    </div>
 </div>
