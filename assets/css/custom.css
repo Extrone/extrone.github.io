@@ -1,3 +1,7 @@
+* {
+    scrollbar-color: rgba(var(--color-neutral-600)) rgba(var(--color-neutral-700), 50%);
+}
+
 #main-content {
     margin-bottom: 64px;
 }
@@ -15,60 +19,86 @@
     backdrop-filter: blur(32px);
 }
 
-.extrone-taxonomies {
-  margin: 12px auto;
-}
-
 .extrone-pills {
-  font-size: 14px;
-  font-weight: 500;
-  display: flex;
-  gap: 8px;
-  margin: 8px auto;
-  flex-wrap: wrap;
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    gap: 2px;
+    margin: 4px auto;
+    flex-wrap: wrap;
 }
 
 .extrone-pill {
-  display: flex;
-  gap: 4px;
-  background-color: rgba(var(--color-neutral-500));
-  color: rgba(var(--color-primary-200));
-  padding: 2px 8px;
-  border-radius: 8px;
-  word-break: keep-all;
-  text-wrap-mode: nowrap;
+    display: flex;
+    width: fit-content !important;
+    gap: 4px;
+    background-color: rgba(var(--color-neutral-500));
+    color: rgba(var(--color-primary-200));
+    padding: 2px 6px;
+    border-radius: 2px;
+    word-break: keep-all;
+    text-wrap-mode: nowrap;
 }
 
-.extrone-pill > *{
-  margin: auto;
+.extrone-params {
+    margin-top: 8px;
+}
+
+.extrone-params .extrone-pill {
+    background-color: rgba(var(--color-neutral-700), 50%);
+}
+
+.extrone-pill>* {
+    margin: auto;
 }
 
 .tag {
-  background-color: rgba(0, 130, 100, 100%);
+    background-color: rgba(0, 130, 100, 100%);
 }
 
 .engine {
-  background-color: rgba(100, 100, 100, 100%);
+    background-color: rgba(100, 100, 100, 100%);
 }
 
 .Unreal-Engine {
-  background-color: rgba(100, 0, 180, 100%);
+    background-color: rgba(100, 0, 180, 100%);
 }
 
 .ueversion {
-  background-color: rgba(100, 50, 150, 100%);
+    background-color: rgba(100, 50, 150, 100%);
 }
 
 .plang {
-  background-color: rgba(0, 100, 150, 100%);
+    background-color: rgba(0, 100, 150, 100%);
 }
 
 .contact-form {
+    top: 0;
     width: 100%;
     position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.extrone-profile figure {
+    margin-bottom: 12px;
+    border-radius: 128px;
+    transition: .2s;
+}
+
+.extrone-profile figure img {
+    width: 144px;
+    border-radius: 128px;
+    transition: .2s;
+}
+
+.extrone-profile h1 {
+    color: rgba(var(--color-neutral-200));
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
 }
 
 .contact-form form {
@@ -79,7 +109,7 @@
 
 .contact-field {
     display: flex;
-    width: 80% !important;
+    width: 60% !important;
     flex-direction: column;
     margin: 15px auto;
     font-weight: 500;
@@ -162,8 +192,7 @@
     -webkit-backdrop-filter: blur(10px);
 }
 
-.modal-window
-{
+.modal-window {
     display: flex;
     flex-direction: column;
     max-width: 524px;
@@ -207,11 +236,12 @@
     padding: 0;
     padding-left: 40px;
 }
+
 .modal-content p {
-  font-size: 18px;
-  color: rgba(var(--color-neutral-300));
-  margin: auto 32px;
-  text-align: center;
+    font-size: 18px;
+    color: rgba(var(--color-neutral-300));
+    margin: auto 32px;
+    text-align: center;
 }
 
 .modal-close-button {
@@ -226,24 +256,49 @@
 }
 
 .modal-close-button:hover {
-  transform: translate(0, -12px);
-  transition-duration: .2s
+    transform: translate(0, -12px);
+    transition-duration: .2s
 }
 
-.article-link--simple, .article-link--related, details {
+.article-link--simple,
+details {
     border: dashed 1px rgba(var(--color-neutral-600));
     backdrop-filter: blur(24px);
 }
 
+.article-link--simple {
+    margin-bottom: 20px;
+    transition: .2s;
+}
+
+.article-link--simple:hover {
+    background-color: rgba(var(--color-neutral-700), 10%);
+    box-shadow: 8px 8px 24px rgba(0, 0, 0, 50%);
+    transition: .2s;
+}
+
+.article-link--simple> :nth-child(1) {
+    transition: .2s;
+}
+
+.article-link--simple:hover> :nth-child(1) {
+    transform: translate(-8px, 0) scale(1.05);
+    transition: .2s;
+}
+
+.article-link__summary {
+    line-height: 1.3em;
+}
+
 /* Timeline styling */
-.article-content > ol > li > div > .block {
+.article-content>ol>li>div>.block {
     background-color: rgba(255, 255, 255, 2%);
     border: dashed 1px rgba(var(--color-neutral-600));
     backdrop-filter: blur(4px);
 }
 
 /* Disable dotted border on left of TOC */
-#TOCView > div {
+#TOCView>div {
     border: none;
     padding: 0 0 0 24px;
 }
@@ -264,4 +319,10 @@ table {
 section div:nth-child(2) {
     width: 100%;
     max-width: none !important;
+}
+
+@media only screen and (max-width: 852px) {
+    .contact-field {
+        width: 90% !important;
+    }
 }

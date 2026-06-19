@@ -1,6 +1,6 @@
 ---
-title: "Create an Auto Save System in Unreal Engine"
-summary: "Learn how to quickly create an Auto Save System in Unreal Engine 4 or 5"
+title: "Auto Save System in UE5"
+summary: "Learn how to quickly create an Auto Save System in Unreal Engine"
 date: 2023-07-07T17:50:00+05:30
 draft: false
 cover:
@@ -12,7 +12,6 @@ engines:
    - Unreal Engine
 
 unrealengineversions:
-   - 4.27
    - 5.4
 
 programminglanguages:
