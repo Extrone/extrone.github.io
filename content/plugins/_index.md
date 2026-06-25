@@ -8,5 +8,5 @@ constrainItemsWidth: true
 Unreal Engine Plugins
 <br> <br>
 {{< button href="https://www.fab.com/sellers/Extrone" target="_blank" >}}
-Get Plugins on Fab {{< icon "link" >}}
+{{< icon "Fab" >}} Fab {{< icon "External-link" >}}
 {{< /button >}}

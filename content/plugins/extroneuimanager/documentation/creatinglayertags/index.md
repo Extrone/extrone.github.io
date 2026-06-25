@@ -3,11 +3,21 @@ title: "Creating Layer Gameplay Tags"
 summary: Need to add more Layer Gameplay Tags? Here is how.
 url: "/plugins/extroneuimanager/documentation/createlayergameplaytags"
 weight: 300
-tags: ["Gameplay Tags"]
-Projects: ["Extrone UI Manager"]
-Engines: ["Unreal Engine"]
-unrealengineversions: ["5.4", "5.5", "5.6"]
-programminglanguages: ["C++", "Blueprint"]
+tags:
+    - Gameplay Tags
+Projects:
+    - Extrone UI Manager
+Engines:
+    - Unreal Engine
+unrealengineversions:
+    - 5.4
+    - 5.5
+    - 5.6
+    - 5.7
+    - 5.8
+programminglanguages:
+    - C++
+    - Blueprint
 ---
 ## UI Layer Gameplay Tags
 In Extrone UI Manager, Gameplay Tags are used to keep track of Layers.

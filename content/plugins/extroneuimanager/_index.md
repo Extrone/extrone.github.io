@@ -2,15 +2,24 @@
 title: "Extrone UI Manager"
 description: "Layer based widget manager for Unreal Engine."
 summary: "Simple Layer based UI Management"
-unrealengineversions: ["5.5", "5.6", "5.7"]
-programminglanguages: ["Blueprint"]
-engines: ["Unreal Engine"]
-tags: ["UI", "Easy"]
+unrealengineversions:
+    - 5.4
+    - 5.5
+    - 5.6
+    - 5.7
+    - 5.8
+programminglanguages:
+    - Blueprint
+engines:
+    - Unreal Engine
+tags:
+    - UI
+    - Easy
 showWordCount: false
 showReadingTime: false
 ---
 {{< button href="https://www.fab.com/listings/e4b733a3-3bc8-45b5-9800-8fec1578c38f" target="_blank" >}}
-Get Plugin {{< icon "link" >}}
+{{< icon "Fab" >}} Get Plugin {{< icon "External-link" >}}
 {{< /button >}} 
 {{< accordion mode="open" separated=true >}}
 {{< accordionItem title="Features" open=true >}}

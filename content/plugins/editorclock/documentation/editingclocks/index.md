@@ -2,6 +2,7 @@
 title: "Editing Clocks"
 summary: You can easily edit Timers and Stopwatches in the editor. Let's learn how.
 url: "/plugins/editorclock/documentation/editingclocks"
+draft: true
 weight: 150
 ShowBreadCrumbs: true
 ShowReadingTime: false

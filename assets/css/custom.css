@@ -19,8 +19,18 @@
     backdrop-filter: blur(32px);
 }
 
+.extend-64 {
+    height: 64px;
+}
+
+a[role=button] .icon svg,
+.external-game-link .icon svg {
+    width: 18px;
+    height: 18px;
+}
+
 .extrone-pills {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
     display: flex;
     gap: 2px;
@@ -34,7 +44,7 @@
     gap: 4px;
     background-color: rgba(var(--color-neutral-500));
     color: rgba(var(--color-primary-200));
-    padding: 2px 6px;
+    padding: 1px 6px;
     border-radius: 2px;
     word-break: keep-all;
     text-wrap-mode: nowrap;
@@ -54,6 +64,10 @@
 
 .tag {
     background-color: rgba(0, 130, 100, 100%);
+}
+
+.project {
+    background-color: rgba(200, 20, 100, 100%);
 }
 
 .engine {
@@ -290,6 +304,136 @@ details {
     line-height: 1.3em;
 }
 
+div:has(> .extrone-game-list) {
+    max-width: none;
+}
+
+.games-heading {
+    margin: 24px 0;
+}
+
+.extrone-game-list {
+    width: fit-content !important;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.game-summary {
+    border: none;
+}
+
+.extrone-game-thumbnail {
+    background-color: rgba(var(--color-neutral-700), 20%);
+    clip-path: inset(4px 4px 4px 4px round 8px 8px 8px 8px);
+    display: flex;
+    transition: .2s;
+}
+
+.extrone-game-thumbnail h3 {
+    z-index: 10;
+    position: absolute;
+    bottom: 80px;
+    left: 80px;
+    margin: auto;
+    color: rgba(var(--color-neutral-200));
+    transition: .2s;
+}
+
+.extrone-game-thumbnail img {
+    z-index: 20;
+    min-height: 150px;
+    width: 260px;
+    height: auto;
+    overflow: hidden;
+    transition: .2s;
+    pointer-events: none;
+    padding: 0;
+    margin: 0;
+}
+
+.article-link--game {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: fit-content;
+    border: dashed 1px rgba(var(--color-neutral-600));
+    background-color: rgba(var(--color-neutral-700), 10%);
+    backdrop-filter: blur(16px);
+    border-radius: 12px;
+    transition: .2s;
+}
+
+.game-buy-button {
+    width: fit-content !important;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    background-color: rgba(var(--color-primary-400), 80%);
+    color: rgba(var(--color-secondary-900));
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 8px;
+    margin: auto 2px 2px 2px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.game-buy-button:hover {
+    background-color: rgba(var(--color-primary-600));
+    transition: .2s;
+}
+
+.game-buy-button span {
+    margin: auto 0;
+}
+
+.article-link--game .extrone-pills {
+    padding: 12px;
+    padding-top: 0;
+    margin: 0;
+}
+
+.article-link--game-details {
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    padding-top: 0;
+    overflow: hidden;
+}
+
+.article-link--game-details a {
+    display: flex;
+    flex-grow: 1;
+    margin: auto 0;
+}
+
+.article-link--game-details a h4 {
+    margin: auto 0;
+    margin-left: 8px;
+}
+
+.article-link--game-details a span {
+    margin: auto 0;
+    margin-left: 2px;
+}
+
+.article-link--game-details p {
+    margin-bottom: 0;
+}
+
+.article-link--game:hover {
+    background-color: rgba(var(--color-neutral-700), 30%);
+    transition: .2s;
+}
+
+.article-link--game:hover>a>.extrone-game-thumbnail img {
+    transform: scale(1.1);
+    transition: .2s;
+}
+
 /* Timeline styling */
 .article-content>ol>li>div>.block {
     background-color: rgba(255, 255, 255, 2%);
@@ -316,13 +460,14 @@ table {
     backdrop-filter: blur(24px);
 }
 
-section div:nth-child(2) {
-    width: 100%;
-    max-width: none !important;
-}
-
 @media only screen and (max-width: 852px) {
     .contact-field {
         width: 90% !important;
+    }
+}
+
+@media only screen and (max-width: 639px) {
+    .extrone-game-thumbnail img {
+        width: auto;
     }
 }

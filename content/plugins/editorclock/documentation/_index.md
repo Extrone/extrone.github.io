@@ -2,6 +2,7 @@
 title: "Documentation"
 summary: Editor Clock Plugin Documentation
 url: "/plugins/editorclock/documentation"
+draft: true
 Weight: 10
 ShowBreadCrumbs: true
 ShowReadingTime: false

@@ -1,0 +1,126 @@
+{{ $game := .Get "id" }}
+{{ $gameid := printf "%s-link" $game }}
+{{ $thumbnailid := printf "%s-thumbnail" $game }}
+{{ $titleid := printf "%s-title" $game }}
+{{ $titlelinkid := printf "%s-titlelink" $game }}
+{{ $priceid := printf "%s-price" $game }}
+{{ $tagsid := printf "%s-tags" $game }}
+{{ $buybuttonid := printf "%s-buybutton" $game}}
+{{ $imgloadingid := printf "%s-imgloading" $game}}
+
+<div class="article-link--game">
+    <a id="{{ $gameid }}" class="" target="_blank">
+        <div class="extrone-game-thumbnail">
+            <h3 id="{{ $imgloadingid }}">Loading • • •</h3>
+            <img id="{{ $thumbnailid }}">
+        </div>
+    </a>
+    <div class="article-link--game-details">
+        <a id="{{ $titlelinkid }}" class="external-game-link" target="_blank">
+            <h4 id="{{ $titleid }}">Waiting for itch.io • • •</h4>
+            {{ partial "icon.html" "External-link"}}
+        </a>
+        <div id="{{ $buybuttonid }}" class="game-buy-button">
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    window.Itch = {};
+    Itch.getGameData = function (opts) {
+        var domain, url, xhr;
+        if (opts == null) {
+            opts = {};
+        }
+        domain = opts.domain || "itch.io";
+        if (!opts.user) {
+            throw new Error("Missing user");
+        }
+        if (!opts.game) {
+            throw new Error("Missing game");
+        }
+        url = "https://" + opts.user + "." + domain + "/" + opts.game + "/data.json";
+        if (opts.secret) {
+            url = url + "?secret=" + opts.secret;
+        }
+        xhr = new XMLHttpRequest();
+        xhr.open("GET", url);
+        xhr.addEventListener("readystatechange", (function (_this) {
+            return function (e) {
+                var game;
+                if (xhr.readyState !== 4) {
+                    return;
+                }
+                game = JSON.parse(xhr.responseText);
+                return typeof opts.onComplete === "function" ? opts.onComplete(game) : void 0;
+            };
+        })(this));
+        return xhr.send();
+    };
+
+    Itch.attachBuyButton = function (el, opts) {
+        var domain, height, left, top, width;
+        if (opts == null) {
+            opts = {};
+        }
+        domain = opts.domain || "itch.io";
+        width = opts.width || 680;
+        height = opts.height || 400;
+        top = (screen.height - height) / 2;
+        left = (screen.width - width) / 2;
+        if (!opts.user) {
+            throw new Error("Missing user");
+        }
+        if (!opts.game) {
+            throw new Error("Missing game");
+        }
+        return el.onclick = function () {
+            var w;
+            w = window.open("https://" + opts.user + "." + domain + "/" + opts.game + "/purchase?popup=1", "purchase", "scrollbars=1, resizable=no, width=" + width + ", height=" + height + ", top=" + top + ", left=" + left);
+            if (typeof w.focus === "function") {
+                w.focus();
+            }
+            return false;
+        };
+    };
+    Itch.getGameData({
+        user: 'extrone',
+        game: '{{ $game }}',
+        onComplete: function (data) {
+            console.log(data);
+            var game = document.getElementById("{{ $gameid }}");
+            var titlelink = document.getElementById("{{ $titlelinkid }}");
+            var image = document.getElementById("{{ $thumbnailid }}");
+            var title = document.getElementById("{{ $titleid }}");
+            var buybutton = document.getElementById("{{ $buybuttonid }}");
+            var imgloadingid = document.getElementById("{{ $imgloadingid }}");
+            // var tags = document.getElementById("{{ $tagsid }}");
+            game.href = data.links.self;
+            titlelink.href = data.links.self;
+            image.src = data.cover_image;
+            title.innerText = data.title;
+            buybutton.innerHTML = '{{ partial "icon.html" "itch-io" }}' + (data.price ? data.price : "Free");
+            imgloadingid.style.visibility = "hidden";
+            // if (data.tags) {
+            //     for (let i = 0; i < (data.tags.length > 3 ? 3 : data.tags.length); i++) {
+            //         let tag = data.tags[i];
+            //         tag = tag
+            //             .toLowerCase()
+            //             .split('-')
+            //             .map(function (word) {
+            //                 return word[0].toUpperCase() + word.substr(1);
+            //             })
+            //             .join(' ');
+            //         var pill = document.createElement("a");
+            //         pill.className = "extrone-pill {{ $game }}"
+            //         pill.innerHTML = '{{ partial "icon.html" "tag" }}' + tag;
+            //         tags.appendChild(pill);
+            //     }
+            // }
+        }
+    })
+    Itch.attachBuyButton(document.getElementById("{{ $buybuttonid }}"), {
+        user: "extrone",
+        game: "{{ $game }}"
+    });
+</script>

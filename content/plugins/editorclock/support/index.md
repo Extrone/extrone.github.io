@@ -2,6 +2,7 @@
 title: "Support"
 summary: Submit any support requests you have about Editor Clock plugin here.
 url: "/plugins/editorclock/support"
+draft: true
 Weight: 30
 ShowBreadCrumbs: true
 ShowReadingTime: false

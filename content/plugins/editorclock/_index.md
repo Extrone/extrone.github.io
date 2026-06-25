@@ -2,6 +2,7 @@
 title: "Editor Clock"
 summary: Adds a clock widget to the Unreal Engine Status Bar. Create Timers and Stopwatches to manage your time while working in editor.
 url: "/plugins/editorclock/"
+draft: true
 Weight: 0
 ShowBreadCrumbs: true
 ShowReadingTime: false

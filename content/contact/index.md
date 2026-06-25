@@ -53,6 +53,7 @@ layoutBackgroundHeaderSpace: false
         </div>
     </div>
 </form>
+<div class="extend-64"></div>
 <div class="form-submit-confirmation modal" class="modal" id="form-submit-confirmation" style="visibility: hidden;">
     <div class="modal-window">
         <div class="modal-title-bar">

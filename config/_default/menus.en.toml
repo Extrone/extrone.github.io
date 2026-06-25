@@ -11,14 +11,19 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
+  name = "Games"
+  pageRef = "games"
+  weight = 1
+
+[[main]]
   name = "Plugins"
   pageRef = "plugins"
   weight = 1
 
-[[main]]
-  name = "Posts"
-  pageRef = "posts"
-  weight = 2
+# [[main]]
+#   name = "Posts"
+#   pageRef = "posts"
+#   weight = 2
 
 [[main]]
   name = "About"

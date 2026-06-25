@@ -2,10 +2,18 @@
 title: "Function Reference"
 summary: Information on what every function in this plugin does.
 weight: 200
-programminglanguages: ["Blueprint"]
-Projects: ["Extrone UI Manager"]
-Engines: ["Unreal Engine"]
-unrealengineversions: ["5.4", "5.5", "5.6"]
+programminglanguages:
+    - Blueprint
+Projects:
+    - Extrone UI Manager
+Engines:
+    - Unreal Engine
+unrealengineversions:
+    - 5.4
+    - 5.5
+    - 5.6
+    - 5.7
+    - 5.8
 ---
 
 ## Initialize Extrone UI Manager
