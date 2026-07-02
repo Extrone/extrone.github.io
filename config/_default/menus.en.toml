@@ -16,7 +16,7 @@
   weight = 1
 
 [[main]]
-  name = "Plugins"
+  name = "UE Plugins"
   pageRef = "plugins"
   weight = 1
 

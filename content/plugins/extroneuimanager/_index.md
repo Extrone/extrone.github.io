@@ -15,8 +15,6 @@ engines:
 tags:
     - UI
     - Easy
-showWordCount: false
-showReadingTime: false
 ---
 {{< button href="https://www.fab.com/listings/e4b733a3-3bc8-45b5-9800-8fec1578c38f" target="_blank" >}}
 {{< icon "Fab" >}} Get Plugin {{< icon "External-link" >}}
