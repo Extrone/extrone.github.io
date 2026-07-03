@@ -344,7 +344,7 @@ div:has(> .extrone-game-list) {
 .extrone-game-thumbnail img {
     z-index: 20;
     min-height: 150px;
-    width: 260px;
+    width: 240px;
     height: auto;
     overflow: hidden;
     transition: .2s;
@@ -359,35 +359,81 @@ div:has(> .extrone-game-list) {
     height: 100%;
     width: fit-content;
     border: dashed 1px rgba(var(--color-neutral-600));
-    background-color: rgba(var(--color-neutral-700), 10%);
+    background-color: rgba(var(--color-neutral-700), 25%);
     backdrop-filter: blur(16px);
     border-radius: 12px;
     transition: .2s;
 }
 
 .game-buy-button {
-    width: fit-content !important;
+    width: fit-content;
     height: fit-content;
     display: flex;
     flex-direction: row;
-    gap: 8px;
-    background-color: rgba(var(--color-primary-400), 80%);
-    color: rgba(var(--color-secondary-900));
+    gap: 4px;
+    background-color: black;
     font-weight: 600;
     padding: 4px 12px;
     border-radius: 8px;
-    margin: auto 2px 2px 2px;
+    margin: 12px auto;
     cursor: pointer;
-    transition: .2s;
+    transition: all .2s,transform .2s cubic-bezier(.175,.885,.32,2.275);
 }
 
 .game-buy-button:hover {
-    background-color: rgba(var(--color-primary-600));
-    transition: .2s;
+    background-color: rgba(var(--color-neutral-700));
+    transform: scale(1.1);
+    transition: all .2s,transform .2s cubic-bezier(.175,.885,.32,2.275);
 }
 
 .game-buy-button span {
+    color: white;
     margin: auto 0;
+    margin-left: auto;
+}
+
+.game-buy-button p {
+    margin: auto 0;
+    transform: translate(0, -1px);
+}
+
+.game-price-og {
+    color: rgba(200, 200, 200, 100%);
+    font-weight: 500;
+    text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    text-decoration-inset: -1px;
+}
+
+.game-price {
+    color: white;
+    margin-right: auto !important;
+}
+
+.game-sale {
+    color: rgba(var(--color-primary-600));
+}
+
+.sale-tag {
+    font-size: 14px;
+    display: flex;
+    position: absolute;
+    right: 0;
+    gap: 4px;
+    font-weight: 600;
+    background-color: rgba(255, 200, 50, 100%);
+    color: black;
+    margin: 8px 8px;
+    padding: 4px 8px;
+    border-radius: 16px 6px 16px 16px;
+}
+
+.sale-tag span {
+    margin: auto 0;
+}
+
+.sale-tag p {
+    margin: 0 auto;
 }
 
 .article-link--game .extrone-pills {
@@ -397,17 +443,20 @@ div:has(> .extrone-game-list) {
 }
 
 .article-link--game-details {
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 2px;
     padding-top: 0;
     overflow: hidden;
+    margin: 0 auto;
 }
 
 .article-link--game-details a {
     display: flex;
     flex-grow: 1;
-    margin: auto 0;
+    margin: 0 auto;
+    margin-top: 12px;
 }
 
 .article-link--game-details a h4 {
@@ -469,5 +518,9 @@ table {
 @media only screen and (max-width: 639px) {
     .extrone-game-thumbnail img {
         width: auto;
+    }
+
+    .article-link--game {
+        margin: 0 auto;
     }
 }

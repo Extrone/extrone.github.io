@@ -3,10 +3,12 @@
 {{ $thumbnailid := printf "%s-thumbnail" $game }}
 {{ $titleid := printf "%s-title" $game }}
 {{ $titlelinkid := printf "%s-titlelink" $game }}
-{{ $priceid := printf "%s-price" $game }}
+{{ $originalpriceid := printf "%s-original-price" $game }}
+{{ $currentpriceid := printf "%s-current-price" $game }}
 {{ $tagsid := printf "%s-tags" $game }}
-{{ $buybuttonid := printf "%s-buybutton" $game}}
-{{ $imgloadingid := printf "%s-imgloading" $game}}
+{{ $buybuttonid := printf "%s-buybutton" $game }}
+{{ $imgloadingid := printf "%s-imgloading" $game }}
+{{ $saletagid := printf "%s-sale-tag" $game }}
 
 <div class="article-link--game">
     <a id="{{ $gameid }}" class="" target="_blank">
@@ -21,7 +23,14 @@
             {{ partial "icon.html" "External-link"}}
         </a>
         <div id="{{ $buybuttonid }}" class="game-buy-button">
+            {{ partial "icon.html" "itch-io" }}
+            <p class="game-price-og" style="visibility: collapse;" id="{{ $originalpriceid }}">$ • • •</p>
+            <p class="game-price" id="{{ $currentpriceid }}">$ • • •</p>
         </div>
+    </div>
+    <div class="sale-tag" id="{{ $saletagid }}" style="visibility: collapse;">
+        {{ partial "icon.html" "tag"}}
+        <p>0%</p>
     </div>
 </div>
 
@@ -87,36 +96,37 @@
         user: 'extrone',
         game: '{{ $game }}',
         onComplete: function (data) {
-            console.log(data);
             var game = document.getElementById("{{ $gameid }}");
             var titlelink = document.getElementById("{{ $titlelinkid }}");
             var image = document.getElementById("{{ $thumbnailid }}");
             var title = document.getElementById("{{ $titleid }}");
             var buybutton = document.getElementById("{{ $buybuttonid }}");
+            var originalprice = document.getElementById("{{ $originalpriceid }}")
+            var currentprice = document.getElementById("{{ $currentpriceid }}");
             var imgloadingid = document.getElementById("{{ $imgloadingid }}");
-            // var tags = document.getElementById("{{ $tagsid }}");
+            var saletag = document.getElementById("{{ $saletagid }}");
+            var salerate = saletag.firstChild;
             game.href = data.links.self;
             titlelink.href = data.links.self;
             image.src = data.cover_image;
             title.innerText = data.title;
-            buybutton.innerHTML = '{{ partial "icon.html" "itch-io" }}' + (data.price ? data.price : "Free");
+            if (data.original_price) {
+                originalprice.innerText = (data.original_price ? data.original_price : "");
+                originalprice.style.visibility = "visible"
+            }
+            else {
+                originalprice.remove();
+            }
+            currentprice.innerText = (data.price === "$0.00" ? "Free" : data.price);
             imgloadingid.style.visibility = "hidden";
-            // if (data.tags) {
-            //     for (let i = 0; i < (data.tags.length > 3 ? 3 : data.tags.length); i++) {
-            //         let tag = data.tags[i];
-            //         tag = tag
-            //             .toLowerCase()
-            //             .split('-')
-            //             .map(function (word) {
-            //                 return word[0].toUpperCase() + word.substr(1);
-            //             })
-            //             .join(' ');
-            //         var pill = document.createElement("a");
-            //         pill.className = "extrone-pill {{ $game }}"
-            //         pill.innerHTML = '{{ partial "icon.html" "tag" }}' + tag;
-            //         tags.appendChild(pill);
-            //     }
-            // }
+            if (data.sale) {
+                saletag.innerHTML = '{{ partial "icon.html" "tag"}}<p>' + data.sale.rate + "% Off</p>";
+                saletag.style.visibility = "visible";
+                currentprice.classList.add("game-sale");
+            }
+            else {
+                saletag.remove();
+            }
         }
     })
     Itch.attachBuyButton(document.getElementById("{{ $buybuttonid }}"), {

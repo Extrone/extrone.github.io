@@ -14,7 +14,10 @@ layoutBackgroundHeaderSpace: false
 cardViewScreenWidth: true
 constrainItemsWidth: false
 ---
-<h2 class="games-heading">Jam Games</h2>
+<h2 class="games-heading">Jam Games</h2> 
+{{< button href="https://extrone.itch.io/" target="_blank" >}}
+{{< icon "itch-io" >}} itch.io {{< icon "External-link" >}}
+{{< /button >}} <br> <br>
 
 <div class="extrone-game-list">
     {{< game-itch id="derpy-deep-drive">}}
@@ -24,4 +27,5 @@ constrainItemsWidth: false
     {{< game-itch id="balloonpop">}}
     {{< game-itch id="jumpinjelly">}}
     {{< game-itch id="pheonix-heavy">}}
+    {{< game-itch id="lightnight">}}
 </div>
