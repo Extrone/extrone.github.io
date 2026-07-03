@@ -50,15 +50,15 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 
 [footer]
   showMenu = true
-  showCopyright = false
-  showThemeAttribution = false
+  showCopyright = true
+  showThemeAttribution = true
   showAppearanceSwitcher = false
   showScrollToTop = true
 
 [homepage]
-  layout = "background" # valid options: page, profile, hero, card, background, custom
+  layout = "custom" # valid options: page, profile, hero, card, background, custom
   homepageImage = "img/background.jpg" # used in: hero, and card
-  showRecent = false
+  showRecent = true
   showRecentItems = 3
   showMoreLink = true
   showMoreLinkDest = "/posts/"
@@ -101,6 +101,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   # sharingLinks = [ "linkedin", "twitter", "bluesky", "mastodon", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram", "line"]
   showZenMode = true
   # externalLinkForceNewTab = false # disable to allow external links in the same tab (defaults to true)
+  customMetaData = true
 
 [list]
   showHero = true
@@ -118,6 +119,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   cardView = false
   cardViewScreenWidth = false
   constrainItemsWidth = false
+  customMetaData = true
 
 [sitemap]
   excludedKinds = ["taxonomy", "term"]

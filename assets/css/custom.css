@@ -11,7 +11,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 30%);
+    background-color: rgba(0, 0, 0, 50%);
     padding: 2px 8px;
     margin: 0px auto;
     width: fit-content;
@@ -19,8 +19,20 @@
     backdrop-filter: blur(32px);
 }
 
-#site-footer > div > span > a:hover {
-    text-decoration-line: underline;
+#site-footer p {
+    font-size: 14px;
+    margin-right: 6px;
+}
+
+#site-footer p:has(a) {
+    margin: 0;
+}
+
+#site-footer p:has(a)::before {
+    content: "•";
+    margin-right: 2px;
+}
+
 }
 
 .extend-64 {

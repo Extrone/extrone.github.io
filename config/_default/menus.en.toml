@@ -11,14 +11,20 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
+  name = "Projects"
+  weight = 1
+
+[[main]]
   name = "Games"
   pageRef = "games"
   weight = 1
+  parent = "Projects"
 
 [[main]]
   name = "Plugins"
   pageRef = "plugins"
   weight = 2
+  parent = "Projects"
 
 [[main]]
   name = "Posts"
@@ -34,4 +40,3 @@
   name = "Contact"
   pageRef = "contact"
   weight = 5
-
