@@ -33,7 +33,7 @@ hotlinkFeatureImage = false
 # thumbnailAspectRatio = "1.5"
 # imagePosition = "50% 50%"
 
-highlightCurrentMenuArea = false
+highlightCurrentMenuArea = true
 smartTOC = true
 # smartTOCHideUnfocusedChildren = false
 

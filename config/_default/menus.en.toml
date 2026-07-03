@@ -16,22 +16,22 @@
   weight = 1
 
 [[main]]
-  name = "UE Plugins"
+  name = "Plugins"
   pageRef = "plugins"
-  weight = 1
+  weight = 2
 
-# [[main]]
-#   name = "Posts"
-#   pageRef = "posts"
-#   weight = 2
+[[main]]
+  name = "Posts"
+  pageRef = "posts"
+  weight = 3
 
 [[main]]
   name = "About"
   pageRef = "about"
-  weight = 3
+  weight = 4
 
 [[main]]
   name = "Contact"
   pageRef = "contact"
-  weight = 4
+  weight = 5
 

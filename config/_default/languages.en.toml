@@ -11,8 +11,7 @@ title = "Extrone"
   dateFormat = "2 January 2006"
   logo = "img/headericon.png"
   secondaryLogo = "img/Profile_400x400.png"
-  description = "My awesome website"
-  copyright = "2026 Arjun Subhash"
+  copyright = "© 2026 Extrone"
 
 [params.author]
   name = "Extrone"

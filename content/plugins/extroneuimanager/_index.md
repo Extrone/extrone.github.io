@@ -18,7 +18,7 @@ tags:
 ---
 {{< button href="https://www.fab.com/listings/e4b733a3-3bc8-45b5-9800-8fec1578c38f" target="_blank" >}}
 {{< icon "Fab" >}} Get Plugin {{< icon "External-link" >}}
-{{< /button >}} 
+{{< /button >}}
 {{< accordion mode="open" separated=true >}}
 {{< accordionItem title="Features" open=true >}}
 - Layer based Widget handling

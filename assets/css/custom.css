@@ -19,14 +19,23 @@
     backdrop-filter: blur(32px);
 }
 
+#site-footer > div > span > a:hover {
+    text-decoration-line: underline;
+}
+
 .extend-64 {
     height: 64px;
+}
+
+a > .icon {
+    color: rgba(var(--color-neutral-400));
 }
 
 a[role=button] .icon svg,
 .external-game-link .icon svg {
     width: 18px;
     height: 18px;
+    color: white;
 }
 
 .extrone-pills {
@@ -48,6 +57,10 @@ a[role=button] .icon svg,
     border-radius: 2px;
     word-break: keep-all;
     text-wrap-mode: nowrap;
+}
+
+.extrone-pill span:has(svg) {
+    color: white;
 }
 
 .extrone-params {
@@ -173,16 +186,18 @@ a[role=button] .icon svg,
     border-radius: 8px;
     padding: 8px 16px;
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 25%);
-    transition: 0.2s;
+    transition: all .2s,transform .2s cubic-bezier(.175,.885,.32,2.275);
 }
 
 .submit-button:hover {
     transform: scale(1.05);
     background-color: cadetblue;
+    transition: all .2s,transform .2s cubic-bezier(.175,.885,.32,2.275);
 }
 
 .submit-button:active {
     transform: scale(.9);
+    transition: all .2s,transform .2s cubic-bezier(.175,.885,.32,2.275);
 }
 
 .required:after {

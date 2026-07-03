@@ -10,6 +10,7 @@ replyByEmail: false
 showPagination: false
 heroStyle: "background"
 layoutBackgroundHeaderSpace: false
+showHeadingAnchors: false
 ---
 
 > [!info] Notice
