@@ -2,7 +2,6 @@
     {{ if .Params.tags}}
     {{ range $index, $tags := .Params.tags }}
     <a class="tag extrone-pill {{ replace . " " "-" }}" href="{{ "/tags/" | relURL }}{{ . | urlize }}">
-        {{ partial "icon.html" "tag" }}
         {{ . }}
     </a>
     {{ end }}
@@ -10,7 +9,6 @@
     {{ if .Params.projects}}
     {{ range $index, $project := .Params.projects }}
     <a class="project extrone-pill {{ replace . " " "-" }}" href="{{ "/projects/" | relURL }}{{ . | urlize }}">
-        {{ partial "icon.html" "file-lines" }}
         {{ . }}
     </a>
     {{ end }}
@@ -18,7 +16,6 @@
     {{ if .Params.engines}}
     {{ range $index, $engines := .Params.engines }}
     <a class="engine extrone-pill {{ replace . " " "-" }}" href="{{ "/engines/" | relURL }}{{ . | urlize }}">
-        {{ partial "icon.html" "EmptyLogo_White" }}
         {{ . }}
     </a>
     {{ end }}
@@ -28,7 +25,6 @@
     {{ with index (.Params.unrealengineversions) 0 }}
     <a class="ueversion extrone-pill {{ replace . " " "-" }}" href="{{ "/unrealengineversions/" | relURL }}{{ . |
         urlize }}">
-        {{ partial "icon.html" "UE-Icon-2023-White" }}
         {{ . }}
     </a>
     {{ end }}
@@ -36,7 +32,6 @@
     {{ with index (last 1 .Params.unrealengineversions) 0 }}
     <a class="ueversion extrone-pill {{ replace . " " "-" }}" href="{{ "/unrealengineversions/" | relURL }}{{ . |
         urlize }}">
-        {{ partial "icon.html" "UE-Icon-2023-White" }}
         {{ . }}
     </a>
     {{ end }}
@@ -44,7 +39,6 @@
     {{ range $index, $versions := .Params.unrealengineversions }}
     <a class="ueversion extrone-pill {{ replace . " " "-" }}" href="{{ "/unrealengineversions/" | relURL }}{{ . |
         urlize }}">
-        {{ partial "icon.html" "UE-Icon-2023-White" }}
         {{ . }}
     </a>
     {{ end }}
@@ -54,12 +48,12 @@
     {{ range $index, $plangs := .Params.programminglanguages }}
     <a class="plang extrone-pill {{ replace . " " "-" }}" href="{{ "/programminglanguages/" | relURL }}{{ . | urlize
         }}">
-        {{ partial "icon.html" "code" }}
         {{ . }}
     </a>
     {{ end }}
     {{ end }}
 </div>
+{{ if .Params.customMetaData | default (site.Params.article.customMetaData | default false) }}
 <div class="extrone-params extrone-pills">
     <div class="extrone-pill">
         {{ .Params.date | time.Format "02 January 2006" }}
@@ -71,3 +65,4 @@
         {{- i18n "article.reading_time" .ReadingTime | markdownify | emojify -}}
     </div>
 </div>
+{{ end }}
