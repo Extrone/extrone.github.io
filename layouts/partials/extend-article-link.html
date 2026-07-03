@@ -24,12 +24,30 @@
     {{ end }}
     {{ end }}
     {{ if .Params.unrealengineversions}}
+    {{ if gt (.Params.unrealengineversions | len) 2 }}
+    {{ with index (.Params.unrealengineversions) 0 }}
+    <a class="ueversion extrone-pill {{ replace . " " "-" }}" href="{{ "/unrealengineversions/" | relURL }}{{ . |
+        urlize }}">
+        {{ partial "icon.html" "UE-Icon-2023-White" }}
+        {{ . }}
+    </a>
+    {{ end }}
+    <p class="ueversion extrone-pill">. . .</p>
+    {{ with index (last 1 .Params.unrealengineversions) 0 }}
+    <a class="ueversion extrone-pill {{ replace . " " "-" }}" href="{{ "/unrealengineversions/" | relURL }}{{ . |
+        urlize }}">
+        {{ partial "icon.html" "UE-Icon-2023-White" }}
+        {{ . }}
+    </a>
+    {{ end }}
+    {{ else }}
     {{ range $index, $versions := .Params.unrealengineversions }}
     <a class="ueversion extrone-pill {{ replace . " " "-" }}" href="{{ "/unrealengineversions/" | relURL }}{{ . |
         urlize }}">
         {{ partial "icon.html" "UE-Icon-2023-White" }}
         {{ . }}
     </a>
+    {{ end }}
     {{ end }}
     {{ end }}
     {{ if .Params.programminglanguages}}
