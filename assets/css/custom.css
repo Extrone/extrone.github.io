@@ -38,6 +38,30 @@ a[role=button] .icon svg,
     color: white;
 }
 
+.taxonomy-terms {
+    margin-top: 32px;
+    display: flex;
+    gap: 2px;
+    flex-wrap: wrap;
+}
+
+.taxonomy-terms > article {
+    width: fit-content;
+    background-color: rgba(var(--color-neutral-700));
+    border-radius: 8px;
+    margin: 2px;
+    padding: 3px 12px 4px 12px;
+}
+
+.taxonomy-terms span {
+    color: white;
+}
+
+.taxonomy-term {
+    font-size: 18px;
+    width: fit-content;
+}
+
 .extrone-pills {
     font-size: 14px;
     font-weight: 500;
@@ -80,7 +104,7 @@ a[role=button] .icon svg,
 }
 
 .project {
-    background-color: rgba(200, 20, 100, 100%);
+    background-color: rgb(168, 17, 85);
 }
 
 .engine {

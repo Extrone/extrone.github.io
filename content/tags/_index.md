@@ -1,6 +1,6 @@
 ---
 title: "Tags"
-layout: "taxonomies"
+layout: "terms"
 url: "/tags/"
 color: "rgba(150, 150, 50, 100%)"
 summary: Tags
