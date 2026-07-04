@@ -1,3 +1,22 @@
+{{ $showCustomMetadataDefault := false}}
+{{ $showCustomDateDefault := true }}
+{{ $showCustomWordCountDefault := true }}
+{{ $showCustomReadingTimeDefault := true }}
+{{ if eq .File.BaseFileName "_index" }}
+{{ $showCustomMetadataDefault = site.Params.list.customMetaData }}
+{{ $showCustomDateDefault = site.Params.list.customDate }}
+{{ $showCustomWordCountDefault = site.Params.list.customWordCount }}
+{{ $showCustomReadingTimeDefault = site.Params.list.customReadingTime }}
+{{ else }}
+{{ $showCustomMetadataDefault = site.Params.article.customMetaData }}
+{{ $showCustomDateDefault = site.Params.article.customDate }}
+{{ $showCustomWordCountDefault = site.Params.article.customWordCount }}
+{{ $showCustomReadingTimeDefault = site.Params.article.customReadingTime }}
+{{ end }}
+{{ $showCustomMetadata := .Params.customMetaData | default ( $showCustomMetadataDefault | default false) }}
+{{ $showCustomDate := .Params.customDate | default ( $showCustomDateDefault | default false) }}
+{{ $showCustomWordCount := .Params.customWordCount | default ( $showCustomWordCountDefault | default false) }}
+{{ $showCustomReadingTime := .Params.customReadingTime | default ( $showCustomReadingTimeDefault | default false) }}
 <div class="extrone-pills">
     {{ if .Params.tags}}
     {{ range $index, $tags := .Params.tags }}
@@ -53,16 +72,22 @@
     {{ end }}
     {{ end }}
 </div>
-{{ if .Params.customMetaData | default (site.Params.article.customMetaData | default false) }}
+{{ if and $showCustomMetadata | or $showCustomWordCount | or $showCustomReadingTime $showCustomDate}}
 <div class="extrone-params extrone-pills">
+    {{ if $showCustomDate }}
     <div class="extrone-pill">
         {{ .Params.date | time.Format "02 January 2006" }}
     </div>
+    {{ end }}
+    {{ if $showCustomWordCount }}
     <div class="extrone-pill">
         {{- i18n "article.word_count" .WordCount | markdownify -}}
     </div>
+    {{ end }}
+    {{ if $showCustomReadingTime }}
     <div class="extrone-pill">
         {{- i18n "article.reading_time" .ReadingTime | markdownify | emojify -}}
     </div>
+    {{ end }}
 </div>
 {{ end }}

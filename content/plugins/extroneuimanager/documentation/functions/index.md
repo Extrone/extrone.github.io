@@ -1,6 +1,7 @@
 ---
 title: "Function Reference"
 summary: Information on what every function in this plugin does.
+date: 2024-10-22T00:00:00+05:30
 weight: 200
 programminglanguages:
     - Blueprint

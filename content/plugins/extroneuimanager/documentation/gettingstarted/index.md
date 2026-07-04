@@ -2,6 +2,7 @@
 title: "Getting Started"
 summary: Everything you need to know to start using the plugin.
 url: "/plugins/extroneuimanager/documentation/gettingstarted"
+date: 2024-10-22T00:00:00+05:30
 weight: 100
 Projects:
     - Extrone UI Manager

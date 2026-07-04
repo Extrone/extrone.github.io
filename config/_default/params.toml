@@ -102,6 +102,9 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showZenMode = true
   # externalLinkForceNewTab = false # disable to allow external links in the same tab (defaults to true)
   customMetaData = true
+  customDate = true
+  customWordCount = true
+  customReadingTime = true
 
 [list]
   showHero = true
@@ -120,6 +123,9 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   cardViewScreenWidth = false
   constrainItemsWidth = false
   customMetaData = true
+  customDate = true
+  customWordCount = false
+  customReadingTime = false
 
 [sitemap]
   excludedKinds = ["taxonomy", "term"]

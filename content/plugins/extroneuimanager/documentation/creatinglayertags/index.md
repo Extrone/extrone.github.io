@@ -2,6 +2,7 @@
 title: "Creating Layer Gameplay Tags"
 summary: Need to add more Layer Gameplay Tags? Here is how.
 url: "/plugins/extroneuimanager/documentation/createlayergameplaytags"
+date: 2024-10-22T00:00:00+05:30
 weight: 300
 tags:
     - Gameplay Tags

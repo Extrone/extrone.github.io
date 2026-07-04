@@ -2,6 +2,7 @@
 title: "Extrone UI Manager"
 description: "Layer based widget manager for Unreal Engine."
 summary: "Simple Layer based UI Management"
+date: 2024-10-22T00:00:00+05:30
 unrealengineversions:
     - 5.4
     - 5.5

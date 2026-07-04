@@ -1,6 +1,7 @@
 ---
 title: "Sample Project"
 summary: "Use the sample project to better understand how to use the plugin."
+date: 2024-10-22T00:00:00+05:30
 showReadingTime: false
 showWordCount: false
 tags:
@@ -14,6 +15,8 @@ unrealengineversions:
     - 5.7
     - 5.8
 showTableOfContents: false
+customWordCount: false
+customReadingTime: false
 ---
 <br>
 {{< button href="https://drive.google.com/drive/folders/1Jaw_iwY0F5nY0qAwFnFBEqng0wsdcz23" target="_blank" >}}
