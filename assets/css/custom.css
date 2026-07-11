@@ -87,6 +87,7 @@ section:has(#search-results) {
     background-color: rgba(var(--color-neutral-700));
     padding: 3px 16px 6px 16px;
     transition: all .2s,transform .2s cubic-bezier(.175,.885,.32,2.275);
+    user-select: none;
 }
 
 .home-page-buttons > a:hover {
